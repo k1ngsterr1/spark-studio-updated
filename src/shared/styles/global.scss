@@ -2,6 +2,13 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@font-face {
+  font-family: "Macherie";
+  src: url("/assets/fonts/macherie.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,5 +16,5 @@
 }
 
 .h1 {
-  @apply text-6xl text-green-700;
+  @apply text-6xl text-custom-black font-macherie;
 }
