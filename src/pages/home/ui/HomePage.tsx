@@ -1,5 +1,9 @@
-import { Cursor } from "@shared/ui";
+import { Loader } from "@shared/ui";
 
 export const HomePage = () => {
-  return <div>HOME-PAGE</div>;
+  return (
+    <div>
+      <Loader />
+    </div>
+  );
 };

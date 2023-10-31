@@ -1,5 +1,24 @@
-import styles from "./styles.module.scss";
+import { useRef } from "react";
+import { useLoaderAnimation } from "@shared/lib/hooks";
+
+import "./styles.scss";
+
+// Assets
+import logo from "@assets/images/spark_logo.svg";
 
 export const Loader = () => {
-  return <div className="loader">index</div>;
+  const loaderWrapperRef = useRef(null);
+
+  useLoaderAnimation(loaderWrapperRef);
+
+  return (
+    <div
+      className="loader__wrapper flex justify-center items-center"
+      ref={loaderWrapperRef}
+    >
+      <div className="loader flex-col">
+        <img src={logo} className="loader__logo" alt="logo" />
+      </div>
+    </div>
+  );
 };

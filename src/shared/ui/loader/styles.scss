@@ -1,0 +1,15 @@
+.loader__wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+
+  .loader {
+    justify-content: center;
+    align-items: center;
+
+    &__logo {
+      width: 300px;
+      height: auto;
+    }
+  }
+}
