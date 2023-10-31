@@ -8,8 +8,8 @@ export const LoaderBar = () => {
   useProgressBar(barRef);
 
   return (
-    <div className="bar" ref={barRef}>
-      <div className="bar__indicatator"></div>
+    <div className="bar flex justify-start items-center mt-8">
+      <div className="bar__indicator bg-custom-orange" ref={barRef}></div>
     </div>
   );
 };

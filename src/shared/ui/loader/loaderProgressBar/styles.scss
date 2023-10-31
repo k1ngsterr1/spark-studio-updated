@@ -1,0 +1,12 @@
+.bar {
+  width: clamp(150px, 15.624vw, 600px);
+  height: clamp(8px, 0.83328vw, 32px);
+  border: 2px solid black;
+  border-radius: clamp(32px, 3.33312vw, 128px);
+
+  &__indicator {
+    width: 10%;
+    height: 100%;
+    border-radius: clamp(25px, 2.604vw, 100px);
+  }
+}

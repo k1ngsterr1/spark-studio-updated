@@ -1,5 +1,4 @@
-import React, { useEffect, useRef } from "react";
-import gsap from "gsap";
+import React, { useRef } from "react";
 
 import "./styles.scss";
 import { useCustomCursor } from "@shared/lib/hooks";

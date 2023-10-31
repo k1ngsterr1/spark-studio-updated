@@ -12,7 +12,7 @@ export const useLoaderAnimation = (loaderWrapperRef: any) => {
 
     // Simulate loading for 3 seconds
     tl.to(loaderWrapperRef.current, {
-      delay: 3,
+      delay: 3000,
     });
 
     // Disappear Animation

@@ -5,20 +5,36 @@ export const useProgressBar = (progressBarRef: any) => {
   useEffect(() => {
     const tl = gsap.timeline();
 
-    // tl.to(loaderWrapperRef.current, {
-    //   autoAlpha: 1,
-    //   duration: 0.5,
-    // });
+    tl.to(progressBarRef.current, {
+      autoAlpha: 1,
+      duration: 0.5,
+      width: "10%",
+    });
 
-    // // Simulate loading for 3 seconds
-    // tl.to(loaderWrapperRef.current, {
-    //   delay: 3,
-    // });
+    // Simulated staggered loading
+    tl.to(progressBarRef.current, {
+      duration: 0.5,
+      width: "30%",
+      ease: "power1.inOut",
+    })
+      .to(progressBarRef.current, {
+        duration: 1,
+        width: "60%",
+        ease: "power1.inOut",
+      })
+      .to(progressBarRef.current, {
+        duration: 1.5,
+        width: "80%",
+        ease: "elastic.out(1, 0.3)",
+      });
 
-    // // Disappear Animation
-    // tl.to(loaderWrapperRef.current, {
-    //   autoAlpha: 0,
-    //   duration: 0.5,
-    // });
+    // Disappear Animation
+    tl.to(progressBarRef.current, {
+      duration: 0.5,
+      width: "100%",
+      onComplete: () => {
+        gsap.set(progressBarRef.current, { width: "100%" }); // Reset the progress bar after the animation completes
+      },
+    });
   }, []);
 };
