@@ -1,0 +1,11 @@
+.hamburger {
+  width: clamp(20px, 9.3456vw, 80px);
+  height: clamp(20px, 9.3456vw, 80px);
+
+  &__line {
+    width: 100%;
+    height: clamp(2px, 0.93456vw, 8px);
+    @apply bg-custom-orange;
+    @apply mt-2;
+  }
+}

@@ -1,4 +1,4 @@
-import { Cursor } from "@shared/ui";
+import { Cursor } from "@shared/index";
 import { MyRoutes } from "../pages/index";
 
 function App() {

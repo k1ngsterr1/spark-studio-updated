@@ -9,7 +9,7 @@ import { HomePage } from "@pages/home";
 import { ApplicationsPage } from "@pages/applications";
 import { WebsitesPage } from "@pages/websites";
 import { SeoPage } from "@pages/seo";
-import { NotFound } from "@pages/not-found";
+import { NotFound } from "@pages/notFound";
 import { PortfolioDetails } from "@pages/portfolioDetails";
 import { Portfolio } from "@pages/portfolio";
 
