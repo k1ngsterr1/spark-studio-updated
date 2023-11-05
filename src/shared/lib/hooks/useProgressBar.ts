@@ -23,9 +23,9 @@ export const useProgressBar = (progressBarRef: any) => {
         ease: "power1.inOut",
       })
       .to(progressBarRef.current, {
-        duration: 1.5,
+        duration: 0.5,
         width: "80%",
-        ease: "elastic.out(1, 0.3)",
+        ease: "power1.inOut(1, 0.3)",
       });
 
     // Disappear Animation

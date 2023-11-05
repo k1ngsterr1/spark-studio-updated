@@ -1,4 +1,4 @@
-import { Loader } from "@shared/ui";
+import { Loader } from "@shared/index";
 
 export const HomePage = () => {
   return (
