@@ -19,3 +19,12 @@
 .h1 {
   @apply text-6xl text-custom-black font-macherie;
 }
+
+.nav {
+  color: #1a1a1a;
+  font-family: Montserrat;
+  font-size: clamp(9.5px, 4.439159999999999vw, 38px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130.5%;
+}

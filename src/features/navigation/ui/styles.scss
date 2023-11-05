@@ -2,13 +2,18 @@
   width: 100%;
   height: auto;
 
-  &__logo {
-    width: clamp(69px, 32.24232vw, 276px);
-    height: clamp(22.5px, 10.5138vw, 90px);
-  }
-
-  &__wrapper {
-    width: 30%;
+  &__mob {
+    width: 100%;
     height: auto;
+
+    &__logo {
+      width: clamp(69px, 32.24232vw, 276px);
+      height: clamp(22.5px, 10.5138vw, 90px);
+    }
+
+    &__wrapper {
+      width: auto;
+      height: auto;
+    }
   }
 }
