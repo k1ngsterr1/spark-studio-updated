@@ -1,1 +1,1 @@
-export { SeoPage } from "./ui/SeoPage";
+import { SeoPage } from "./ui";

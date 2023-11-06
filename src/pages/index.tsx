@@ -5,13 +5,13 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { ROUTE_CONSTANTS } from "@shared/config/routes";
 
 // Pages
-import { HomePage } from "@pages/home";
-import { ApplicationsPage } from "@pages/applications";
-import { WebsitesPage } from "@pages/websites";
-import { SeoPage } from "@pages/seo";
-import { NotFound } from "@pages/notFound";
-import { PortfolioDetails } from "@pages/portfolioDetails";
-import { Portfolio } from "@pages/portfolio";
+import { HomePage } from "@pages/home/ui";
+import { ApplicationsPage } from "@pages/applications/ui";
+import { SeoPage } from "@pages/seo/ui";
+import { WebsitesPage } from "@pages/websites/ui";
+import { Portfolio } from "@pages/portfolio/ui";
+import { PortfolioDetails } from "@pages/portfolioDetails/ui";
+import { NotFound } from "@pages/notFound/ui";
 
 export const MyRoutes: FC = () => {
   return (

@@ -1,1 +1,1 @@
-export { Portfolio } from "./ui/Portfolio";
+import { Portfolio } from "./ui";

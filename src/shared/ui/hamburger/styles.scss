@@ -4,8 +4,9 @@
 
   &__line {
     width: 100%;
-    height: clamp(2px, 0.93456vw, 8px);
+    height: clamp(1.5px, 0.70092vw, 6px);
     @apply bg-custom-orange;
     @apply mt-2;
+    border-radius: 10px;
   }
 }

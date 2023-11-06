@@ -1,1 +1,1 @@
-export { PortfolioDetails } from "./ui/PortfolioDetails.tsx";
+import { PortfolioDetails } from "./ui";

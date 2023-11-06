@@ -1,1 +1,1 @@
-export { WebsitesPage } from "./ui/WebsitesPage";
+import { WebsitesPage } from "./ui";

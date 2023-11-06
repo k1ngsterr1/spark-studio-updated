@@ -8,7 +8,7 @@ export const languageButton: React.FC<LanguageButtonProps> = ({
   onClick,
 }) => {
   return (
-    <button onClick={onClick} className="language-btn">
+    <button onClick={onClick} className="link cursor-pointer">
       {language}
     </button>
   );
