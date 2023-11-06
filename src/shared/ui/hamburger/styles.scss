@@ -1,6 +1,8 @@
-.hamburger {
+.hamburger,
+.hamburger--disabled {
   width: clamp(20px, 9.3456vw, 80px);
   height: clamp(20px, 9.3456vw, 80px);
+  display: flex;
 
   &__line {
     width: 100%;
@@ -8,5 +10,21 @@
     @apply bg-custom-orange;
     @apply mt-2;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  &__line-short {
+    width: 60%;
+    height: clamp(1.5px, 0.70092vw, 6px);
+    @apply bg-custom-orange;
+    @apply mt-2;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  &--disabled {
+    > div {
+      border: 2px solid red;
+    }
   }
 }

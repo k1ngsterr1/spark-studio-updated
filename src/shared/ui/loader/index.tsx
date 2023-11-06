@@ -17,7 +17,7 @@ export const Loader = () => {
       className="loader__wrapper flex justify-center items-center"
       ref={loaderWrapperRef}
     >
-      <div className="loader flex-col justify-center items-center">
+      <div className="loader flex flex-col justify-center items-center">
         <img src={logo} className="loader__logo" alt="logo" />
         <LoaderBar />
       </div>

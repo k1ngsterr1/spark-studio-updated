@@ -8,10 +8,14 @@ import "./styles.scss";
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const { topLine, middleLine, bottomLine, toggleMenu } = useBurgerAnimation(
-    isOpen,
-    setIsOpen
-  );
+  const {
+    topLine,
+    middleLine,
+    bottomLine,
+    toggleMenu,
+    animateOnHover,
+    animateOffHover,
+  } = useBurgerAnimation(isOpen, setIsOpen);
 
   const handleHamburgerClick = () => {
     toggleMenu();
@@ -23,6 +27,9 @@ export const Navigation = () => {
         <img src={Logo} className="navigation__mob__logo" alt="logo" />{" "}
         <div className="navigation__mob__wrapper items-center justify-between">
           <Hamburger
+            onHover={animateOnHover}
+            offHover={animateOffHover}
+            isEnabled={false}
             onClick={handleHamburgerClick}
             topLineRef={topLine}
             middleLineRef={middleLine}
