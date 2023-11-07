@@ -1,5 +1,5 @@
 // useBurgerAnimation.ts
-import { useRef, useState, useCallback } from "react";
+import { useRef, useCallback } from "react";
 import gsap from "gsap";
 
 type UseBurgerAnimationReturnType = {
@@ -19,6 +19,8 @@ export const useBurgerAnimation = (
   const topLine = useRef<HTMLDivElement>(null);
   const middleLine = useRef<HTMLDivElement>(null);
   const bottomLine = useRef<HTMLDivElement>(null);
+
+  // On Hover Animation
 
   const animateToX = () => {
     gsap
@@ -55,6 +57,8 @@ export const useBurgerAnimation = (
       );
   };
 
+  // On Hover Animation
+
   const animateOnHover = () => {
     gsap.to(middleLine.current, {
       width: "100%",
@@ -63,6 +67,8 @@ export const useBurgerAnimation = (
     });
   };
 
+  // Off Hover Animation
+
   const animateOffHover = () => {
     gsap.to(middleLine.current, {
       width: "60%",
@@ -70,6 +76,8 @@ export const useBurgerAnimation = (
       ease: "power1.inOut",
     });
   };
+
+  // Burger Animation
 
   const animateToBurger = () => {
     gsap
@@ -107,13 +115,12 @@ export const useBurgerAnimation = (
   };
 
   const toggleMenu = useCallback(() => {
-    setIsOpen(!isOpen);
     if (isOpen) {
       animateToBurger();
     } else {
       animateToX();
     }
-  }, [isOpen, setIsOpen]);
+  }, [isOpen]);
 
   return {
     topLine,

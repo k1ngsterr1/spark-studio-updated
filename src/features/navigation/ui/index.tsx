@@ -14,11 +14,18 @@ export const Navigation = () => {
   const dispatch = useAppDispatch();
   const isMenuOpen = useAppSelector((state: any) => state.menu.isOpen); // Adjust 'state.navigation.isOpen' according to your state structure
 
-  const { topLine, middleLine, bottomLine, animateOnHover, animateOffHover } =
-    useBurgerAnimation(isMenuOpen, () => dispatch(toggleMenuAction()));
+  const {
+    topLine,
+    middleLine,
+    bottomLine,
+    animateOnHover,
+    animateOffHover,
+    toggleMenu,
+  } = useBurgerAnimation(isMenuOpen, () => dispatch(toggleMenuAction()));
 
   const handleHamburgerClick = () => {
     dispatch(toggleMenuAction());
+    toggleMenu();
   };
   return (
     <nav className="navigation  mt-8">
@@ -28,7 +35,6 @@ export const Navigation = () => {
           <Hamburger
             onHover={animateOnHover}
             offHover={animateOffHover}
-            isEnabled={true}
             onClick={handleHamburgerClick}
             topLineRef={topLine}
             middleLineRef={middleLine}

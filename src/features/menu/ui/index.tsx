@@ -1,11 +1,14 @@
+import React from "react";
+import { useMenuAnimation } from "@shared/lib/hooks/useMenuAnimation";
 import { LanguageButton } from "@shared/ui/languageButton";
 import { NavigationLink } from "@shared/ui/link";
 
 import "./styles.scss";
 
 export const Menu = () => {
+  const { menuRef } = useMenuAnimation(); // Get the menuRef
   return (
-    <aside className="menu flex flex-col items-end">
+    <aside className="menu flex flex-col items-end" ref={menuRef}>
       <nav className="mt-16 mr-8 flex flex-col items-end">
         <NavigationLink to="" linkName="Главная" />
         <NavigationLink to="" linkName="О нас" />
