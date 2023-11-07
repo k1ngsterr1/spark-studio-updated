@@ -14,7 +14,7 @@ export const useMenuAnimation = (): {
       gsap.to(menuRef.current, {
         x: isOpen ? 0 : "100%",
         autoAlpha: isOpen ? 1 : 0,
-        duration: 0.5,
+        duration: 1,
         ease: "power3.out",
       });
     }

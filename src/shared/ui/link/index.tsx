@@ -8,7 +8,7 @@ interface LinkProps {
 
 export const NavigationLink: React.FC<LinkProps> = ({ to, linkName }) => {
   return (
-    <Link className="link mt-4" to={to}>
+    <Link className="menu__link mt-8" to={to}>
       {linkName}
     </Link>
   );

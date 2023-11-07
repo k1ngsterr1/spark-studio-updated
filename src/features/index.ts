@@ -1,3 +1,2 @@
-import { Menu } from "./menu/ui";
-import { Navigation } from "./navigation/ui";
-import menuReducer from "./navigation/model/index";
+export { Menu } from "./menu/ui";
+export { Navigation } from "./navigation/ui";

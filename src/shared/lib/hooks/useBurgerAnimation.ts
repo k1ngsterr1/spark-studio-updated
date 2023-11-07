@@ -30,7 +30,7 @@ export const useBurgerAnimation = (
         {
           rotation: 45,
           transformOrigin: "50% 50%",
-          duration: 0.5,
+          duration: 0.1,
           y: "+=11",
           ease: "elastic.out(1, 0.75)",
         },
@@ -40,7 +40,7 @@ export const useBurgerAnimation = (
         middleLine.current,
         {
           autoAlpha: 0,
-          duration: 0.2,
+          duration: 0.1,
         },
         0
       )
@@ -49,7 +49,7 @@ export const useBurgerAnimation = (
         {
           rotation: -45,
           transformOrigin: "50% 50%",
-          duration: 0.5,
+          duration: 0.1,
           y: "-=11",
           ease: "elastic.out(1, 0.75)",
         },
@@ -62,7 +62,7 @@ export const useBurgerAnimation = (
   const animateOnHover = () => {
     gsap.to(middleLine.current, {
       width: "100%",
-      duration: 0.3,
+      duration: 0.5,
       ease: "power1.inOut",
     });
   };
@@ -72,7 +72,7 @@ export const useBurgerAnimation = (
   const animateOffHover = () => {
     gsap.to(middleLine.current, {
       width: "60%",
-      duration: 0.3,
+      duration: 0.5,
       ease: "power1.inOut",
     });
   };
@@ -88,7 +88,7 @@ export const useBurgerAnimation = (
           rotation: 0,
           transformOrigin: "50% 50%",
           y: 0,
-          duration: 0.5,
+          duration: 0.1,
           ease: "elastic.out(1, 0.75)",
         },
         0
@@ -97,7 +97,7 @@ export const useBurgerAnimation = (
         middleLine.current,
         {
           autoAlpha: 1,
-          duration: 0.2,
+          duration: 0.1,
         },
         0.3
       )
@@ -107,7 +107,7 @@ export const useBurgerAnimation = (
           rotation: 0,
           transformOrigin: "50% 50%",
           y: 0,
-          duration: 0.5,
+          duration: 0.1,
           ease: "elastic.out(1, 0.75)",
         },
         0

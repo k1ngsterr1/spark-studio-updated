@@ -8,4 +8,32 @@
   overflow: hidden;
   right: 0;
   top: clamp(45px, 21.0276vw, 180px);
+
+  &__link {
+    @apply text-custom-black;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(16px, 7.47648vw, 64px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130.5%;
+    cursor: pointer;
+    transition: 0.3s all;
+    &:hover {
+      @apply text-custom-orange;
+    }
+  }
+
+  &__link--contact {
+    @apply text-gray-700;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(10px, 4.6728vw, 40px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130.5%;
+    cursor: pointer;
+    transition: 0.3s all;
+    &:hover {
+      @apply text-custom-orange;
+    }
+  }
 }
