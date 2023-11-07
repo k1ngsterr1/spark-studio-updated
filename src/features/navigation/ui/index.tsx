@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Menu } from "@features/menu/ui";
 import { Hamburger } from "@shared/ui/hamburger";
 import { useBurgerAnimation } from "@shared/lib/hooks/useBurgerAnimation";
 import Logo from "@assets/images/spark_logo.svg";
@@ -7,6 +8,7 @@ import "./styles.scss";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const {
     topLine,
@@ -19,6 +21,7 @@ export const Navigation = () => {
 
   const handleHamburgerClick = () => {
     toggleMenu();
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -29,7 +32,7 @@ export const Navigation = () => {
           <Hamburger
             onHover={animateOnHover}
             offHover={animateOffHover}
-            isEnabled={false}
+            isEnabled={true}
             onClick={handleHamburgerClick}
             topLineRef={topLine}
             middleLineRef={middleLine}
@@ -37,6 +40,7 @@ export const Navigation = () => {
           />
         </div>
       </div>
+      {isMenuOpen && <Menu />}
     </nav>
   );
 };

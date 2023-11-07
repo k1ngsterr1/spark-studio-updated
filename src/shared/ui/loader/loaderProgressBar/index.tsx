@@ -1,6 +1,7 @@
 import { useRef } from "react";
-import "./styles.scss";
 import { useProgressBar } from "@shared/lib/hooks";
+
+import "./styles.scss";
 
 export const LoaderBar = () => {
   const barRef = useRef(null);

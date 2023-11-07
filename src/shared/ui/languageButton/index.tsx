@@ -3,7 +3,7 @@ interface LanguageButtonProps {
   onClick: () => void;
 }
 
-export const languageButton: React.FC<LanguageButtonProps> = ({
+export const LanguageButton: React.FC<LanguageButtonProps> = ({
   language,
   onClick,
 }) => {
