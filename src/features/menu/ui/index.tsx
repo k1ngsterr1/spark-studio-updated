@@ -1,9 +1,11 @@
 import { LanguageButton } from "@shared/ui/languageButton";
 import { NavigationLink } from "@shared/ui/link";
 
+import "./styles.scss";
+
 export const Menu = () => {
   return (
-    <aside className="menu flex flex-col">
+    <aside className="menu flex flex-col items-end">
       <NavigationLink to="" linkName="Главная" />
       <NavigationLink to="" linkName="О нас" />
       <NavigationLink to="" linkName="Услуги" />

@@ -1,5 +1,11 @@
-.aside {
-  width: clamp(200px, 93.45599999999999vw, 800px);
-  height: auto;
+.menu {
+  width: clamp(150px, 70.092vw, 600px);
+  height: 100vh;
   background-color: white;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-box-shadow: -27px -5px 45px -6px rgba(34, 60, 80, 0.16);
+  -moz-box-shadow: -27px -5px 45px -6px rgba(34, 60, 80, 0.16);
+  box-shadow: -27px -5px 45px -6px rgba(34, 60, 80, 0.16);
 }
