@@ -1,16 +1,23 @@
+// slices/menuSlice.ts
 import { createSlice } from "@reduxjs/toolkit";
 
-const navigationSlice = createSlice({
-  name: "navigation",
-  initialState: {
-    menuOpen: false,
-  },
+interface MenuState {
+  isOpen: boolean;
+}
+
+const initialState: MenuState = {
+  isOpen: false,
+};
+
+const menuSlice = createSlice({
+  name: "menu",
+  initialState,
   reducers: {
-    toggleMenu(state) {
-      state.menuOpen = !state.menuOpen;
+    toggleMenu: (state) => {
+      state.isOpen = !state.isOpen;
     },
   },
 });
 
-export const { toggleMenu } = navigationSlice.actions;
-export default navigationSlice.reducer;
+export const { toggleMenu } = menuSlice.actions;
+export default menuSlice.reducer;

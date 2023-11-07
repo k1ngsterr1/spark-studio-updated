@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Menu } from "@features/menu/ui";
+import { useAppDispatch, useAppSelector } from "@shared/lib/redux/hooks";
+import { toggleMenu as toggleMenuAction } from "../model";
 import { Hamburger } from "@shared/ui/hamburger";
 import { useBurgerAnimation } from "@shared/lib/hooks/useBurgerAnimation";
 import Logo from "@assets/images/spark_logo.svg";
@@ -11,23 +11,15 @@ interface NavigationProps {
 }
 
 export const Navigation = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const dispatch = useAppDispatch();
+  const isMenuOpen = useAppSelector((state: any) => state.navigation.isOpen); // Adjust 'state.navigation.isOpen' according to your state structure
 
-  const {
-    topLine,
-    middleLine,
-    bottomLine,
-    toggleMenu,
-    animateOnHover,
-    animateOffHover,
-  } = useBurgerAnimation(isOpen, setIsOpen);
+  const { topLine, middleLine, bottomLine, animateOnHover, animateOffHover } =
+    useBurgerAnimation(isMenuOpen, () => dispatch(toggleMenuAction()));
 
   const handleHamburgerClick = () => {
-    toggleMenu();
-    setIsMenuOpen(!isMenuOpen);
+    dispatch(toggleMenuAction());
   };
-
   return (
     <nav className="navigation  mt-8">
       <div className="navigation__mob flex flex-row items-center justify-between">
