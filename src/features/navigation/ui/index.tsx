@@ -6,6 +6,10 @@ import Logo from "@assets/images/spark_logo.svg";
 
 import "./styles.scss";
 
+interface NavigationProps {
+  menuOpen: boolean;
+}
+
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,7 +44,6 @@ export const Navigation = () => {
           />
         </div>
       </div>
-      {isMenuOpen && <Menu />}
     </nav>
   );
 };
