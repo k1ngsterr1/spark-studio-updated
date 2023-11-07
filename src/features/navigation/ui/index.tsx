@@ -12,7 +12,7 @@ interface NavigationProps {
 
 export const Navigation = () => {
   const dispatch = useAppDispatch();
-  const isMenuOpen = useAppSelector((state: any) => state.navigation.isOpen); // Adjust 'state.navigation.isOpen' according to your state structure
+  const isMenuOpen = useAppSelector((state: any) => state.menu.isOpen); // Adjust 'state.navigation.isOpen' according to your state structure
 
   const { topLine, middleLine, bottomLine, animateOnHover, animateOffHover } =
     useBurgerAnimation(isMenuOpen, () => dispatch(toggleMenuAction()));
