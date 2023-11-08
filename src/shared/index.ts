@@ -1,3 +1,4 @@
+export { Meta } from "./ui/meta";
 export { Block } from "./ui/block";
 export { NavigationLink } from "./ui/link";
 export { PhoneLink } from "./ui/phoneLink";

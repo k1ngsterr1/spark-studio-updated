@@ -9,6 +9,7 @@
   src: url("../../assets/fonts/macherie.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 * {
@@ -18,6 +19,13 @@
   box-sizing: border-box;
 }
 
+.main {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
   font-family: macherie, sans-serif;
   font-style: normal;
@@ -25,6 +33,23 @@ h1 {
   font-size: clamp(22.5px, 10.5138vw, 90px);
   line-height: 120%;
   @apply text-custom-black;
+}
+
+h2 {
+  font-family: "Machérie";
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(40px, 4.1664vw, 160px);
+  @apply text-custom-black;
+}
+
+p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  @apply text-custom-black;
+  text-align: center;
+  font-size: clamp(8px, 3.73824vw, 32px);
 }
 
 .orange {
