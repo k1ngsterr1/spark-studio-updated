@@ -12,7 +12,11 @@ export const Menu = () => {
     <aside className="menu flex flex-col items-start" ref={menuRef}>
       <div className="flex items-end mt-16 ml-8">
         <LanguageButton language="RU" onClick={() => console.log("RU")} />
-        <LanguageButton language="EN" onClick={() => console.log("EN")} />
+        <LanguageButton
+          language="EN"
+          margin="ml-4"
+          onClick={() => console.log("EN")}
+        />
       </div>
       <nav className="mt-2 ml-8 flex flex-col items-start">
         <NavigationLink to="" linkName="Главная" />
