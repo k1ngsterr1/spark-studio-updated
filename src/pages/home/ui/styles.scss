@@ -1,0 +1,19 @@
+.main {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+  &__squares {
+    width: 100%;
+    height: auto;
+  }
+
+  &__squares--row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

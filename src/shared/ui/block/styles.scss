@@ -1,0 +1,22 @@
+.block {
+  width: clamp(90px, 42.0552vw, 360px);
+  height: clamp(90px, 42.0552vw, 360px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  @apply border-custom-black;
+  transition: 0.3s all;
+  &:hover {
+    @apply bg-custom-orange;
+    color: white;
+    font-weight: 400;
+  }
+
+  &__text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 200;
+    font-size: clamp(22.5px, 10.5138vw, 90px);
+  }
+}

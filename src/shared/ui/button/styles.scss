@@ -1,0 +1,18 @@
+.button {
+  width: clamp(149.93px, 70.0592904vw, 599.72px);
+  height: clamp(61.98px, 28.962014399999997vw, 247.92px);
+  background: none;
+  border: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: clamp(9.5px, 4.439159999999999vw, 38px);
+  outline: none;
+  background-size: cover;
+  background-image: url("../../../assets//images/button.svg");
+  transition: 0.3s all;
+  &:hover {
+    @apply text-custom-orange;
+    background-image: url("../assets/web_button_active.svg");
+  }
+}

@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Macherie";
-  src: url("/assets/fonts/macherie.ttf") format("truetype");
+  src: url("../../assets/fonts/macherie.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -18,6 +18,15 @@
   box-sizing: border-box;
 }
 
-.h1 {
-  @apply text-6xl text-custom-black font-macherie;
+h1 {
+  font-family: macherie, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(22.5px, 10.5138vw, 90px);
+  line-height: 120%;
+  @apply text-custom-black;
+}
+
+.orange {
+  @apply text-custom-orange;
 }
