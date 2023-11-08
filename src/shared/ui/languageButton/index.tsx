@@ -1,5 +1,3 @@
-import "./styles.scss";
-
 interface LanguageButtonProps {
   language: string;
   margin?: string;
@@ -14,7 +12,7 @@ export const LanguageButton: React.FC<LanguageButtonProps> = ({
   return (
     <button
       onClick={onClick}
-      className={`language-btn cursor-pointer ${margin}`}
+      className={`menu__link--language-btn cursor-pointer ${margin}`}
     >
       {language}
     </button>

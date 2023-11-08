@@ -10,7 +10,7 @@ export const HomePage = () => {
     <>
       <Loader />
       <Header />
-      {isOpen ? <Menu /> : null}
+      <Menu />
     </>
   );
 };

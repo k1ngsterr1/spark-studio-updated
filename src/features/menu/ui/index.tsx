@@ -1,4 +1,3 @@
-import React from "react";
 import { useMenuAnimation } from "@shared/lib/hooks/useMenuAnimation";
 import { LanguageButton } from "@shared/ui/languageButton";
 import { NavigationLink } from "@shared/ui/link";
@@ -23,6 +22,7 @@ export const Menu = () => {
         <NavigationLink to="" linkName="О нас" />
         <NavigationLink to="" linkName="Услуги" />
         <NavigationLink to="" linkName="Портфолио" />
+        <NavigationLink to="" linkName="Контакты" />
       </nav>
       <PhoneLink />
       <EmailLink />
