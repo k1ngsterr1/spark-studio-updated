@@ -27,15 +27,19 @@ export const Carousel: React.FC<CarouselProps> = ({
       slidesPerView={1}
       centeredSlides={true}
       className="carousel mt-12"
+      // style={{
+      //   "--swiper-pagination-color": "#FF5722",
+      //   "--swiper-navigation-color": "#FF5722",
+      // }}
     >
       <SwiperSlide className="carousel__slide">
         <img src={imageFirst} alt="phone" />
       </SwiperSlide>
       <SwiperSlide className="carousel__slide">
-        <img src={imageFirst} alt="phone" />
+        <img src={imageSecond} alt="phone" />
       </SwiperSlide>
       <SwiperSlide className="carousel__slide">
-        <img src={imageFirst} alt="phone" />
+        <img src={imageThird} alt="phone" />
       </SwiperSlide>
     </Swiper>
   );

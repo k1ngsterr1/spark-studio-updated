@@ -1,0 +1,18 @@
+.feature {
+  width: auto;
+  height: auto;
+
+  &__icon {
+    width: clamp(21px, 9.81288vw, 84px);
+    height: clamp(21px, 9.81288vw, 84px);
+  }
+
+  &__text {
+    font-size: clamp(12.5px, 5.840999999999999vw, 50px);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130.5%;
+    @apply text-custom-black;
+  }
+}
