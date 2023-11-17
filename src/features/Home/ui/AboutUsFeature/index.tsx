@@ -13,12 +13,12 @@ export const AboutUsFeature = () => {
 
   return (
     <>
-      <Slide direction="left" delay={100}>
+      <Slide direction="left" delay={100} triggerOnce={true}>
         <h2 className="mt-20">
           Кто <span className="orange">мы</span>
         </h2>
       </Slide>
-      <Slide direction="right" delay={200}>
+      <Slide direction="right" delay={200} triggerOnce={true}>
         <p className=" mt-4 w-80">
           Идейные соображения высшего порядка, а также консультация с широким
           активом позволяет оценить значение дальнейших направлений развития. Не

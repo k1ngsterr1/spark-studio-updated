@@ -7,18 +7,22 @@ export const ServicesFeature = () => {
 
   return (
     <>
-      <h3 className="mt-20">
-        Наши <span className="orange">услуги</span>
-      </h3>
-      <p className="mt-4">
-        В <span className="orange">Spark Studio</span> мы предлагаем широкий
-        спектр услуг, чтобы помочь вам достичь вашего полного потенциала в
-        онлайн-мире. Наша команда профессионалов обладает опытом и навыками в
-        различных областях веб-разработки, и мы готовы воплотить ваши идеи в
-        реальность.
-      </p>
+      <Slide direction="left" triggerOnce={true}>
+        <h3 className="mt-20">
+          Наши <span className="orange">услуги</span>
+        </h3>
+      </Slide>
+      <Slide direction="right" triggerOnce={true}>
+        <p className="mt-4">
+          В <span className="orange">Spark Studio</span> мы предлагаем широкий
+          спектр услуг, чтобы помочь вам достичь вашего полного потенциала в
+          онлайн-мире. Наша команда профессионалов обладает опытом и навыками в
+          различных областях веб-разработки, и мы готовы воплотить ваши идеи в
+          реальность.
+        </p>
+      </Slide>
       <div className="w-full flex flex-col items-center">
-        <Slide className="w-full" direction="left">
+        <Slide className="w-full" direction="left" triggerOnce={true}>
           <ServiceTab
             text="САЙТЫ"
             onClick={() => navigate("/services/websites")}
@@ -28,7 +32,7 @@ export const ServicesFeature = () => {
             delayNumber={350}
           />
         </Slide>
-        <Slide className="w-full" direction="right">
+        <Slide className="w-full" direction="right" triggerOnce={true}>
           <ServiceTab
             text="ПРИЛОЖЕНИЯ"
             onClick={() => navigate("/services/applications")}
@@ -38,7 +42,7 @@ export const ServicesFeature = () => {
             delayNumber={450}
           />
         </Slide>
-        <Slide className="w-full" direction="left">
+        <Slide className="w-full" direction="left" triggerOnce={true}>
           <ServiceTab
             text="ЛОГОТИПЫ"
             onClick={() => navigate("/services/logotypes")}
@@ -48,7 +52,7 @@ export const ServicesFeature = () => {
             delayNumber={550}
           />
         </Slide>
-        <Slide className="w-full" direction="right">
+        <Slide className="w-full" direction="right" triggerOnce={true}>
           <ServiceTab
             text="SEO"
             onClick={() => navigate("/services/SEO")}
