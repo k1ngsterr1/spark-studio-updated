@@ -33,13 +33,13 @@ export const Carousel: React.FC<CarouselProps> = ({
       // }}
     >
       <SwiperSlide className="carousel__slide">
-        <img src={imageFirst} alt="phone" />
+        <img src={imageFirst} alt="phone" className="mb-12" />
       </SwiperSlide>
       <SwiperSlide className="carousel__slide">
-        <img src={imageSecond} alt="phone" />
+        <img src={imageSecond} alt="phone" className="mb-12" />
       </SwiperSlide>
       <SwiperSlide className="carousel__slide">
-        <img src={imageThird} alt="phone" />
+        <img src={imageThird} alt="phone" className="mb-12" />
       </SwiperSlide>
     </Swiper>
   );

@@ -1,7 +1,7 @@
 export const ROUTE_CONSTANTS = {
-  HOME: "/",
+  HOME: "/home",
   SERVICES: "/services",
-  WEBSITES: "/services/website",
+  WEBSITES: "/services/websites",
   APPLICATIONS: "/services/applications",
   SEO: "/services/SEO",
   PORTFOLIO: "/portfolio",

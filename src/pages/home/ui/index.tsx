@@ -3,6 +3,7 @@ import { Menu } from "@features/menu/ui";
 import { Header } from "@widgets/Header/ui";
 import { MainFeature } from "@features/index";
 import { AboutUsFeature } from "@features/Home/ui/AboutUsFeature";
+import { ServicesFeature } from "@features/Home/ui/ServicesFeature";
 
 export const HomePage = () => {
   return (
@@ -19,6 +20,7 @@ export const HomePage = () => {
       <div className="main mt-16 m-auto items-center">
         <MainFeature />
         <AboutUsFeature />
+        <ServicesFeature />
       </div>
     </>
   );

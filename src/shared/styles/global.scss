@@ -35,7 +35,8 @@ h1 {
   @apply text-custom-black;
 }
 
-h2 {
+h2,
+h3 {
   font-family: "Machérie";
   font-style: normal;
   font-weight: 600;
@@ -49,7 +50,7 @@ p {
   font-weight: 400;
   @apply text-custom-black;
   text-align: center;
-  font-size: clamp(8px, 3.73824vw, 32px);
+  font-size: clamp(9px, 4.20552vw, 36px);
 }
 
 .orange {
