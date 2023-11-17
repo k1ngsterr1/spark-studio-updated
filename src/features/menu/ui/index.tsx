@@ -6,7 +6,7 @@ import "./styles.scss";
 import { EmailLink, PhoneLink } from "@shared/index";
 
 export const Menu = () => {
-  const { menuRef } = useMenuAnimation(); // Get the menuRef
+  const { menuRef } = useMenuAnimation();
   return (
     <aside className="menu flex flex-col items-start" ref={menuRef}>
       <div className="flex items-end mt-16 ml-8">
