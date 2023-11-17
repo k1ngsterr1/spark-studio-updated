@@ -4,6 +4,7 @@ import { Header } from "@widgets/Header/ui";
 import { MainFeature } from "@features/index";
 import { AboutUsFeature } from "@features/Home/ui/AboutUsFeature";
 import { ServicesFeature } from "@features/Home/ui/ServicesFeature";
+import { PortfolioFeature } from "@features/Home/ui/PortfolioFeature";
 
 export const HomePage = () => {
   return (
@@ -21,6 +22,7 @@ export const HomePage = () => {
         <MainFeature />
         <AboutUsFeature />
         <ServicesFeature />
+        <PortfolioFeature />
       </div>
     </>
   );

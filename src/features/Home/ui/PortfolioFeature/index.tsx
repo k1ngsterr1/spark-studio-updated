@@ -1,10 +1,11 @@
+import { Selector } from "@shared/ui/selector";
 import { Slide } from "react-awesome-reveal";
 
 export const PortfolioFeature = () => {
   return (
     <>
       <Slide direction="left" triggerOnce={true}>
-        <h4 className="mt-20">
+        <h4 className="mt-20 text-center">
           Наше <span className="orange">портфолио</span>
         </h4>
       </Slide>
@@ -15,6 +16,7 @@ export const PortfolioFeature = () => {
           следует, однако забывать, что реализация.
         </p>
       </Slide>
+      <Selector />
     </>
   );
 };
