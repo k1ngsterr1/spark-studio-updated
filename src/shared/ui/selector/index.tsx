@@ -1,5 +1,6 @@
-import React from "react";
 import Select from "react-select";
+import { useSelector, useDispatch } from "react-redux";
+import { changeOption } from "./model";
 
 export const Selector = () => {
   const options = [
@@ -8,19 +9,23 @@ export const Selector = () => {
     { value: "logotypes", label: "Логотипы" },
   ];
 
-  // Set the default selected option to the option object where label is "Сайты"
-  const defaultOption = options.find((option) => option.label === "Сайты");
+  const selectedValue = useSelector(
+    (state: any) => state.selector.selectedOption
+  );
+  const dispatch = useDispatch();
 
-  const [selectedOption, setSelectedOption] = React.useState(defaultOption);
+  const defaultOption = options.find(
+    (option) => option.value === selectedValue
+  );
 
   const handleChange = (option: any) => {
-    setSelectedOption(option);
+    dispatch(changeOption(option.value));
   };
 
   return (
     <>
       <Select
-        defaultValue={selectedOption}
+        defaultValue={defaultOption}
         onChange={handleChange}
         options={options}
         className="react-select text-xl w-[300px] mt-8"
