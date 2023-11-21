@@ -1,3 +1,4 @@
+import { PortfolioList } from "@features/PortfolioList/ui";
 import { Selector } from "@shared/ui/selector";
 import { Slide } from "react-awesome-reveal";
 
@@ -17,6 +18,7 @@ export const PortfolioFeature = () => {
         </p>
       </Slide>
       <Selector />
+      <PortfolioList />
     </>
   );
 };

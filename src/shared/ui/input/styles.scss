@@ -1,0 +1,19 @@
+.input {
+  width: clamp(159px, 74.29751999999999vw, 636px);
+  height: clamp(13px, 6.07464vw, 52px);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(9px, 4.20552vw, 36px);
+  outline: none;
+  border: none;
+  border-bottom: 2px solid;
+  @apply border-custom-black;
+  padding-left: clamp(5px, 2.3364vw, 20px);
+  padding-bottom: clamp(3px, 1.40184vw, 12px);
+  transition: 0.3s all;
+  &:focus {
+    border-bottom: 2px solid;
+    @apply border-custom-orange;
+  }
+}
