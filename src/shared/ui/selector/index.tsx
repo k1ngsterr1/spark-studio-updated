@@ -28,6 +28,10 @@ export const Selector = () => {
         defaultValue={defaultOption}
         onChange={handleChange}
         options={options}
+        placeholder="Выберите услугу"
+        menuPortalTarget={document.body}
+        menuPosition="fixed"
+        required
         className="react-select text-xl w-[300px] mt-8"
         classNamePrefix="react-select"
       />

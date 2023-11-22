@@ -5,6 +5,7 @@ import { MainFeature } from "@features/index";
 import { AboutUsFeature } from "@features/Home/ui/AboutUsFeature";
 import { ServicesFeature } from "@features/Home/ui/ServicesFeature";
 import { PortfolioFeature } from "@features/Home/ui/PortfolioFeature";
+import FormFeature from "@features/Home/ui/FormFeature";
 
 export const HomePage = () => {
   return (
@@ -23,6 +24,7 @@ export const HomePage = () => {
         <AboutUsFeature />
         <ServicesFeature />
         <PortfolioFeature />
+        <FormFeature />
       </div>
     </>
   );
