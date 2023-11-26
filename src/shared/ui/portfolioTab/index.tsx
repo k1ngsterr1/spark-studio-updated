@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./styles.scss";
+
 interface PortfolioTabsProps {
   name: string;
   img: string;

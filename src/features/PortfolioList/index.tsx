@@ -30,7 +30,6 @@ export const PortfolioList = () => {
         img: "/images/site-two.jpg",
         description: "Another cool website",
       },
-      // ... more website items
     ],
     applications: [
       {
@@ -43,7 +42,6 @@ export const PortfolioList = () => {
         img: "/images/app-two.jpg",
         description: "Another useful app",
       },
-      // ... more application items
     ],
     logotypes: [
       {
@@ -56,7 +54,6 @@ export const PortfolioList = () => {
         img: "/images/logo-two.jpg",
         description: "Another sleek logo",
       },
-      // ... more logotype items
     ],
   };
 

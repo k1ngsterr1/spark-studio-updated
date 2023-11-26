@@ -1,4 +1,4 @@
-import { PortfolioList } from "@features/PortfolioList/ui";
+import { PortfolioList } from "@features/PortfolioList";
 import { Selector } from "@shared/ui/selector";
 import { Slide } from "react-awesome-reveal";
 
