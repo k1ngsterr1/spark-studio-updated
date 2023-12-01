@@ -1,7 +1,6 @@
-import React, { useMemo } from "react";
-import { useTabAnimations } from "@shared/lib/hooks/useTabAnimation";
+import { useMemo } from "react";
 import { useSelector } from "react-redux";
-import { PortfolioTab } from "@shared/ui/portfolioTab";
+import { PortfolioItem } from "@shared/ui/PortfolioItem";
 
 import work01 from "@assets/images/work01.webp";
 import work02 from "@assets/images/work02.webp";
@@ -104,23 +103,16 @@ export const PortfolioList = () => {
 
   return (
     <div className="portfolio-list w-full">
-      {itemsToDisplay.map((item, index) => {
-        const { ref, onHoverAnimation, offHoverAnimation } = useTabAnimations();
-
-        return (
-          <PortfolioTab
-            key={index}
-            tabRef={ref}
-            onHover={onHoverAnimation}
-            offHover={offHoverAnimation}
-            name={item.name}
-            img={item.img}
-            onClick={() => {
-              console.log(`${item.name} clicked`);
-            }}
-          />
-        );
-      })}
+      {itemsToDisplay.map((item, index) => (
+        <PortfolioItem
+          key={index}
+          name={item.name}
+          img={item.img}
+          onClick={() => {
+            console.log(`${item.name} clicked`);
+          }}
+        />
+      ))}
     </div>
   );
 };
