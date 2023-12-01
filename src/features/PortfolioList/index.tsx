@@ -1,4 +1,5 @@
 import React, { useMemo } from "react";
+import { usePortfolioNameReveal } from "@shared/lib/hooks/usePortfolioNameReveal";
 import { useSelector } from "react-redux";
 import { PortfolioTab } from "@shared/ui/portfolioTab";
 
@@ -17,6 +18,8 @@ export const PortfolioList = () => {
   const selectedOption: string = useSelector(
     (state: any) => state.selector.selectedOption
   );
+
+  const { portfolioTab, tabOnHoverAnimation } = usePortfolioNameReveal();
 
   type PortfolioCategory = {
     name: string;
@@ -106,6 +109,9 @@ export const PortfolioList = () => {
       {itemsToDisplay.map((item, index) => (
         <PortfolioTab
           key={index}
+          tabRef={portfolioTab}
+          onHover={tabOnHoverAnimation}
+          offHover={() => console.log("aaa")}
           name={item.name}
           img={item.img}
           onClick={() => {
