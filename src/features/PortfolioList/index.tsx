@@ -2,12 +2,15 @@ import React, { useMemo } from "react";
 import { useSelector } from "react-redux";
 import { PortfolioTab } from "@shared/ui/portfolioTab";
 
+import work01 from "@assets/images/work01.webp";
+import work02 from "@assets/images/work02.webp";
+import work03 from "@assets/images/work03.webp";
+
 export const PortfolioList = () => {
   const selectedOption: string = useSelector(
     (state: any) => state.selector.selectedOption
   );
 
-  // Define a type for portfolioItems
   type PortfolioCategory = {
     name: string;
     img: string;
@@ -21,13 +24,18 @@ export const PortfolioList = () => {
   const portfolioItems: PortfolioItems = {
     websites: [
       {
-        name: "Site One",
-        img: "/images/site-one.jpg",
+        name: "Intelligence.io",
+        img: work01,
         description: "A cool website",
       },
       {
         name: "Site Two",
-        img: "/images/site-two.jpg",
+        img: work02,
+        description: "Another cool website",
+      },
+      {
+        name: "Site Three",
+        img: work03,
         description: "Another cool website",
       },
     ],
@@ -62,7 +70,7 @@ export const PortfolioList = () => {
   }, [selectedOption]);
 
   return (
-    <div className="portfolio-list">
+    <div className="portfolio-list w-full">
       {itemsToDisplay.map((item, index) => (
         <PortfolioTab
           key={index}

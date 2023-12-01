@@ -14,7 +14,7 @@ export const PortfolioTab: React.FC<PortfolioTabsProps> = ({
   onClick,
 }) => {
   return (
-    <div className="portfolio-tab" onClick={onClick}>
+    <div className="portfolio-tab mt-12" onClick={onClick}>
       <div className="portfolio-tab__name-tab flex items-center justify-center">
         <span className="portfolio-tab__name-tab__text">{name}</span>
       </div>

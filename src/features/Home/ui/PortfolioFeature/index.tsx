@@ -18,7 +18,9 @@ export const PortfolioFeature = () => {
         </p>
       </Slide>
       <Selector />
-      <PortfolioList />
+      <div className="w-full flex flex-col">
+        <PortfolioList />
+      </div>
     </>
   );
 };

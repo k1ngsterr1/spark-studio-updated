@@ -5,13 +5,14 @@
 
   &__name-tab {
     position: absolute;
-    width: clamp(90px, 42.0552vw, 360px);
+    width: clamp(50px, 23.363999999999997vw, 200px);
     height: clamp(90px, 42.0552vw, 360px);
     transform: translateX(-200px);
+    transition: 0.3s all;
     @apply bg-custom-orange;
 
     &__text {
-      font-size: 20px;
+      font-size: clamp(10px, 4.6728vw, 40px);
       color: white;
     }
   }
