@@ -5,9 +5,10 @@
 
   &__name-tab {
     position: absolute;
-    width: clamp(50px, 23.363999999999997vw, 200px);
-    height: clamp(90px, 42.0552vw, 360px);
-    transform: translateX(-200px);
+    padding: clamp(7.5px, 3.5046vw, 30px);
+    // transform: translateX(-200px);
+    left: 16px;
+    bottom: 0px;
     transition: 0.3s all;
     @apply bg-custom-orange;
 
