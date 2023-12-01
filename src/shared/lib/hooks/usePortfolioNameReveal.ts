@@ -4,6 +4,7 @@ import gsap from "gsap";
 type usePortfolioNameRevealReturnType = {
   portfolioTab: React.RefObject<HTMLDivElement>;
   tabOnHoverAnimation: () => void;
+  tabOffHoverAnimation: () => void;
 };
 
 export const usePortfolioNameReveal = (): usePortfolioNameRevealReturnType => {
@@ -14,11 +15,17 @@ export const usePortfolioNameReveal = (): usePortfolioNameRevealReturnType => {
       const tab = portfolioTab.current;
 
       gsap.to(tab, {
-        translateX: 0,
+        translateX: 1000,
       });
+    }
+  }, []);
+
+  const tabOffHoverAnimation = useCallback(() => {
+    if (portfolioTab.current) {
+      const tab = portfolioTab.current;
 
       gsap.to(tab, {
-        translateX: 200,
+        translateX: -1000,
       });
     }
   }, []);
@@ -26,5 +33,6 @@ export const usePortfolioNameReveal = (): usePortfolioNameRevealReturnType => {
   return {
     portfolioTab,
     tabOnHoverAnimation,
+    tabOffHoverAnimation,
   };
 };

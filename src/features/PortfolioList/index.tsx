@@ -19,7 +19,8 @@ export const PortfolioList = () => {
     (state: any) => state.selector.selectedOption
   );
 
-  const { portfolioTab, tabOnHoverAnimation } = usePortfolioNameReveal();
+  const { portfolioTab, tabOnHoverAnimation, tabOffHoverAnimation } =
+    usePortfolioNameReveal();
 
   type PortfolioCategory = {
     name: string;
@@ -111,7 +112,7 @@ export const PortfolioList = () => {
           key={index}
           tabRef={portfolioTab}
           onHover={tabOnHoverAnimation}
-          offHover={() => console.log("aaa")}
+          offHover={tabOffHoverAnimation}
           name={item.name}
           img={item.img}
           onClick={() => {
