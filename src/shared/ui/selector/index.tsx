@@ -26,7 +26,7 @@ export const Selector = () => {
     control: (base: any) => ({
       ...base,
       border: 0,
-      borderBottom: "2px solid #d3d3d3",
+      borderBottom: "2px solid black",
       boxShadow: "none",
     }),
     option: (provided: any, state: any) => ({

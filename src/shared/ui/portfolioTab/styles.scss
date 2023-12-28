@@ -5,15 +5,15 @@
 
   &__name-tab {
     position: absolute;
-    padding: clamp(7.5px, 3.5046vw, 30px);
-    transform: translateX(-200px);
-    left: clamp(16px, 7.47648vw, 64px);
-    bottom: clamp(8px, 3.73824vw, 32px);
+    padding: clamp(16px, 7.47648vw, 64px);
+    height: clamp(32px, 14.95296vw, 128px);
+    left: clamp(8px, 3.73824vw, 32px);
+    bottom: 0px;
     transition: 0.3s all;
     @apply bg-custom-orange;
 
     &__text {
-      font-size: clamp(10px, 4.6728vw, 40px);
+      font-size: clamp(12px, 5.60736vw, 48px);
       color: white;
     }
   }

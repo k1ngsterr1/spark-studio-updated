@@ -40,7 +40,7 @@ export const Form = () => {
             </span>
           )}
         </div>
-        <div className="form-mobile-screen__input mt-12">
+        <div className="form-mobile-screen__input mt-2">
           <Selector />
         </div>
         <Button

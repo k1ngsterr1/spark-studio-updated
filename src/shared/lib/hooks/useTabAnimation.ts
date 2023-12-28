@@ -7,7 +7,9 @@ export const useTabAnimations = () => {
   const onHoverAnimation = useCallback(() => {
     if (ref.current) {
       gsap.to(ref.current, {
-        translateX: 1000,
+        duration: 0.3,
+        opacity: 1,
+        ease: "Linear.easeNone",
       });
     }
   }, []);
@@ -15,7 +17,9 @@ export const useTabAnimations = () => {
   const offHoverAnimation = useCallback(() => {
     if (ref.current) {
       gsap.to(ref.current, {
-        translateX: -1000,
+        duration: 0.3,
+        opacity: 0,
+        ease: "Linear.easeNone",
       });
     }
   }, []);
