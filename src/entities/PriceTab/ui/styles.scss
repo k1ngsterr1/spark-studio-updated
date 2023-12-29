@@ -71,5 +71,16 @@
         @apply text-custom-black;
       }
     }
+
+    &__button {
+      font-size: clamp(12.5px, 5.840999999999999vw, 50px);
+      font-family: Montserrat;
+      transition: 0.3s all;
+      @apply mt-6;
+      &:hover {
+        cursor: none;
+        text-decoration: underline;
+      }
+    }
   }
 }

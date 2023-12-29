@@ -1,6 +1,7 @@
-import { PriceScreen } from "@features/Screens/PriceScreen";
 import { Button } from "@shared/ui/button";
 import { Slide } from "react-awesome-reveal";
+import { PriceScreen } from "@features/Screens/PriceScreen";
+import { WorkScreen } from "@features/Screens/WorkScreen";
 
 export const WebsiteFeature = () => {
   return (
@@ -26,6 +27,7 @@ export const WebsiteFeature = () => {
         />
       </Slide>
       <PriceScreen />
+      <WorkScreen />
     </>
   );
 };

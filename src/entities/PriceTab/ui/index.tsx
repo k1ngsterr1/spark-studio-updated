@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "@shared/ui/button";
 import spark from "@assets/images/spark.svg";
 
 import "./styles.scss";
@@ -48,6 +49,7 @@ export const PriceTab: React.FC<PriceTabProps> = ({
               </div>
             ))}
         </div>
+        <button className="price-tab__container__button">Заказать</button>
       </div>
     </div>
   );
