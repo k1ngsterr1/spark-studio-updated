@@ -1,8 +1,4 @@
 import { WorkFlowTab } from "@shared/ui/WorkFlow";
-import { PortfolioFeature } from "@features/Home/ui/PortfolioFeature";
-
-import { Number } from "@shared/ui/Number";
-import line from "@assets/images/line.svg";
 
 import "./styles.scss";
 

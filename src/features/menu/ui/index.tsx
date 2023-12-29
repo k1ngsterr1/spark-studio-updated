@@ -18,7 +18,7 @@ export const Menu = () => {
         />
       </div>
       <nav className="mt-2 ml-8 flex flex-col items-start">
-        <NavigationLink to="" linkName="Главная" />
+        <NavigationLink to="/home" linkName="Главная" />
         <NavigationLink to="" linkName="О нас" />
         <NavigationLink to="" linkName="Услуги" />
         <NavigationLink to="" linkName="Портфолио" />

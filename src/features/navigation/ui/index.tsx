@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "@shared/lib/redux/hooks";
 import { toggleMenu as toggleMenuAction } from "../model";
 import { Hamburger } from "@shared/ui/hamburger";
@@ -12,7 +13,12 @@ interface NavigationProps {
 
 export const Navigation = () => {
   const dispatch = useAppDispatch();
+  const navigate = useNavigate();
   const isMenuOpen = useAppSelector((state: any) => state.menu.isOpen); // Adjust 'state.navigation.isOpen' according to your state structure
+
+  function handleNavigateHome() {
+    navigate("/home");
+  }
 
   const {
     topLine,
@@ -30,7 +36,12 @@ export const Navigation = () => {
   return (
     <nav className="navigation  mt-8">
       <div className="navigation__mob flex flex-row items-center justify-between">
-        <img src={Logo} className="navigation__mob__logo" alt="logo" />{" "}
+        <img
+          src={Logo}
+          onClick={handleNavigateHome}
+          className="navigation__mob__logo"
+          alt="logo"
+        />
         <div className="navigation__mob__wrapper items-center justify-between">
           <Hamburger
             onHover={animateOnHover}
