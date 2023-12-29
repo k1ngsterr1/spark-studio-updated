@@ -1,6 +1,68 @@
 .work-container {
   width: 100%;
   display: flex;
+  flex-wrap: nowrap;
+  display: flex;
   align-items: center;
   flex-direction: column;
+
+  &__image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__line {
+      width: 100%;
+    }
+
+    &__text {
+      font-size: clamp(9px, 4.20552vw, 36px);
+      @apply text-custom-black;
+    }
+  }
+
+  &__text {
+    font-size: clamp(11.5px, 5.37372vw, 46px);
+    text-align: center;
+    font-family: Montserrat;
+    @apply text-custom-black;
+  }
+
+  &__additional-text {
+    font-size: clamp(9px, 4.20552vw, 36px);
+    text-align: center;
+    font-style: italic;
+    font-family: Montserrat;
+    @apply mt-6;
+  }
+}
+
+.editor {
+  background-image: url("../../../assets/images/bg/edit.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.design {
+  background-image: url("../../../assets/images/bg/design.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.code {
+  background-image: url("../../../assets/images/bg/code.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.content {
+  background-image: url("../../../assets/images/bg/content.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.settings {
+  background-image: url("../../../assets/images/bg/settings.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
