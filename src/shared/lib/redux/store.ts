@@ -1,12 +1,13 @@
-// store.ts
 import { configureStore } from "@reduxjs/toolkit";
 import menuReducer from "@features/navigation/model/index";
 import selectorReducer from "@shared/ui/selector/model/index";
 import loadReducer from "./loaderSlice";
+import menuStateReducer from "./menuStateSlice";
 
 export const store = configureStore({
   reducer: {
     menu: menuReducer,
+    menuState: menuStateReducer,
     selector: selectorReducer,
     loader: loadReducer,
   },
