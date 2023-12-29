@@ -29,7 +29,6 @@ export const MainFeature = () => {
             <Block onClick={() => navigate("/services/seo")} blockText="SEO" />
           </Slide>
         </div>
-
         <div className="main__squares--row mt-6">
           <Slide duration={1000} direction="left" triggerOnce={true}>
             <Block
