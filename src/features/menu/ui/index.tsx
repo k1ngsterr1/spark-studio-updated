@@ -8,6 +8,7 @@ import { serviceState } from "@shared/lib/redux/menuStateSlice";
 import { noneState } from "@shared/lib/redux/menuStateSlice";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import { toggleMenu } from "@features/navigation/model";
 
 import "./styles.scss";
 
@@ -22,6 +23,10 @@ export const Menu = () => {
   function handleServices() {
     dispatch(serviceState());
     console.log(menuState);
+  }
+
+  function handleClick() {
+    dispatch(toggleMenu());
   }
 
   function handleBack() {
@@ -65,7 +70,11 @@ export const Menu = () => {
           </span>
           <nav className="mt-0 ml-8 flex flex-col items-start">
             <NavigationLink to="/services" linkName="Все Услуги" />
-            <NavigationLink to="/services/websites" linkName="Веб-Сайты" />
+            <NavigationLink
+              to="/services/websites"
+              onClick={handleClick}
+              linkName="Веб-Сайты"
+            />
             <NavigationLink to="/services/design" linkName="Дизайн" />
             <NavigationLink to="/services/app" linkName="Приложения" />
             <NavigationLink to="/services/seo" linkName="SEO Оптимизация" />
