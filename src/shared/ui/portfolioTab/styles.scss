@@ -8,6 +8,7 @@
     padding: clamp(16px, 7.47648vw, 64px);
     height: clamp(32px, 14.95296vw, 128px);
     left: clamp(8px, 3.73824vw, 32px);
+    opacity: 0;
     bottom: 0px;
     transition: 0.3s all;
     @apply bg-custom-orange;
