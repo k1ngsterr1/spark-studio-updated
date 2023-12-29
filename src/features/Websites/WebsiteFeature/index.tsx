@@ -3,7 +3,9 @@ import { Slide } from "react-awesome-reveal";
 import { PriceScreen } from "@features/Screens/PriceScreen";
 import { WorkScreen } from "@features/Screens/WorkScreen";
 import { PortfolioFeature } from "@features/Home/ui/PortfolioFeature";
-import { Form } from "@widgets/Form/ui";
+import { Breadcrumbs } from "@mui/material";
+import { Link } from "react-router-dom";
+
 import FormFeature from "@features/Home/ui/FormFeature";
 
 export const WebsiteFeature = () => {
@@ -14,6 +16,17 @@ export const WebsiteFeature = () => {
           Разработка <span className="orange">Веб-Сайтов</span>{" "}
         </h1>
       </Slide>
+      <Breadcrumbs
+        sx={{
+          marginTop: "16px",
+        }}
+      >
+        <Link to="/home">Главная</Link>
+        <Link to="/services">Услуги</Link>
+        <Link to="/services/websites" className="orange">
+          Разработка Веб-Сайтов
+        </Link>
+      </Breadcrumbs>
       <Slide direction="right" delay={200} triggerOnce={true}>
         <p className="mt-8 w-[100%]">
           Команда "Spark Studio" - это творческая мастерская, где воплощаются
@@ -22,6 +35,7 @@ export const WebsiteFeature = () => {
           потребности вашего бизнеса, но и вдохновляют вашу аудиторию.
         </p>
       </Slide>
+
       <Slide direction="left" delay={300} triggerOnce={true}>
         <Button
           text="Заказать"
