@@ -1,4 +1,3 @@
-import React from "react";
 import { PriceTab } from "@entities/PriceTab/ui";
 
 export const PriceScreen = () => {
@@ -13,9 +12,10 @@ export const PriceScreen = () => {
           планом “Exclusive” для нестандартных и кастомных решений
         </p>
         <PriceTab
+          marginTop="mt-8"
           tabNaming="Базовый"
-          tabDescription="Лендинг"
-          price="250 000₸"
+          tabDescription="Лендинг, сайт - визитка"
+          price="250 000 ₸"
         />
       </div>
     </>

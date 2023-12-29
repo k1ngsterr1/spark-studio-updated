@@ -12,6 +12,7 @@ interface PriceTabProps {
   tabNaming: string;
   tabDescription: string;
   price: string;
+  marginTop: string;
   properties?: PriceProperty[];
 }
 
@@ -19,10 +20,11 @@ export const PriceTab: React.FC<PriceTabProps> = ({
   tabNaming,
   tabDescription,
   price,
+  marginTop,
   properties,
 }) => {
   return (
-    <div className="price-tab">
+    <div className={`price-tab ${marginTop}`}>
       <div className="price-tab__container">
         <img src={spark} alt="spark" className="price-tab__container__image" />
         <div className="price-tab__container__heading-container">
