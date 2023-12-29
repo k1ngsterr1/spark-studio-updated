@@ -16,6 +16,16 @@ export const PriceScreen = () => {
           tabNaming="Базовый"
           tabDescription="Лендинг, сайт - визитка"
           price="250 000 ₸"
+          properties={[
+            {
+              propertyName: "Макеты дизайна ПК версии",
+              propertyGraph: "Value 1",
+            },
+            {
+              propertyName: "Макеты дизайна моб. версии",
+              propertyGraph: "Value 1",
+            },
+          ]}
         />
       </div>
     </>

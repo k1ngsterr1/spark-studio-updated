@@ -2,13 +2,15 @@
 import { configureStore } from "@reduxjs/toolkit";
 import menuReducer from "@features/navigation/model/index";
 import selectorReducer from "@shared/ui/selector/model/index";
+import loadReducer from "./loaderSlice";
 
 export const store = configureStore({
   reducer: {
     menu: menuReducer,
     selector: selectorReducer,
+    loader: loadReducer,
   },
-  devTools: process.env.NODE_ENV !== "production", // Explicitly enabling DevTools
+  devTools: process.env.NODE_ENV !== "production",
 });
 
 export type RootState = ReturnType<typeof store.getState>;

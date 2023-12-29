@@ -36,6 +36,18 @@ export const PriceTab: React.FC<PriceTabProps> = ({
           </span>
         </div>
         <span className="price-tab__container__price">{price}</span>
+        <div className="price-tab__container__properties">
+          {properties &&
+            properties.map((prop, index) => (
+              <div
+                key={index}
+                className="price-tab__container__properties__property"
+              >
+                <span className="font-normal">{prop.propertyName}</span>
+                <span>{prop.propertyGraph}</span>
+              </div>
+            ))}
+        </div>
       </div>
     </div>
   );
