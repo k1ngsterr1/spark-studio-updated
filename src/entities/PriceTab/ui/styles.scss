@@ -1,19 +1,47 @@
 .price-tab {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   border: 2px solid;
   @apply border-custom-black;
 
   &__container {
-    width: 90%;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: start;
+    padding: clamp(10px, 4.6728vw, 40px);
+
+    &__image {
+      margin-bottom: clamp(8px, 3.73824vw, 32px);
+    }
 
     &__heading-container {
       display: flex;
       flex-direction: column;
       align-items: start;
+
+      &__heading {
+        font-size: clamp(20px, 9.3456vw, 80px);
+        font-family: macherie, sans-serif;
+        @apply text-custom-orange;
+      }
+
+      &__description {
+        font-size: clamp(12px, 5.60736vw, 48px);
+        font-weight: 400;
+        line-height: 130.5%;
+        font-family: Montserrat;
+      }
+    }
+
+    &__price {
+      font-size: clamp(17.5px, 8.177399999999999vw, 70px);
+      font-family: Montserrat;
+      font-weight: 500;
+      @apply text-custom-black;
+      @apply mt-2;
     }
   }
 }
