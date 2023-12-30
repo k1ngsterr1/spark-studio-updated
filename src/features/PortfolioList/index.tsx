@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import { Slide } from "react-awesome-reveal";
 import { useSelector } from "react-redux";
 import { PortfolioItem } from "@shared/ui/PortfolioItem";
 
@@ -8,10 +9,14 @@ import work03 from "@assets/images/work03.webp";
 import work04 from "@assets/images/work04.webp";
 import work05 from "@assets/images/work05.webp";
 import work06 from "@assets/images/work06.webp";
-import work07 from "@assets/images/work07.webp";
-import work08 from "@assets/images/work08.webp";
 import work10 from "@assets/images/work10.webp";
 import work11 from "@assets/images/work11.webp";
+
+import logo01 from "@assets/images/logo.webp";
+import logo02 from "@assets/images/logo2.webp";
+import logo03 from "@assets/images/logo3.webp";
+import logo04 from "@assets/images/logo4.webp";
+import logo05 from "@assets/images/logo5.webp";
 
 export const PortfolioList = () => {
   const selectedOption: string = useSelector(
@@ -85,13 +90,28 @@ export const PortfolioList = () => {
     ],
     logotypes: [
       {
-        name: "Logo One",
-        img: "/images/logo-one.jpg",
+        name: "China Drive",
+        img: logo01,
         description: "A sleek logo",
       },
       {
         name: "Logo Two",
-        img: "/images/logo-two.jpg",
+        img: logo02,
+        description: "Sun Grain",
+      },
+      {
+        name: "Agro Class",
+        img: logo03,
+        description: "Another sleek logo",
+      },
+      {
+        name: "Cargo Express PV",
+        img: logo04,
+        description: "Cargo Express PV",
+      },
+      {
+        name: "SAMIGROUP",
+        img: logo05,
         description: "Another sleek logo",
       },
     ],
@@ -102,17 +122,21 @@ export const PortfolioList = () => {
   }, [selectedOption]);
 
   return (
-    <div className="portfolio-list w-full">
-      {itemsToDisplay.map((item, index) => (
-        <PortfolioItem
-          key={index}
-          name={item.name}
-          img={item.img}
-          onClick={() => {
-            console.log(`${item.name} clicked`);
-          }}
-        />
-      ))}
-    </div>
+    <>
+      <div className="portfolio-list w-full">
+        {itemsToDisplay.map((item, index) => (
+          <Slide cascade triggerOnce>
+            <PortfolioItem
+              key={index}
+              name={item.name}
+              img={item.img}
+              onClick={() => {
+                console.log(`${item.name} clicked`);
+              }}
+            />
+          </Slide>
+        ))}
+      </div>
+    </>
   );
 };
