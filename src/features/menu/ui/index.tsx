@@ -8,13 +8,20 @@ import { serviceState } from "@shared/lib/redux/menuStateSlice";
 import { noneState } from "@shared/lib/redux/menuStateSlice";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import { toggleMenu } from "@features/navigation/model";
+import { toggleMenu as toggleMenuAction } from "@features/navigation/model";
+import { useBurgerAnimation } from "@shared/lib/hooks";
+import { Slide } from "react-awesome-reveal";
 
 import "./styles.scss";
 
 export const Menu = () => {
   const dispatch = useAppDispatch();
+  const isMenuOpen = useAppSelector((state: any) => state.menu.isOpen);
   const { menuRef } = useMenuAnimation();
+
+  const { toggleMenu } = useBurgerAnimation(isMenuOpen, () =>
+    dispatch(toggleMenuAction())
+  );
 
   const menuState = useAppSelector(
     (state: RootState) => state.menuState.menuState
@@ -26,7 +33,9 @@ export const Menu = () => {
   }
 
   function handleClick() {
-    dispatch(toggleMenu());
+    dispatch(toggleMenuAction());
+    dispatch(noneState());
+    toggleMenu();
   }
 
   function handleBack() {
@@ -45,7 +54,7 @@ export const Menu = () => {
           />
         </div>
         <nav className="mt-2 ml-8 flex flex-col items-start">
-          <NavigationLink to="/home" linkName="Главная" />
+          <NavigationLink onClick={handleClick} to="/home" linkName="Главная" />
           <NavigationLink to="/about" linkName="О нас" />
           <NavigationLink onClick={handleServices} linkName="Услуги" />
           <NavigationLink to="/portfolio" linkName="Портфолио" />

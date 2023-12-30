@@ -3,12 +3,12 @@ import { Button } from "@shared/ui/button";
 import { PriceTab } from "@entities/PriceTab/ui";
 import FormFeature from "@features/Home/ui/FormFeature";
 
-export const SeoFeature = () => {
+export const LogoFeature = () => {
   return (
     <>
       <Slide direction="left" delay={100} triggerOnce={true}>
         <h1 className="text-center">
-          SEO <span className="orange">Оптимизация</span>
+          Разработка <span className="orange">Логотипов</span>
         </h1>
       </Slide>
       <Slide direction="right" delay={200} triggerOnce={true}>

@@ -5,7 +5,6 @@ interface HamburgerProps {
   onClick: () => void;
   onHover?: () => void;
   offHover?: () => void;
-  isOpen: boolean;
   topLineRef: React.RefObject<HTMLDivElement>;
   middleLineRef: React.RefObject<HTMLDivElement>;
   bottomLineRef: React.RefObject<HTMLDivElement>;

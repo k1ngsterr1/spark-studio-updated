@@ -14,7 +14,7 @@ interface NavigationProps {
 export const Navigation = () => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
-  const isMenuOpen = useAppSelector((state: any) => state.menu.isOpen); // Adjust 'state.navigation.isOpen' according to your state structure
+  const isMenuOpen = useAppSelector((state: any) => state.menu.isOpen);
 
   function handleNavigateHome() {
     navigate("/home");
