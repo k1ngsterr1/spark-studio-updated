@@ -7,10 +7,6 @@ import Logo from "@assets/images/spark_logo.svg";
 
 import "./styles.scss";
 
-interface NavigationProps {
-  menuOpen: boolean;
-}
-
 export const Navigation = () => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
