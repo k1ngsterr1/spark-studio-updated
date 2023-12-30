@@ -1,5 +1,5 @@
-// useBurgerAnimation.ts
 import { useRef, useCallback } from "react";
+import { useAppDispatch, useAppSelector } from "../redux/hooks";
 import gsap from "gsap";
 
 type UseBurgerAnimationReturnType = {

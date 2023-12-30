@@ -38,7 +38,7 @@ export const MainFeature = () => {
           </Slide>
           <Slide duration={1000} direction="right" triggerOnce={true}>
             <Block
-              onClick={() => navigate("/services/logotypes")}
+              onClick={() => navigate("/services/logo")}
               blockText="LOGO"
             />
           </Slide>

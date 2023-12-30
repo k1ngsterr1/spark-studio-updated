@@ -1,6 +1,8 @@
 import { Slide } from "react-awesome-reveal";
 import { Button } from "@shared/ui/button";
 import { PriceTab } from "@entities/PriceTab/ui";
+import { Breadcrumbs } from "@mui/material";
+import { Link } from "react-router-dom";
 import FormFeature from "@features/Home/ui/FormFeature";
 
 export const SeoFeature = () => {
@@ -11,6 +13,17 @@ export const SeoFeature = () => {
           SEO <span className="orange">Оптимизация</span>
         </h1>
       </Slide>
+      <Breadcrumbs
+        sx={{
+          marginTop: "16px",
+        }}
+      >
+        <Link to="/home">Главная</Link>
+        <Link to="/services">Услуги</Link>
+        <Link to="/services/seo" className="orange">
+          SEO Оптимизация
+        </Link>
+      </Breadcrumbs>
       <Slide direction="right" delay={200} triggerOnce={true}>
         <p className="mt-8 w-[100%]">
           Команда "Spark Studio" - это творческая мастерская, где воплощаются

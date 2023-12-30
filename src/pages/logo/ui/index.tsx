@@ -5,6 +5,7 @@ import { useFetchDataWithLoader } from "@shared/lib/hooks/useFetchDataWithLoader
 import { useSelector } from "react-redux";
 import { RootState } from "@shared/lib/redux/store";
 import { LogoFeature } from "@features/Logo/LogoFeature";
+import { Footer } from "@widgets/Footer/ui";
 
 export const LogoPage = () => {
   const isLoading = useSelector((state: RootState) => state.loader.isLoading);
@@ -28,6 +29,7 @@ export const LogoPage = () => {
       <div className="main mt-16 m-auto flex items-center">
         <LogoFeature />
       </div>
+      <Footer />
     </div>
   );
 };

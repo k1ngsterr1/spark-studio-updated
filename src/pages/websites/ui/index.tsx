@@ -5,6 +5,7 @@ import { WebsiteFeature } from "@features/Websites/WebsiteFeature";
 import { useFetchDataWithLoader } from "@shared/lib/hooks/useFetchDataWithLoader";
 import { useSelector } from "react-redux";
 import { RootState } from "@shared/lib/redux/store";
+import { Footer } from "@widgets/Footer/ui";
 
 export const WebsitesPage = () => {
   const isLoading = useSelector((state: RootState) => state.loader.isLoading);
@@ -16,7 +17,7 @@ export const WebsitesPage = () => {
   }
 
   return (
-    <div>
+    <>
       <Meta
         title="Spark Studio - Студия Веб-Дизайна и Разработки в Казахстане"
         ogTitle="Spark Studio - Студия Веб-Дизайна и Разработки в Казахстане"
@@ -28,6 +29,7 @@ export const WebsitesPage = () => {
       <div className="main mt-16 m-auto flex items-center">
         <WebsiteFeature />
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };

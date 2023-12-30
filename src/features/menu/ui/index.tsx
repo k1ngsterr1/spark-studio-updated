@@ -84,7 +84,7 @@ export const Menu = () => {
               onClick={handleClick}
               linkName="Веб-Сайты"
             />
-            <NavigationLink to="/services/design" linkName="Дизайн" />
+            <NavigationLink to="/services/design" linkName="Логотипы" />
             <NavigationLink to="/services/app" linkName="Приложения" />
             <NavigationLink to="/services/seo" linkName="SEO Оптимизация" />
           </nav>
