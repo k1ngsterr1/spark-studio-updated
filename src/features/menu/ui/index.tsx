@@ -87,7 +87,11 @@ export const Menu = () => {
             <span className="ml-2">Назад</span>
           </span>
           <nav className="mt-0 ml-8 flex flex-col items-start">
-            <NavigationLink to="/services" linkName="Все Услуги" />
+            <NavigationLink
+              onClick={handleClick}
+              to="/services"
+              linkName="Все Услуги"
+            />
             <NavigationLink
               to="/services/websites"
               onClick={handleClick}

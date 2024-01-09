@@ -14,6 +14,7 @@ import { PortfolioDetails } from "@pages/portfolioDetails/ui";
 import { NotFound } from "@pages/notFound/ui";
 import { LogoPage } from "./logo/ui";
 import { ServicesPage } from "./services/ui";
+import { AboutPage } from "./about/ui";
 
 export const MyRoutes: FC = () => {
   return (
@@ -25,6 +26,7 @@ export const MyRoutes: FC = () => {
           path={ROUTE_CONSTANTS.APPLICATIONS}
           element={<ApplicationsPage />}
         />
+        <Route path={ROUTE_CONSTANTS.ABOUT} element={<AboutPage />} />
         <Route path={ROUTE_CONSTANTS.WEBSITES} element={<WebsitesPage />} />
         <Route path={ROUTE_CONSTANTS.SEO} element={<SeoPage />} />
         <Route path={ROUTE_CONSTANTS.LOGO} element={<LogoPage />} />

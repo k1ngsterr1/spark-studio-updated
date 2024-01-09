@@ -14,7 +14,7 @@ export const MainFeature = () => {
       <Slide duration={500} direction="up" triggerOnce={true}>
         <h1 className="text-center">
           СТУДИЯ ВЕБ <br />
-          <span className="orange">ДИЗАЙНА</span>
+          <span className="orange">РАЗРАБОТКИ</span>
         </h1>
       </Slide>
       <div className="main__squares flex flex-col mt-8">
