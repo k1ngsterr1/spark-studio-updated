@@ -1,4 +1,3 @@
-import React from "react";
 import direction from "@assets/images/direction.svg";
 import { Form } from "@widgets/Form/ui";
 

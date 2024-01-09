@@ -4,7 +4,6 @@ import { Header } from "@widgets/Header/ui";
 import { useFetchDataWithLoader } from "@shared/lib/hooks/useFetchDataWithLoader";
 import { useSelector } from "react-redux";
 import { RootState } from "@shared/lib/redux/store";
-import { LogoFeature } from "@features/Logo/LogoFeature";
 import { Footer } from "@widgets/Footer/ui";
 import { ServicesFeature } from "@features/Home/ui/ServicesFeature";
 

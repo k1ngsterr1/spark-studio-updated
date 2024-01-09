@@ -1,4 +1,3 @@
-import React from "react";
 import { CountElement } from "@shared/ui/countElement";
 
 export const AboutCompanyFeature = () => {

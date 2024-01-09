@@ -1,1 +1,0 @@
-import { PortfolioDetails } from "./ui";

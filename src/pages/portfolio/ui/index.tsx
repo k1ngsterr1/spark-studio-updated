@@ -6,7 +6,6 @@ import { Footer } from "@widgets/Footer/ui";
 import { RootState } from "@shared/lib/redux/store";
 import { useFetchDataWithLoader } from "@shared/lib/hooks/useFetchDataWithLoader";
 import { Menu } from "@features/index";
-import FormFeature from "@features/Home/ui/FormFeature";
 
 export const Portfolio = () => {
   const isLoading = useSelector((state: RootState) => state.loader.isLoading);

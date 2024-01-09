@@ -1,7 +1,12 @@
 import { FC } from "react";
 
 // Router
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import { ROUTE_CONSTANTS } from "@shared/config/routes";
 
 // Pages
@@ -22,6 +27,10 @@ export const MyRoutes: FC = () => {
       <Routes>
         <Route path="*" element={<NotFound />} />
         <Route path={ROUTE_CONSTANTS.HOME} element={<HomePage />} />
+        <Route path="/" element={<Navigate to="/home" />} />
+        <Route path="/index.html" element={<Navigate to="/home" />} />
+        <Route path="/index.shtml" element={<Navigate to="/home" />} />
+
         <Route
           path={ROUTE_CONSTANTS.APPLICATIONS}
           element={<ApplicationsPage />}

@@ -11,7 +11,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { toggleMenu as toggleMenuAction } from "@features/navigation/model";
 import { useBurgerAnimation } from "@shared/lib/hooks";
-import { Slide } from "react-awesome-reveal";
 
 import "./styles.scss";
 

@@ -1,5 +1,4 @@
 import { useRef, useCallback } from "react";
-import { useAppDispatch, useAppSelector } from "../redux/hooks";
 import gsap from "gsap";
 
 type UseBurgerAnimationReturnType = {
@@ -113,6 +112,8 @@ export const useBurgerAnimation = (
         0
       );
   };
+
+  console.log(setIsOpen);
 
   const toggleMenu = useCallback(() => {
     if (isOpen) {

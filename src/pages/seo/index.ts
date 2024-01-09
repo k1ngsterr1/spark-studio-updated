@@ -1,1 +1,0 @@
-import { SeoPage } from "./ui";
