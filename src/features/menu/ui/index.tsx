@@ -82,7 +82,7 @@ export const Menu = () => {
         <aside className="menu flex flex-col items-start" ref={menuRef}>
           <span
             className="ml-8 mt-8 flex items-center orange text-xl"
-            onClick={handleBack}
+            onClick={() => handleBack()}
           >
             <FontAwesomeIcon icon={faChevronLeft} className="text-lg" />
             <span className="ml-2">Назад</span>
