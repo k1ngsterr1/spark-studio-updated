@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useMenuAnimation } from "@shared/lib/hooks/useMenuAnimation";
 import { useAppDispatch, useAppSelector } from "@shared/lib/redux/hooks";
 import { LanguageButton } from "@shared/ui/languageButton";
@@ -42,6 +43,10 @@ export const Menu = () => {
     dispatch(noneState());
   }
 
+  useEffect(() => {
+    console.log(isMenuOpen);
+  });
+
   if (menuState == "") {
     return (
       <aside className="menu flex flex-col items-start" ref={menuRef}>
@@ -55,10 +60,14 @@ export const Menu = () => {
         </div>
         <nav className="mt-2 ml-8 flex flex-col items-start">
           <NavigationLink onClick={handleClick} to="/home" linkName="Главная" />
-          <NavigationLink to="/about" linkName="О нас" />
+          <NavigationLink onClick={handleClick} to="/about" linkName="О нас" />
           <NavigationLink onClick={handleServices} linkName="Услуги" />
-          <NavigationLink to="/portfolio" linkName="Портфолио" />
-          <NavigationLink to="" linkName="Контакты" />
+          <NavigationLink
+            onClick={handleClick}
+            to="/portfolio"
+            linkName="Портфолио"
+          />
+          <NavigationLink onClick={handleClick} to="" linkName="Контакты" />
         </nav>
         <PhoneLink />
         <EmailLink />
@@ -84,9 +93,21 @@ export const Menu = () => {
               onClick={handleClick}
               linkName="Веб-Сайты"
             />
-            <NavigationLink to="/services/logo" linkName="Логотипы" />
-            <NavigationLink to="/services/app" linkName="Приложения" />
-            <NavigationLink to="/services/seo" linkName="SEO Оптимизация" />
+            <NavigationLink
+              onClick={handleClick}
+              to="/services/logo"
+              linkName="Логотипы"
+            />
+            <NavigationLink
+              onClick={handleClick}
+              to="/services/app"
+              linkName="Приложения"
+            />
+            <NavigationLink
+              onClick={handleClick}
+              to="/services/seo"
+              linkName="SEO Оптимизация"
+            />
           </nav>
           <PhoneLink />
           <EmailLink />
