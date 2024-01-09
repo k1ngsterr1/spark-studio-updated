@@ -8,12 +8,12 @@ import { Link } from "react-router-dom";
 
 import FormFeature from "@features/Home/ui/FormFeature";
 
-export const WebsiteFeature = () => {
+export const ApplicationFeature = () => {
   return (
     <>
       <Slide direction="left" delay={100} triggerOnce={true}>
         <h1 className="text-center">
-          Разработка <span className="orange">Веб-Сайтов</span>{" "}
+          Разработка <span className="orange">Приложений</span>{" "}
         </h1>
       </Slide>
       <Breadcrumbs
@@ -23,8 +23,8 @@ export const WebsiteFeature = () => {
       >
         <Link to="/home">Главная</Link>
         <Link to="/services">Услуги</Link>
-        <Link to="/services/websites" className="orange">
-          Разработка Веб-Сайтов
+        <Link to="/services/applications" className="orange">
+          Разработка Приложений
         </Link>
       </Breadcrumbs>
       <Slide direction="right" delay={200} triggerOnce={true}>

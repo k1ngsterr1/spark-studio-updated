@@ -15,7 +15,7 @@ export const SeoFeature = () => {
       </Slide>
       <Breadcrumbs
         sx={{
-          marginTop: "16px",
+          marginTop: "clamp(8px,3.73824vw,32px)",
         }}
       >
         <Link to="/home">Главная</Link>
