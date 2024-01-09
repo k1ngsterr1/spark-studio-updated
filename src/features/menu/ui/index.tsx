@@ -43,7 +43,9 @@ export const Menu = () => {
   }
 
   useEffect(() => {
-    console.log(isMenuOpen);
+    if (isMenuOpen) {
+      document.body.style.overflowY = "hidden";
+    }
   });
 
   if (menuState == "") {
