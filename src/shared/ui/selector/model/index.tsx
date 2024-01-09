@@ -5,7 +5,7 @@ interface SelectState {
 }
 
 const initialState: SelectState = {
-  selectedOption: "Сайты",
+  selectedOption: "websites",
 };
 
 const selectorSlice = createSlice({
