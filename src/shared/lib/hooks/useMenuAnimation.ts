@@ -22,7 +22,7 @@ export const useMenuAnimation = (): {
           duration: 0.5,
           ease: "power3.out",
         }).to(
-          ".menu__link, .menu__link--language-btn, .menu__link--contact",
+          ".menu__link, .menu__link--contact",
           {
             x: "0%",
             autoAlpha: 1,
@@ -36,7 +36,7 @@ export const useMenuAnimation = (): {
         // Overlap the end of menu animation with the start of links animation
       } else {
         // Animate the links out before the menu starts closing
-        tl.to(".menu__link, .menu__link--language-btn, .menu__link--contact", {
+        tl.to(".menu__link, .menu__link--contact", {
           x: "-500%", // Move to the right
           autoAlpha: 0, // Fade out
           scale: 0.95,

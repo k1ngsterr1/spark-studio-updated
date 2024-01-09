@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useMenuAnimation } from "@shared/lib/hooks/useMenuAnimation";
 import { useAppDispatch, useAppSelector } from "@shared/lib/redux/hooks";
 import { LanguageButton } from "@shared/ui/languageButton";
@@ -29,7 +29,6 @@ export const Menu = () => {
 
   function handleServices() {
     dispatch(serviceState());
-    console.log(menuState);
   }
 
   function handleClick() {
@@ -51,14 +50,7 @@ export const Menu = () => {
   if (menuState == "") {
     return (
       <aside className="menu flex flex-col items-start" ref={menuRef}>
-        <div className="flex items-end mt-16 ml-8">
-          <LanguageButton language="RU" onClick={() => console.log("RU")} />
-          <LanguageButton
-            language="EN"
-            margin="ml-4"
-            onClick={() => console.log("EN")}
-          />
-        </div>
+        <span className="none" onClick={() => handleBack()}></span>
         <nav className="mt-2 ml-8 flex flex-col items-start">
           <NavigationLink onClick={handleClick} to="/home" linkName="Главная" />
           <NavigationLink onClick={handleClick} to="/about" linkName="О нас" />
@@ -68,7 +60,11 @@ export const Menu = () => {
             to="/portfolio"
             linkName="Портфолио"
           />
-          <NavigationLink onClick={handleClick} to="" linkName="Контакты" />
+          <NavigationLink
+            onClick={handleClick}
+            to="/contacts"
+            linkName="Контакты"
+          />
         </nav>
         <PhoneLink />
         <EmailLink />
