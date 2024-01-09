@@ -1,4 +1,3 @@
-// slices/menuSlice.ts
 import { createSlice } from "@reduxjs/toolkit";
 
 interface MenuState {

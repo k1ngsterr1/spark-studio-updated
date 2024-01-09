@@ -13,6 +13,7 @@ import { Portfolio } from "@pages/portfolio/ui";
 import { PortfolioDetails } from "@pages/portfolioDetails/ui";
 import { NotFound } from "@pages/notFound/ui";
 import { LogoPage } from "./logo/ui";
+import { ServicesPage } from "./services/ui";
 
 export const MyRoutes: FC = () => {
   return (
@@ -28,6 +29,7 @@ export const MyRoutes: FC = () => {
         <Route path={ROUTE_CONSTANTS.SEO} element={<SeoPage />} />
         <Route path={ROUTE_CONSTANTS.LOGO} element={<LogoPage />} />
         <Route path={ROUTE_CONSTANTS.PORTFOLIO} element={<Portfolio />} />
+        <Route path={ROUTE_CONSTANTS.SERVICES} element={<ServicesPage />} />
         <Route
           path={ROUTE_CONSTANTS.PORTFOLIO_DETAIL}
           element={<PortfolioDetails />}

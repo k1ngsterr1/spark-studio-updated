@@ -26,7 +26,7 @@ export const WebsitesPage = () => {
       />
       <Header />
       <Menu />
-      <div className="main mt-16 m-auto flex items-center">
+      <div className="main mt-16 m-auto flex items-center mb-16">
         <WebsiteFeature />
       </div>
       <Footer />

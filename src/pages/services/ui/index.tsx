@@ -1,14 +1,14 @@
+import { Menu } from "@features/index";
 import { Loader, Meta } from "@shared/index";
 import { Header } from "@widgets/Header/ui";
-import { PortfolioFeature } from "@features/Home/ui/PortfolioFeature";
-import { useSelector } from "react-redux";
-import { Footer } from "@widgets/Footer/ui";
-import { RootState } from "@shared/lib/redux/store";
 import { useFetchDataWithLoader } from "@shared/lib/hooks/useFetchDataWithLoader";
-import { Menu } from "@features/index";
-import FormFeature from "@features/Home/ui/FormFeature";
+import { useSelector } from "react-redux";
+import { RootState } from "@shared/lib/redux/store";
+import { LogoFeature } from "@features/Logo/LogoFeature";
+import { Footer } from "@widgets/Footer/ui";
+import { ServicesFeature } from "@features/Home/ui/ServicesFeature";
 
-export const Portfolio = () => {
+export const ServicesPage = () => {
   const isLoading = useSelector((state: RootState) => state.loader.isLoading);
 
   useFetchDataWithLoader();
@@ -18,7 +18,8 @@ export const Portfolio = () => {
   }
 
   return (
-    <>
+    <div>
+      {" "}
       <Meta
         title="Spark Studio - Студия Веб-Дизайна и Разработки в Казахстане"
         ogTitle="Spark Studio - Студия Веб-Дизайна и Разработки в Казахстане"
@@ -27,10 +28,10 @@ export const Portfolio = () => {
       />
       <Header />
       <Menu />
-      <div className="main flex m-auto items-center mb-16">
-        <PortfolioFeature />
+      <div className="main m-auto flex items-center mb-16">
+        <ServicesFeature />
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
