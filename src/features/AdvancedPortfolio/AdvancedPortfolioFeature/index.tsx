@@ -14,8 +14,8 @@ export const AdvancedPortfolioFeature = () => {
   const [bgImage, setBgImage] = useState("one");
 
   const backgrounds: { [key: number]: string } = {
-    0: "zero", // First slide background class
-    1: "one", // Second slide background class
+    0: "zero",
+    1: "one",
     2: "two",
     3: "three",
     4: "four",
