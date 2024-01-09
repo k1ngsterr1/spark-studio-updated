@@ -1,0 +1,71 @@
+.zero {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../../../assets/images/work08.webp");
+  transition: background-image 0.3s ease-in-out;
+}
+
+.one {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../../../assets/images/work07.webp");
+  transition: background-image 0.3s ease-in-out;
+}
+
+.two {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../../../assets/images/work06.webp");
+  transition: background-image 0.3s ease-in-out;
+}
+
+.three {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../../../assets/images/work05.webp");
+  transition: background-image 0.3s ease-in-out;
+}
+
+.four {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../../../assets/images/work04.webp");
+  transition: background-image 0.3s ease-in-out;
+}
+
+.five {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../../../assets/images/work03.webp");
+  transition: background-image 0.3s ease-in-out;
+}
+
+.six {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../../../assets/images/work02.webp");
+  transition: background-image 0.3s ease-in-out;
+}
+
+.seven {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../../../assets/images/work01.webp");
+  transition: background-image 0.3s ease-in-out;
+}
+
+.parallax-slider {
+  width: 100%;
+  height: clamp(300px, 140.184vw, 1200px);
+  display: flex;
+  position: relative;
+  transition: background-image 0.3s ease-in-out;
+}

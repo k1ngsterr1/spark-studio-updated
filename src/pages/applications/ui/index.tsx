@@ -1,7 +1,6 @@
 import { Menu } from "@features/index";
 import { Loader, Meta } from "@shared/index";
 import { Header } from "@widgets/Header/ui";
-import { WebsiteFeature } from "@features/Websites/WebsiteFeature";
 import { useFetchDataWithLoader } from "@shared/lib/hooks/useFetchDataWithLoader";
 import { useSelector } from "react-redux";
 import { RootState } from "@shared/lib/redux/store";

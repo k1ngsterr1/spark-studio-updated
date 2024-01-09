@@ -1,9 +1,11 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation, Parallax } from "swiper/modules";
+import mob from "@assets/images/logo.webp";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Pagination, Navigation } from "swiper/modules";
 
 import "./styles.scss";
 
@@ -20,10 +22,12 @@ export const Carousel: React.FC<CarouselProps> = ({
 }) => {
   return (
     <Swiper
-      modules={[Navigation, Pagination]}
+      modules={[Navigation, Pagination, Parallax]}
       navigation
+      parallax
       pagination={{ clickable: true }}
       spaceBetween={50}
+      speed={600}
       slidesPerView={1}
       centeredSlides={true}
       className="carousel mt-12"

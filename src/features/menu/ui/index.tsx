@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useMenuAnimation } from "@shared/lib/hooks/useMenuAnimation";
 import { useAppDispatch, useAppSelector } from "@shared/lib/redux/hooks";
-import { LanguageButton } from "@shared/ui/languageButton";
 import { NavigationLink } from "@shared/ui/link";
 import { EmailLink, PhoneLink } from "@shared/index";
 import { RootState } from "@shared/lib/redux/store";
