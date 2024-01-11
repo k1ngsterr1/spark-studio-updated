@@ -1,5 +1,4 @@
 import { Block } from "@shared/index";
-// import { useAppSelector } from "@shared/lib/redux/hooks";
 import { Button } from "@shared/ui/button";
 import { Slide } from "react-awesome-reveal";
 import { useNavigate } from "react-router-dom";

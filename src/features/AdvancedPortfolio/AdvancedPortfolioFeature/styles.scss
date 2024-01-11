@@ -68,4 +68,19 @@
   display: flex;
   position: relative;
   transition: background-image 0.3s ease-in-out;
+
+  &__slide {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    &__text {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: clamp(30px, 14.0184vw, 120px);
+      @apply font-bold;
+      @apply mb-10;
+    }
+  }
 }

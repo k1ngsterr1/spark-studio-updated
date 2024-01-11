@@ -44,9 +44,8 @@ export const AdvancedPortfolioFeature = () => {
         </p>
       </Slide>
       <Swiper
-        modules={[Pagination, Parallax]}
+        modules={[Parallax]}
         parallax
-        pagination={{ clickable: true }}
         spaceBetween={50}
         speed={600}
         slidesPerView={1}
@@ -63,26 +62,80 @@ export const AdvancedPortfolioFeature = () => {
           data-swiper-parallax="0%"
           className={`${bgImage}`}
         ></div>
-        <SwiperSlide className="parallar-slider__slide">
-          <span className="text-2xl orange">Example 1</span>
+        <SwiperSlide className="parallax-slider__slide">
+          <Slide
+            direction="left"
+            className="w-full flex items-center text-center justify-center"
+            delay={150}
+          >
+            <span className="parallax-slider__slide__text orange">
+              Sharbakty.kz
+            </span>
+          </Slide>
         </SwiperSlide>
-        <SwiperSlide className="parallar-slider__slide">
-          <span className="text-2xl orange">Example 2</span>
+        <SwiperSlide className="parallax-slider__slide">
+          <Slide
+            direction="left"
+            className="w-full flex items-center text-center justify-center"
+            delay={150}
+          >
+            <span className="parallax-slider__slide__text text-custom-black">
+              Special Solution
+            </span>
+          </Slide>
         </SwiperSlide>
-        <SwiperSlide className="parallar-slider__slide">
-          <span className="text-2xl orange">Example 3</span>
+        <SwiperSlide className="parallax-slider__slide">
+          <Slide
+            direction="left"
+            className="w-full flex items-center justify-center orange"
+            delay={150}
+          >
+            <span className="parallax-slider__slide__text">Jintropine</span>
+          </Slide>
         </SwiperSlide>
-        <SwiperSlide className="parallar-slider__slide">
-          <span className="text-2xl orange">Example 1</span>
+        <SwiperSlide className="parallax-slider__slide">
+          <Slide
+            direction="left"
+            className="w-full flex items-center justify-center"
+            delay={150}
+          >
+            <span className="parallax-slider__slide__text orange">
+              YourDomain
+            </span>
+          </Slide>
         </SwiperSlide>
-        <SwiperSlide className="parallar-slider__slide">
-          <span className="text-2xl orange">Example 2</span>
+        <SwiperSlide className="parallax-slider__slide">
+          <Slide
+            direction="left"
+            className="w-full flex items-center justify-center"
+            delay={150}
+          >
+            <span className="parallax-slider__slide__text text-custom-black">
+              DREKT.IO
+            </span>
+          </Slide>
         </SwiperSlide>
-        <SwiperSlide className="parallar-slider__slide">
-          <span className="text-2xl orange">Example 3</span>
+        <SwiperSlide className="parallax-slider__slide">
+          <Slide
+            direction="left"
+            className="w-full flex items-center text-center justify-center"
+            delay={150}
+          >
+            <span className="parallax-slider__slide__text  text-custom-black">
+              Retro Website
+            </span>
+          </Slide>
         </SwiperSlide>
-        <SwiperSlide className="parallar-slider__slide">
-          <span className="text-2xl orange">Example 3</span>
+        <SwiperSlide className="parallax-slider__slide">
+          <Slide
+            direction="left"
+            className="w-full flex items-center justify-center text-center"
+            delay={150}
+          >
+            <span className="parallax-slider__slide__text text-custom-black">
+              Prime Properties
+            </span>
+          </Slide>
         </SwiperSlide>
       </Swiper>
     </>
