@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url("../../../assets/images/work08.webp");
+  background-image: url("../../../assets/images/sites/phone_cards/AI_Phone_Card.png");
   transition: background-image 0.3s ease-in-out;
 }
 
@@ -10,7 +10,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url("../../../assets/images/work07.webp");
+  background-image: url("../../../assets/images/sites/phone_cards/Cargo_Phone_Card.png");
   transition: background-image 0.3s ease-in-out;
 }
 
@@ -18,7 +18,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url("../../../assets/images/work06.webp");
+  background-image: url("../../../assets/images/sites/phone_cards/PP_Phone_Card.png");
   transition: background-image 0.3s ease-in-out;
 }
 
@@ -26,7 +26,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url("../../../assets/images/work05.webp");
+  background-image: url("../../../assets/images/sites/phone_cards/Sharbakty_Phone_Card.png");
   transition: background-image 0.3s ease-in-out;
 }
 
@@ -34,7 +34,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url("../../../assets/images/work04.webp");
+  background-image: url("../../../assets/images/sites/phone_cards/SS_Phone_Card.png");
   transition: background-image 0.3s ease-in-out;
 }
 
@@ -42,7 +42,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url("../../../assets/images/work03.webp");
+  background-image: url("../../../assets/images/sites/phone_cards/Zippity_Phone_Card.png");
   transition: background-image 0.3s ease-in-out;
 }
 
@@ -50,7 +50,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url("../../../assets/images/work02.webp");
+  background-image: url("../../../assets/images/work02.png");
   transition: background-image 0.3s ease-in-out;
 }
 
@@ -58,29 +58,40 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url("../../../assets/images/work01.webp");
+  background-image: url("../../../assets/images/work01.png");
   transition: background-image 0.3s ease-in-out;
 }
 
 .parallax-slider {
   width: 100%;
-  height: clamp(300px, 140.184vw, 1200px);
+  height: clamp(435px, 203.2668vw, 1740px);
   display: flex;
   position: relative;
   transition: background-image 0.3s ease-in-out;
 
   &__slide {
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
     &__text {
       width: 90%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: clamp(30px, 14.0184vw, 120px);
+      font-size: clamp(25px, 11.681999999999999vw, 100px);
       @apply font-bold;
-      @apply mb-10;
+      @apply mb-2;
+    }
+
+    &__sub-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 20px;
+      @apply text-custom-orange;
     }
   }
 }

@@ -27,7 +27,7 @@ export const Portfolio = () => {
       />
       <Header />
       <Menu />
-      <div className="w-100 flex flex-col m-auto items-center mb-16">
+      <div className="w-full flex flex-col m-auto items-center mb-16">
         <AdvancedPortfolioFeature />
       </div>
       <Footer />
