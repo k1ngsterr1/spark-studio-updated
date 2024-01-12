@@ -89,7 +89,8 @@ export const AdvancedPortfolioFeature = () => {
             <Slide
               direction="left"
               className="w-full flex flex-col items-center text-center justify-center"
-              delay={150}
+              // delay={250}
+              fraction={0.1}
             >
               <span className="parallax-slider__slide__text w-full">
                 Cargo Express
