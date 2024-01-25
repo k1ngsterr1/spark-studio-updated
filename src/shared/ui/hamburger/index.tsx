@@ -22,7 +22,7 @@ export const Hamburger: React.FC<HamburgerProps> = ({
 }) => {
   return (
     <div
-      className={`hamburger flex-col items-end ${margin}`}
+      className={`hamburger flex-col items-end ${margin} hoverable`}
       onClick={onClick}
       onMouseEnter={onHover}
       onMouseLeave={offHover}

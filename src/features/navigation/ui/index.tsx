@@ -59,11 +59,39 @@ export const Navigation = () => {
           alt="logo"
         />
         <div className="w-[40%] flex justify-between items-center">
-          <ScrollLink className="navigation__pc__link">Главная</ScrollLink>
-          <ScrollLink className="navigation__pc__link">Кто мы</ScrollLink>
-          <ScrollLink className="navigation__pc__link">Услуги</ScrollLink>
-          <ScrollLink className="navigation__pc__link">Портфолио</ScrollLink>
-          <ScrollLink className="navigation__pc__link--orange">
+          <ScrollLink
+            className="navigation__pc__link hoverable"
+            to="main"
+            smooth
+          >
+            Главная
+          </ScrollLink>
+          <ScrollLink
+            className="navigation__pc__link hoverable"
+            to="about"
+            smooth
+          >
+            Кто мы
+          </ScrollLink>
+          <ScrollLink
+            className="navigation__pc__link hoverable"
+            to="services"
+            smooth
+          >
+            Услуги
+          </ScrollLink>
+          <ScrollLink
+            className="navigation__pc__link hoverable"
+            to="portfolio"
+            smooth
+          >
+            Портфолио
+          </ScrollLink>
+          <ScrollLink
+            className="navigation__pc__link--orange hoverable"
+            to="contacts"
+            smooth
+          >
             Заявка
           </ScrollLink>
           <Hamburger
