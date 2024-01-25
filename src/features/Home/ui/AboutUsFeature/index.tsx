@@ -4,9 +4,9 @@ import { Slide } from "react-awesome-reveal";
 import { Button } from "@shared/ui/button";
 import { useNavigate } from "react-router-dom";
 
-import img1 from "@assets/images/phone_1.webp";
-import img2 from "@assets/images/phone_BSHOP.webp";
-import img3 from "@assets/images/phone_mobauto.webp";
+import img1 from "@assets/images/apps/phone_1.webp";
+import img2 from "@assets/images/apps/phone_BSHOP.webp";
+import img3 from "@assets/images/apps/phone_mobauto.webp";
 
 export const AboutUsFeature = () => {
   const navigate = useNavigate();

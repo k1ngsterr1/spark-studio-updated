@@ -61,8 +61,13 @@ export const Menu = () => {
           />
           <NavigationLink
             onClick={handleClick}
-            to="/contacts"
-            linkName="Контакты"
+            to="/products"
+            linkName="Наши продукты"
+          />
+          <NavigationLink
+            onClick={handleClick}
+            to="/skills"
+            linkName="Наши возможности"
           />
         </nav>
         <PhoneLink />

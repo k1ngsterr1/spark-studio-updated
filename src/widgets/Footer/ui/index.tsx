@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import logo from "@assets/images/spark_logo.svg";
+import logo from "@assets/images/assets/spark_logo.svg";
 
 import "./styles.scss";
 

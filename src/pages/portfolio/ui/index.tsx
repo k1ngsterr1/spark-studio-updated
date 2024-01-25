@@ -7,6 +7,8 @@ import { RootState } from "@shared/lib/redux/store";
 import { useFetchDataWithLoader } from "@shared/lib/hooks/useFetchDataWithLoader";
 import { Menu } from "@features/index";
 import { AdvancedPortfolioFeature } from "@features/AdvancedPortfolio/AdvancedPortfolioFeature";
+import { Form } from "@widgets/Form/ui";
+import FormFeature from "@features/Home/ui/FormFeature";
 
 export const Portfolio = () => {
   const isLoading = useSelector((state: RootState) => state.loader.isLoading);
@@ -29,6 +31,9 @@ export const Portfolio = () => {
       <Menu />
       <div className="w-full flex flex-col m-auto items-center mb-16">
         <AdvancedPortfolioFeature />
+      </div>
+      <div className="main mt-16 m-auto flex items-center">
+        <FormFeature />
       </div>
       <Footer />
     </>

@@ -3,20 +3,20 @@ import { Slide } from "react-awesome-reveal";
 import { useSelector } from "react-redux";
 import { PortfolioItem } from "@shared/ui/PortfolioItem";
 
-import work01 from "@assets/images/work01.webp";
-import work02 from "@assets/images/work02.webp";
-import work03 from "@assets/images/work03.webp";
-import work04 from "@assets/images/work04.webp";
-import work05 from "@assets/images/work05.webp";
-import work06 from "@assets/images/work06.webp";
-import work10 from "@assets/images/work10.webp";
-import work11 from "@assets/images/work11.webp";
+import work01 from "@assets/images/sites/works/work01.webp";
+import work02 from "@assets/images/sites/works/work02.webp";
+import work03 from "@assets/images/sites/works/work03.webp";
+import work04 from "@assets/images/sites/works/work04.webp";
+import work05 from "@assets/images/sites/works/work05.webp";
+import work06 from "@assets/images/sites/works/work06.webp";
+import work10 from "@assets/images/sites/works/work10.webp";
+import work11 from "@assets/images/sites/works/work11.webp";
 
-import logo01 from "@assets/images/logo.webp";
-import logo02 from "@assets/images/logo2.webp";
-import logo03 from "@assets/images/logo3.webp";
-import logo04 from "@assets/images/logo4.webp";
-import logo05 from "@assets/images/logo5.webp";
+import logo01 from "@assets/images/logo/logo.webp";
+import logo02 from "@assets/images/logo/logo2.webp";
+import logo03 from "@assets/images/logo/logo3.webp";
+import logo04 from "@assets/images/logo/logo4.webp";
+import logo05 from "@assets/images/logo/logo5.webp";
 
 export const PortfolioList = () => {
   const selectedOption: string = useSelector(

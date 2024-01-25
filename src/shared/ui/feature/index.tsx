@@ -1,6 +1,6 @@
 import React from "react";
 
-import spark from "@assets/images/spark.svg";
+import spark from "@assets/images/assets/spark.svg";
 
 import "./styles.scss";
 

@@ -20,6 +20,7 @@ import { NotFound } from "@pages/notFound/ui";
 import { LogoPage } from "./logo/ui";
 import { ServicesPage } from "./services/ui";
 import { AboutPage } from "./about/ui";
+import { ComingSoonPage } from "./ComingSoon/ui";
 
 export const MyRoutes: FC = () => {
   return (
@@ -45,6 +46,8 @@ export const MyRoutes: FC = () => {
           path={ROUTE_CONSTANTS.PORTFOLIO_DETAIL}
           element={<PortfolioDetails />}
         />
+        <Route path={ROUTE_CONSTANTS.PRODUCTS} element={<ComingSoonPage />} />
+        <Route path={ROUTE_CONSTANTS.SKILLS} element={<ComingSoonPage />} />
       </Routes>
     </Router>
   );

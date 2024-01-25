@@ -1,4 +1,4 @@
-import direction from "@assets/images/direction.svg";
+import direction from "@assets/images/assets/direction.svg";
 import { Form } from "@widgets/Form/ui";
 
 const FormFeature = () => {

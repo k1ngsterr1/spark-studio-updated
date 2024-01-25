@@ -5,7 +5,7 @@ import { LoaderBar } from "./loaderProgressBar";
 import "./styles.scss";
 
 // Assets
-import logo from "@assets/images/spark_logo.svg";
+import logo from "@assets/images/assets/spark_logo.svg";
 
 export const Loader = () => {
   const loaderWrapperRef = useRef(null);

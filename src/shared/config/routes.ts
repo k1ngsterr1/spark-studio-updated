@@ -8,5 +8,7 @@ export const ROUTE_CONSTANTS = {
   SEO: "/services/SEO",
   PORTFOLIO: "/portfolio",
   PORTFOLIO_DETAIL: "/portfolio/:portfolioCase",
+  PRODUCTS: "/products",
+  SKILLS: "/skills",
   NOT_FOUND: "/404",
 };

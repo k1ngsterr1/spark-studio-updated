@@ -3,7 +3,7 @@ import { useAppDispatch, useAppSelector } from "@shared/lib/redux/hooks";
 import { toggleMenu as toggleMenuAction } from "../model";
 import { Hamburger } from "@shared/ui/hamburger";
 import { useBurgerAnimation } from "@shared/lib/hooks/useBurgerAnimation";
-import Logo from "@assets/images/spark_logo.svg";
+import Logo from "@assets/images/assets/spark_logo.svg";
 
 import "./styles.scss";
 

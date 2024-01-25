@@ -9,10 +9,10 @@
   font-size: clamp(9.5px, 4.439159999999999vw, 38px);
   outline: none;
   background-size: cover;
-  background-image: url("../../../assets/images/button.svg");
+  background-image: url("../../../assets/images/assets/button.svg");
   transition: 0.3s all;
   &:hover {
     @apply text-custom-orange;
-    background-image: url("../../../assets/images/button_active.svg");
+    background-image: url("../../../assets/images/assets/button_active.svg");
   }
 }
