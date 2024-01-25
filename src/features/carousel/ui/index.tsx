@@ -9,17 +9,15 @@ import "swiper/css/pagination";
 
 import "./styles.scss";
 
-interface CarouselProps {
-  imageFirst: any;
-  imageSecond: any;
-  imageThird: any;
+interface PhotoItem {
+  image: string;
 }
 
-export const Carousel: React.FC<CarouselProps> = ({
-  imageFirst,
-  imageSecond,
-  imageThird,
-}) => {
+interface CarouselProps {
+  images: PhotoItem[];
+}
+
+export const Carousel: React.FC<CarouselProps> = ({ images }) => {
   return (
     <Swiper
       modules={[Navigation, Pagination, Parallax]}
@@ -36,15 +34,16 @@ export const Carousel: React.FC<CarouselProps> = ({
         "--swiper-navigation-color": "#FF5722",
       }}
     >
-      <SwiperSlide className="carousel__slide">
-        <img src={imageFirst} alt="phone" className="mb-12" />
-      </SwiperSlide>
-      <SwiperSlide className="carousel__slide">
-        <img src={imageSecond} alt="phone" className="mb-12" />
-      </SwiperSlide>
-      <SwiperSlide className="carousel__slide">
-        <img src={imageThird} alt="phone" className="mb-12" />
-      </SwiperSlide>
+      {images.map((photoObject, index) => (
+        <SwiperSlide className="carousel__slide">
+          <img
+            src={photoObject.image}
+            key={index}
+            alt="phone"
+            className="mb-12"
+          />
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };
