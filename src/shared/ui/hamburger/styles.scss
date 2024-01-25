@@ -28,3 +28,36 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .hamburger,
+  .hamburger--disabled {
+    width: clamp(20px, 2.0832vw, 80px);
+    height: clamp(20px, 2.0832vw, 80px);
+    display: flex;
+
+    &__line {
+      width: 100%;
+      height: clamp(1.5px, 0.15624vw, 6px);
+      @apply bg-custom-orange;
+      @apply mt-2;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    &__line-short {
+      width: 60%;
+      height: clamp(1.5px, 0.15624vw, 6px);
+      @apply bg-custom-orange;
+      @apply mt-2;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    &--disabled {
+      > div {
+        border: 2px solid red;
+      }
+    }
+  }
+}

@@ -16,4 +16,48 @@
       height: auto;
     }
   }
+
+  &__pc {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  %link-style {
+    font-family: Montserrat;
+    font-size: clamp(9px, 0.93744vw, 36px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130.5%;
+    transition: 0.3s all;
+    @apply text-custom-black;
+  }
+
+  .navigation {
+    &__mob {
+      display: none !important;
+    }
+
+    &__pc {
+      display: flex !important;
+
+      &__logo {
+        width: clamp(85px, 8.8536vw, 340px);
+        height: clamp(35px, 3.6456vw, 140px);
+      }
+
+      &__link {
+        @extend %link-style;
+
+        &:hover {
+          @apply text-custom-orange;
+        }
+
+        &--orange {
+          @extend %link-style;
+          @apply text-custom-orange;
+        }
+      }
+    }
+  }
 }

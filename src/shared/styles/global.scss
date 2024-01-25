@@ -61,3 +61,9 @@ p {
 .orange {
   @apply text-custom-orange;
 }
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: clamp(40px, 4.1664vw, 160px);
+  }
+}

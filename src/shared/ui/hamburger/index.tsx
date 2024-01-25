@@ -5,6 +5,7 @@ interface HamburgerProps {
   onClick: () => void;
   onHover?: () => void;
   offHover?: () => void;
+  margin?: string;
   topLineRef: React.RefObject<HTMLDivElement>;
   middleLineRef: React.RefObject<HTMLDivElement>;
   bottomLineRef: React.RefObject<HTMLDivElement>;
@@ -17,10 +18,11 @@ export const Hamburger: React.FC<HamburgerProps> = ({
   topLineRef,
   middleLineRef,
   bottomLineRef,
+  margin,
 }) => {
   return (
     <div
-      className="hamburger flex-col items-end"
+      className={`hamburger flex-col items-end ${margin}`}
       onClick={onClick}
       onMouseEnter={onHover}
       onMouseLeave={offHover}

@@ -3,6 +3,8 @@ import { useAppDispatch, useAppSelector } from "@shared/lib/redux/hooks";
 import { toggleMenu as toggleMenuAction } from "../model";
 import { Hamburger } from "@shared/ui/hamburger";
 import { useBurgerAnimation } from "@shared/lib/hooks/useBurgerAnimation";
+import { Link as ScrollLink } from "react-scroll";
+
 import Logo from "@assets/images/assets/spark_logo.svg";
 
 import "./styles.scss";
@@ -40,6 +42,32 @@ export const Navigation = () => {
         />
         <div className="navigation__mob__wrapper items-center justify-between">
           <Hamburger
+            onHover={animateOnHover}
+            offHover={animateOffHover}
+            onClick={handleHamburgerClick}
+            topLineRef={topLine}
+            middleLineRef={middleLine}
+            bottomLineRef={bottomLine}
+          />
+        </div>
+      </div>
+      <div className="navigation__pc flex flex-row items-center justify-between">
+        <img
+          src={Logo}
+          onClick={handleNavigateHome}
+          className="navigation__pc__logo"
+          alt="logo"
+        />
+        <div className="w-[40%] flex justify-between items-center">
+          <ScrollLink className="navigation__pc__link">Главная</ScrollLink>
+          <ScrollLink className="navigation__pc__link">Кто мы</ScrollLink>
+          <ScrollLink className="navigation__pc__link">Услуги</ScrollLink>
+          <ScrollLink className="navigation__pc__link">Портфолио</ScrollLink>
+          <ScrollLink className="navigation__pc__link--orange">
+            Заявка
+          </ScrollLink>
+          <Hamburger
+            margin="ml-4"
             onHover={animateOnHover}
             offHover={animateOffHover}
             onClick={handleHamburgerClick}
