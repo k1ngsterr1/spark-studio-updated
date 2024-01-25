@@ -8,11 +8,22 @@
   font-weight: 300;
   font-size: clamp(9.5px, 4.439159999999999vw, 38px);
   outline: none;
+  cursor: none !important;
   background-size: cover;
   background-image: url("../../../assets/images/assets/button.svg");
   transition: 0.3s all;
   &:hover {
     @apply text-custom-orange;
     background-image: url("../../../assets/images/assets/button_active.svg");
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    width: clamp(184px, 19.16544vw, 736px);
+    height: clamp(76.32px, 7.9494912vw, 305.28px);
+    font-size: clamp(10px, 1.0416vw, 40px);
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }

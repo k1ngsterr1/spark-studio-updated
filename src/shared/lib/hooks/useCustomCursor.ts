@@ -15,8 +15,8 @@ export const useCustomCursor = (cursorRef: any) => {
       }
     };
 
-    const onMouseOver = () => {
-      if (cursorRef.current) {
+    const onMouseOver = (e: any) => {
+      if (e.target.matches(".hoverable") && cursorRef.current) {
         gsap.to(cursorRef.current, {
           scale: 2,
           backgroundColor: "#FF4500",
@@ -26,8 +26,8 @@ export const useCustomCursor = (cursorRef: any) => {
       }
     };
 
-    const onMouseOut = () => {
-      if (cursorRef.current) {
+    const onMouseOut = (e: any) => {
+      if (e.target.matches(".hoverable") && cursorRef.current) {
         gsap.to(cursorRef.current, {
           scale: 1,
           backgroundColor: "transparent",
@@ -39,19 +39,15 @@ export const useCustomCursor = (cursorRef: any) => {
     };
 
     document.addEventListener("mousemove", moveCursor);
-
-    const hoverElements = document.querySelectorAll(`.hoverable`);
-    hoverElements.forEach((el) => {
-      el.addEventListener("mouseover", onMouseOver);
-      el.addEventListener("mouseout", onMouseOut);
-    });
+    document.addEventListener("mouseover", onMouseOver);
+    document.addEventListener("mouseout", onMouseOut);
 
     return () => {
       document.removeEventListener("mousemove", moveCursor);
-      hoverElements.forEach((el) => {
-        el.removeEventListener("mouseover", onMouseOver);
-        el.removeEventListener("mouseout", onMouseOut);
-      });
+      document.removeEventListener("mouseover", onMouseOver);
+      document.removeEventListener("mouseout", onMouseOut);
     };
   }, []);
+
+  return cursorRef;
 };

@@ -20,3 +20,14 @@
     font-size: clamp(22.5px, 10.5138vw, 90px);
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .block {
+    width: clamp(135px, 14.0616vw, 540px);
+    height: clamp(135px, 14.0616vw, 540px);
+
+    &__text {
+      font-size: clamp(35px, 3.6456vw, 140px);
+    }
+  }
+}

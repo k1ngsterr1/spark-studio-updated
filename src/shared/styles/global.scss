@@ -64,6 +64,11 @@ p {
 
 @media screen and (min-width: 1024px) {
   h1 {
+    text-align: left;
     font-size: clamp(40px, 4.1664vw, 160px);
+  }
+  p {
+    text-align: left;
+    font-size: clamp(9px, 0.93744vw, 36px);
   }
 }

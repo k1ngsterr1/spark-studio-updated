@@ -55,7 +55,7 @@ export const Navigation = () => {
         <img
           src={Logo}
           onClick={handleNavigateHome}
-          className="navigation__pc__logo"
+          className="navigation__pc__logo hoverable"
           alt="logo"
         />
         <div className="w-[40%] flex justify-between items-center">
