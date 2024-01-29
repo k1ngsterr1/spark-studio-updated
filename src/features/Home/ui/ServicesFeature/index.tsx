@@ -7,22 +7,77 @@ export const ServicesFeature = () => {
 
   return (
     <>
-      <Slide direction="left" triggerOnce={true}>
-        <h3 className="mt-20">
-          Наши <span className="orange">услуги</span>
-        </h3>
-      </Slide>
-      <Slide direction="right" triggerOnce={true}>
-        <p className="mt-4">
-          В <span className="orange">Spark Studio</span> мы предлагаем широкий
-          спектр услуг, чтобы помочь вам достичь вашего полного потенциала в
-          онлайн-мире. Наша команда профессионалов обладает опытом и навыками в
-          различных областях веб-разработки, и мы готовы воплотить ваши идеи в
-          реальность.
-        </p>
-      </Slide>
-      <div className="w-full flex flex-col items-center">
-        <Slide className="w-full" direction="left" triggerOnce={true}>
+      <section className="mobile flex flex-col items-center">
+        <Slide direction="left" triggerOnce={true}>
+          <h3 className="mt-20">
+            Наши <span className="orange">услуги</span>
+          </h3>
+        </Slide>
+        <Slide direction="right" triggerOnce={true}>
+          <p className="mt-4">
+            В <span className="orange">Spark Studio</span> мы предлагаем широкий
+            спектр услуг, чтобы помочь вам достичь вашего полного потенциала в
+            онлайн-мире. Наша команда профессионалов обладает опытом и навыками
+            в различных областях веб-разработки, и мы готовы воплотить ваши идеи
+            в реальность.
+          </p>
+        </Slide>
+        <div className="w-full flex flex-col items-center">
+          <Slide className="w-full" direction="left" triggerOnce={true}>
+            <ServiceTab
+              text="САЙТЫ"
+              onClick={() => navigate("/services/websites")}
+              number="01"
+              delayIcon={100}
+              delayText={200}
+              delayNumber={350}
+            />
+          </Slide>
+          <Slide className="w-full" direction="right" triggerOnce={true}>
+            <ServiceTab
+              text="ПРИЛОЖЕНИЯ"
+              onClick={() => navigate("/services/applications")}
+              number="02"
+              delayIcon={200}
+              delayText={300}
+              delayNumber={450}
+            />
+          </Slide>
+          <Slide className="w-full" direction="left" triggerOnce={true}>
+            <ServiceTab
+              text="ЛОГОТИПЫ"
+              onClick={() => navigate("/services/logotypes")}
+              number="03"
+              delayIcon={300}
+              delayText={400}
+              delayNumber={550}
+            />
+          </Slide>
+          <Slide className="w-full" direction="right" triggerOnce={true}>
+            <ServiceTab
+              text="SEO"
+              onClick={() => navigate("/services/SEO")}
+              number="04"
+              delayIcon={400}
+              delayText={500}
+              delayNumber={650}
+            />
+          </Slide>
+        </div>
+      </section>
+      <section className="pc w-full flex flex-col mt-40">
+        <div className="w-full flex flex-col justify-start">
+          <h3>
+            Наши <span className="orange">услуги</span>
+          </h3>
+          <p className="paragraph w-[45%]">
+            Мы предлагаем широкий спектр услуг, чтобы помочь вам достичь вашего
+            полного потенциала в онлайн-мире. Наша команда профессионалов
+            обладает опытом и навыками в различных областях веб-разработки, и мы
+            готовы воплотить ваши идеи в реальность.
+          </p>
+        </div>
+        <div className="w-full flex flex-col">
           <ServiceTab
             text="САЙТЫ"
             onClick={() => navigate("/services/websites")}
@@ -31,38 +86,32 @@ export const ServicesFeature = () => {
             delayText={200}
             delayNumber={350}
           />
-        </Slide>
-        <Slide className="w-full" direction="right" triggerOnce={true}>
           <ServiceTab
             text="ПРИЛОЖЕНИЯ"
-            onClick={() => navigate("/services/applications")}
+            onClick={() => navigate("/services/websites")}
             number="02"
-            delayIcon={200}
-            delayText={300}
-            delayNumber={450}
+            delayIcon={100}
+            delayText={200}
+            delayNumber={350}
           />
-        </Slide>
-        <Slide className="w-full" direction="left" triggerOnce={true}>
           <ServiceTab
             text="ЛОГОТИПЫ"
-            onClick={() => navigate("/services/logotypes")}
+            onClick={() => navigate("/services/websites")}
             number="03"
-            delayIcon={300}
-            delayText={400}
-            delayNumber={550}
+            delayIcon={100}
+            delayText={200}
+            delayNumber={350}
           />
-        </Slide>
-        <Slide className="w-full" direction="right" triggerOnce={true}>
           <ServiceTab
             text="SEO"
-            onClick={() => navigate("/services/SEO")}
+            onClick={() => navigate("/services/websites")}
             number="04"
-            delayIcon={400}
-            delayText={500}
-            delayNumber={650}
+            delayIcon={100}
+            delayText={200}
+            delayNumber={350}
           />
-        </Slide>
-      </div>
+        </div>
+      </section>
     </>
   );
 };

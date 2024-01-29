@@ -10,7 +10,7 @@ export const MainFeature = () => {
 
   return (
     <>
-      <div className="mobile w-full min-[1024px]:hidden">
+      <div className="mobile w-full flex flex-col items-center min-[1024px]:hidden">
         <Slide duration={500} direction="up" triggerOnce={true}>
           <h1 className="text-center">
             СТУДИЯ ВЕБ <br />

@@ -1,21 +1,13 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Parallax } from "swiper/modules";
-import mob from "@assets/images/logo.webp";
+import { CarouselProps } from "@shared/lib/data/images";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import "./styles.scss";
-
-interface PhotoItem {
-  image: string;
-}
-
-interface CarouselProps {
-  images: PhotoItem[];
-}
 
 export const Carousel: React.FC<CarouselProps> = ({ images }) => {
   return (
@@ -25,10 +17,9 @@ export const Carousel: React.FC<CarouselProps> = ({ images }) => {
       parallax
       pagination={{ clickable: true }}
       spaceBetween={50}
-      speed={600}
       slidesPerView={1}
+      className="carousel mt-20 cursor-none"
       centeredSlides={true}
-      className="carousel mt-12"
       style={{
         "--swiper-pagination-color": "#FF5722",
         "--swiper-navigation-color": "#FF5722",
@@ -37,10 +28,10 @@ export const Carousel: React.FC<CarouselProps> = ({ images }) => {
       {images.map((photoObject, index) => (
         <SwiperSlide className="carousel__slide">
           <img
-            src={photoObject.image}
+            src={photoObject.photo}
             key={index}
             alt="phone"
-            className="mb-12"
+            className="carousel__slide__image mb-12 hoverable"
           />
         </SwiperSlide>
       ))}

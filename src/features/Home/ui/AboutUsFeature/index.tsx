@@ -3,17 +3,16 @@ import { Feature } from "@shared/ui/feature";
 import { Slide } from "react-awesome-reveal";
 import { Button } from "@shared/ui/button";
 import { useNavigate } from "react-router-dom";
+import { carouselImages } from "@shared/lib/data/images";
 
-import img1 from "@assets/images/apps/phone_1.webp";
-import img2 from "@assets/images/apps/phone_BSHOP.webp";
-import img3 from "@assets/images/apps/phone_mobauto.webp";
+import "./styles.scss";
 
 export const AboutUsFeature = () => {
   const navigate = useNavigate();
 
   return (
     <>
-      <section className="mobile">
+      <section className="mobile flex flex-col items-center">
         <Slide direction="left" delay={100} triggerOnce={true}>
           <h2 className="mt-20">
             Кто <span className="orange">мы</span>
@@ -28,7 +27,7 @@ export const AboutUsFeature = () => {
             дальнейших направлений развития.
           </p>
         </Slide>
-        <Carousel imageFirst={img1} imageSecond={img2} imageThird={img3} />
+        <Carousel images={carouselImages.first.images} />
         <div className="mt-12 flex flex-col items-center">
           <Slide direction="left" triggerOnce={true}>
             <Feature text="Профессионализм и опыт" />
@@ -62,8 +61,36 @@ export const AboutUsFeature = () => {
           onClick={() => navigate("/portfolio")}
         />
       </section>
-      <section className="pc">
-        <Carousel images={} />
+      <section className="pc w-full flex flex-col mt-20">
+        <div className="upper-content flex items-center justify-between">
+          <Carousel images={carouselImages.first.images} />
+          <div className="about-info">
+            <h2>
+              Кто <span className="orange">мы</span>
+            </h2>
+            <p className="paragraph w-[70%]">
+              В Spark Studio мы стремимся не только к внешней эстетике и
+              функциональности, но и к уникальности каждого проекта, которым мы
+              занимаемся. Мы верим, что каждый бизнес имеет свою уникальную
+              историю, и наша задача – передать эту историю через превосходный
+              дизайн и современные технологии.
+            </p>
+            <Feature text="Профессионализм и опыт" />
+            <Feature text="Креативные решения" />
+            <Feature text="Индивидуальный подход" />
+            <Feature text="Качество и результат" />
+          </div>
+        </div>
+        <div className="lower-content flex items-center justify-between mt-10">
+          <p className="paragraph w-[70%]">
+            Наше основное стремление - помочь вашему бизнесу выделяться в
+            онлайн-мире. Мы готовы создать для вас красивый, функциональный и
+            пользовательски-ориентированный веб-сайт, который поможет вам
+            привлечь новых клиентов, укрепить связь с существующими и расширить
+            свои возможности в Интернете.
+          </p>
+          <Button text="Портфолио" marginTop="mt-0" />
+        </div>
       </section>
     </>
   );

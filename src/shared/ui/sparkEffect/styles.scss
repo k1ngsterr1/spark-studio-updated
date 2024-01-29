@@ -1,0 +1,10 @@
+svg {
+  rotate: -20deg;
+  stroke: var(--click-spark-color, currentcolor);
+}
+
+line {
+  stroke-dasharray: 30;
+  stroke-dashoffset: 30;
+  transform-origin: center;
+}

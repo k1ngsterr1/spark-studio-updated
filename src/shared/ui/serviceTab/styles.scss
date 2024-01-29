@@ -8,6 +8,7 @@
   &__icon {
     font-size: clamp(12.5px, 5.840999999999999vw, 50px);
     padding-bottom: clamp(7px, 3.2709599999999996vw, 28px);
+    transform: rotate(20deg);
   }
 
   &__text {
@@ -30,5 +31,43 @@
   &:hover {
     @apply text-custom-orange;
     @apply border-custom-orange;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .service-tab {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid;
+    transition: 0.3s all;
+    @apply border-custom-black;
+
+    &__icon {
+      font-size: clamp(16px, 1.66656vw, 64px);
+      padding-bottom: clamp(7px, 0.72912vw, 28px);
+      transform: rotate(20deg);
+    }
+
+    &__text {
+      font-family: Montserrat;
+      font-size: clamp(16px, 1.66656vw, 64px);
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      padding-bottom: clamp(7px, 0.72912vw, 28px);
+    }
+
+    &__number {
+      font-family: Montserrat;
+      font-size: clamp(16px, 1.66656vw, 64px);
+      font-style: normal;
+      font-weight: 300;
+      padding-bottom: clamp(7px, 0.72912vw, 28px);
+    }
+
+    &:hover {
+      @apply text-custom-orange;
+      @apply border-custom-orange;
+    }
   }
 }
