@@ -1,6 +1,7 @@
 import React from "react";
 import { useTabAnimations } from "@shared/lib/hooks/useTabAnimation";
 import { PortfolioTab } from "@shared/ui/portfolioTab";
+import { Fade } from "react-awesome-reveal";
 
 interface PortfolioItemProps {
   name: string;
@@ -16,13 +17,15 @@ export const PortfolioItem: React.FC<PortfolioItemProps> = ({
   const { ref, onHoverAnimation, offHoverAnimation } = useTabAnimations();
 
   return (
-    <PortfolioTab
-      tabRef={ref}
-      onHover={onHoverAnimation}
-      offHover={offHoverAnimation}
-      name={name}
-      img={img}
-      onClick={onClick}
-    />
+    <Fade cascade direction="right">
+      <PortfolioTab
+        tabRef={ref}
+        onHover={onHoverAnimation}
+        offHover={offHoverAnimation}
+        name={name}
+        img={img}
+        onClick={onClick}
+      />
+    </Fade>
   );
 };

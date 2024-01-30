@@ -67,15 +67,19 @@ export const ServicesFeature = () => {
       </section>
       <section className="pc w-full flex flex-col mt-40">
         <div className="w-full flex flex-col justify-start">
-          <h3>
-            Наши <span className="orange">услуги</span>
-          </h3>
-          <p className="paragraph w-[45%]">
-            Мы предлагаем широкий спектр услуг, чтобы помочь вам достичь вашего
-            полного потенциала в онлайн-мире. Наша команда профессионалов
-            обладает опытом и навыками в различных областях веб-разработки, и мы
-            готовы воплотить ваши идеи в реальность.
-          </p>
+          <Slide direction="left">
+            <h3>
+              Наши <span className="orange">услуги</span>
+            </h3>
+          </Slide>
+          <Slide direction="right" delay={100}>
+            <p className="paragraph w-[45%]">
+              Мы предлагаем широкий спектр услуг, чтобы помочь вам достичь
+              вашего полного потенциала в онлайн-мире. Наша команда
+              профессионалов обладает опытом и навыками в различных областях
+              веб-разработки, и мы готовы воплотить ваши идеи в реальность.
+            </p>
+          </Slide>
         </div>
         <div className="w-full flex flex-col">
           <ServiceTab

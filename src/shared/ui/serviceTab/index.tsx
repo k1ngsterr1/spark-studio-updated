@@ -27,16 +27,16 @@ export const ServiceTab: React.FC<ServiceTabProps> = ({
       className="service-tab flex justify-between items-center hoverable mt-16"
       onClick={onClick}
     >
-      <Slide delay={delayIcon} triggerOnce={true}>
+      <Slide delay={delayIcon}>
         <FontAwesomeIcon
           icon={faArrowUpRightFromSquare}
           className="service-tab__icon orange hoverable"
         />
       </Slide>
-      <Slide direction="right" delay={delayText} triggerOnce={true}>
+      <Slide direction="right" delay={delayText}>
         <span className="service-tab__text hoverable">{text}</span>
       </Slide>
-      <Slide direction="right" delay={delayNumber} triggerOnce={true}>
+      <Slide direction="right" delay={delayNumber}>
         <span className="service-tab__number hoverable">{number}</span>
       </Slide>
     </div>

@@ -1,5 +1,6 @@
 import direction from "@assets/images/assets/direction.svg";
 import { Form } from "@widgets/Form/ui";
+import { Slide } from "react-awesome-reveal";
 
 const FormFeature = () => {
   return (
@@ -20,17 +21,23 @@ const FormFeature = () => {
         />
         <Form />
       </div>
-      <div className="pc flex flex-col mt-20">
-        <h4>
-          Есть <span className="orange">проект?</span>
-        </h4>
+      <div className="pc flex flex-col mt-40">
+        <Slide direction="left">
+          <h4>
+            Есть <span className="orange">проект?</span>
+          </h4>
+        </Slide>
         <div className="flex items-center mt-8">
-          <img src={direction} alt="direction" />
-          <p className="paragraph ml-8 w-[40%]">
-            Вы готовы начать работу над своим уникальным веб-проектом? Мы с
-            нетерпением ждем возможности помочь вам достичь ваших целей и
-            привести вашу идею к жизни.
-          </p>
+          <Slide direction="left" delay={100}>
+            <img src={direction} alt="direction" />
+          </Slide>
+          <Slide direction="right" delay={150}>
+            <p className="paragraph ml-8 w-[40%]">
+              Вы готовы начать работу над своим уникальным веб-проектом? Мы с
+              нетерпением ждем возможности помочь вам достичь ваших целей и
+              привести вашу идею к жизни.
+            </p>
+          </Slide>
         </div>
         <Form />
       </div>

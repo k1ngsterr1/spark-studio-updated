@@ -127,16 +127,14 @@ export const PortfolioList = () => {
     <>
       <div className="portfolio-list w-full">
         {itemsToDisplay.map((item, index) => (
-          <Slide cascade triggerOnce>
-            <PortfolioItem
-              key={index}
-              name={item.name}
-              img={item.img}
-              onClick={() => {
-                console.log(`${item.name} clicked`);
-              }}
-            />
-          </Slide>
+          <PortfolioItem
+            key={index}
+            name={item.name}
+            img={item.img}
+            onClick={() => {
+              console.log(`${item.name} clicked`);
+            }}
+          />
         ))}
       </div>
     </>
