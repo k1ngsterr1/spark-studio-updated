@@ -49,8 +49,8 @@ export const Form = () => {
           onClick={() => console.log("Doodle")}
         />
       </form>
-      <div className="flex justify-between items-start">
-        <form
+      <form className="flex justify-between items-start mb-20">
+        <div
           className="pc form flex flex-col items-start justify-start w-full mt-20 max-[448px]:hidden"
           onSubmit={handleSubmit(onSubmit)}
         >
@@ -115,8 +115,8 @@ export const Form = () => {
               </div>
             </div>
           </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </>
   );
 };
