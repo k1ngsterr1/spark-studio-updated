@@ -8,14 +8,23 @@
     font-style: normal;
     font-weight: 400;
     font-size: clamp(11.5px, 1.19784vw, 46px);
+    transition: 0.3s all;
     @apply text-custom-black;
+
+    &:hover {
+      @apply text-custom-orange;
+    }
 
     &--active {
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 400;
       font-size: clamp(11.5px, 1.19784vw, 46px);
+      transition: 0.3s all;
       @apply text-custom-orange;
+      &:hover {
+        @apply text-custom-orange;
+      }
     }
 
     &--disable {
@@ -23,7 +32,11 @@
       font-style: normal;
       font-weight: 400;
       font-size: clamp(11.5px, 1.19784vw, 46px);
+      transition: 0.3s all;
       @apply text-custom-black;
+      &:hover {
+        @apply text-custom-orange;
+      }
     }
   }
 }

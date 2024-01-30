@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { Fade } from "react-awesome-reveal";
 
 import "./styles.scss";
-import { Fade } from "react-awesome-reveal";
 
 export const PortfolioSwitch = () => {
   const [select, setSelected] = useState("");
+  const navigate = useNavigate();
 
   return (
     <div className="switcher">
@@ -32,6 +34,12 @@ export const PortfolioSwitch = () => {
           onClick={() => setSelected("Логотипы")}
         >
           Логотипы
+        </span>
+        <span
+          className={`switcher__text text-custom-orange hoverable ml-4`}
+          onClick={() => navigate("/portfolio")}
+        >
+          Портфолио
         </span>
       </Fade>
     </div>
