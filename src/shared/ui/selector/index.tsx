@@ -46,8 +46,8 @@ export const Selector = () => {
         styles={style}
         menuPosition="fixed"
         required
-        className="react-select text-xl w-[300px] mt-8"
-        classNamePrefix="react-select"
+        className="react-select text-xl w-[300px] mt-8 hoverable min-[1024px]:w-[100%]"
+        classNamePrefix="react-select hoverable"
       />
     </>
   );

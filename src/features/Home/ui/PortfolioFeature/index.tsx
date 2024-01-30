@@ -1,6 +1,5 @@
 import { PortfolioList } from "@features/PortfolioList";
 import { PortfolioSwitch } from "@features/PortfolioSwitch";
-import { PortfolioTab } from "@shared/ui/portfolioTab";
 import { Selector } from "@shared/ui/selector";
 import { Slide } from "react-awesome-reveal";
 

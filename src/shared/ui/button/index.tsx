@@ -5,6 +5,7 @@ import "./styles.scss";
 
 interface ButtonProps {
   text: string;
+  type?: string | any;
   marginTop: string;
   onClick?: () => void;
   to?: any;

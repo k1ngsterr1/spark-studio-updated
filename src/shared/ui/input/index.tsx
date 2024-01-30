@@ -4,10 +4,13 @@ import "./styles.scss";
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   isError?: boolean;
+  margin?: string;
 }
 export const Input = React.forwardRef<HTMLInputElement, InputProps>(
-  ({ isError, ...props }, ref) => {
-    const inputClassName = isError ? "input input--error" : "input";
+  ({ isError, margin, ...props }, ref) => {
+    const inputClassName = isError
+      ? `input ${margin} input--error hoverable`
+      : `input ${margin} hoverable`;
     return <input className={inputClassName} ref={ref} {...props} />;
   }
 );

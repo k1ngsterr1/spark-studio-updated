@@ -17,3 +17,25 @@
     @apply border-custom-orange;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .input {
+    width: clamp(270px, 28.1232vw, 1080px);
+    height: clamp(16px, 1.66656vw, 64px);
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(9px, 0.93744vw, 36px);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid;
+    padding-left: clamp(5px, 0.5208vw, 20px);
+    padding-bottom: clamp(3px, 0.31248vw, 12px);
+    transition: 0.3s all;
+    @apply border-custom-black;
+    &:focus {
+      border-bottom: 2px solid;
+      @apply border-custom-orange;
+    }
+  }
+}
