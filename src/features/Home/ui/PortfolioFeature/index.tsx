@@ -24,7 +24,7 @@ export const PortfolioFeature = () => {
           <PortfolioList />
         </div>
       </section>
-      <section className="pc flex flex-col mt-40">
+      <section className="pc flex flex-col mt-40" id="portfolio-pc">
         <div className="flex flex-col justify-between items-start">
           <Slide direction="left">
             <h4>

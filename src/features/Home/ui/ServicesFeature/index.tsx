@@ -65,7 +65,7 @@ export const ServicesFeature = () => {
           </Slide>
         </div>
       </section>
-      <section className="pc w-full flex flex-col mt-40">
+      <section className="pc w-full flex flex-col mt-40" id="services-pc">
         <div className="w-full flex flex-col justify-start">
           <Slide direction="left">
             <h3>

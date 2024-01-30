@@ -61,35 +61,35 @@ export const Navigation = () => {
         <div className="w-[40%] flex justify-between items-center">
           <ScrollLink
             className="navigation__pc__link hoverable"
-            to="main"
+            to="main-pc"
             smooth
           >
             Главная
           </ScrollLink>
           <ScrollLink
             className="navigation__pc__link hoverable"
-            to="about"
+            to="about-pc"
             smooth
           >
             Кто мы
           </ScrollLink>
           <ScrollLink
             className="navigation__pc__link hoverable"
-            to="services"
+            to="services-pc"
             smooth
           >
             Услуги
           </ScrollLink>
           <ScrollLink
             className="navigation__pc__link hoverable"
-            to="portfolio"
+            to="portfolio-pc"
             smooth
           >
             Портфолио
           </ScrollLink>
           <ScrollLink
             className="navigation__pc__link--orange hoverable"
-            to="contacts"
+            to="contacts-pc"
             smooth
           >
             Заявка

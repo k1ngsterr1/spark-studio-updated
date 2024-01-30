@@ -61,7 +61,7 @@ export const AboutUsFeature = () => {
           onClick={() => navigate("/portfolio")}
         />
       </section>
-      <section className="pc w-full flex flex-col mt-20">
+      <section className="pc w-full flex flex-col mt-20" id="about-pc">
         <div className="upper-content flex items-center justify-between">
           <Carousel images={carouselImages.first.images} />
           <div className="about-info">

@@ -21,7 +21,7 @@ const FormFeature = () => {
         />
         <Form />
       </div>
-      <div className="pc flex flex-col mt-40">
+      <div className="pc flex flex-col mt-40" id="contacts-pc">
         <Slide direction="left">
           <h4>
             Есть <span className="orange">проект?</span>

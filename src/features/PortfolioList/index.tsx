@@ -1,5 +1,4 @@
 import { useMemo } from "react";
-import { Slide } from "react-awesome-reveal";
 import { useSelector } from "react-redux";
 import { PortfolioItem } from "@shared/ui/PortfolioItem";
 
