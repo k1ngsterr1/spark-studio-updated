@@ -1,0 +1,29 @@
+.switcher {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(11.5px, 1.19784vw, 46px);
+    @apply text-custom-black;
+
+    &--active {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: clamp(11.5px, 1.19784vw, 46px);
+      @apply text-custom-orange;
+    }
+
+    &--disable {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: clamp(11.5px, 1.19784vw, 46px);
+      @apply text-custom-black;
+    }
+  }
+}

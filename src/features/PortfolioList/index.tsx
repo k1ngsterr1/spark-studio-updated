@@ -18,6 +18,8 @@ import logo03 from "@assets/images/logo/logo3.webp";
 import logo04 from "@assets/images/logo/logo4.webp";
 import logo05 from "@assets/images/logo/logo5.webp";
 
+import "./styles.scss";
+
 export const PortfolioList = () => {
   const selectedOption: string = useSelector(
     (state: any) => state.selector.selectedOption

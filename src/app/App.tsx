@@ -18,8 +18,8 @@ function App() {
 
   return (
     <div className="app-wrapper">
-      <Cursor />
       <ClickSpark />
+      <Cursor />
       <MyRoutes />
     </div>
   );
