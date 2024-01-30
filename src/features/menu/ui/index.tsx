@@ -48,31 +48,92 @@ export const Menu = () => {
 
   if (menuState == "") {
     return (
-      <aside className="menu flex flex-col items-start" ref={menuRef}>
-        <span className="none" onClick={() => handleBack()}></span>
-        <nav className="mt-2 ml-8 flex flex-col items-start">
-          <NavigationLink onClick={handleClick} to="/home" linkName="Главная" />
-          <NavigationLink onClick={handleClick} to="/about" linkName="О нас" />
-          <NavigationLink onClick={handleServices} linkName="Услуги" />
-          <NavigationLink
-            onClick={handleClick}
-            to="/portfolio"
-            linkName="Портфолио"
-          />
-          <NavigationLink
-            onClick={handleClick}
-            to="/products"
-            linkName="Наши продукты"
-          />
-          <NavigationLink
-            onClick={handleClick}
-            to="/skills"
-            linkName="Наши возможности"
-          />
-        </nav>
-        <PhoneLink />
-        <EmailLink />
-      </aside>
+      <>
+        <aside className="menu flex flex-col items-start" ref={menuRef}>
+          <span className="none" onClick={() => handleBack()}></span>
+          <nav className="mt-2 ml-8 flex flex-col items-start">
+            <NavigationLink
+              onClick={handleClick}
+              to="/home"
+              className="menu__link"
+              linkName="Главная"
+            />
+            <NavigationLink
+              onClick={handleClick}
+              to="/about"
+              className="menu__link"
+              linkName="О нас"
+            />
+            <NavigationLink
+              onClick={handleServices}
+              className="menu__link"
+              linkName="Услуги"
+            />
+            <NavigationLink
+              onClick={handleClick}
+              to="/portfolio"
+              className="menu__link"
+              linkName="Портфолио"
+            />
+            <NavigationLink
+              onClick={handleClick}
+              to="/products"
+              className="menu__link"
+              linkName="Наши продукты"
+            />
+            <NavigationLink
+              onClick={handleClick}
+              to="/skills"
+              className="menu__link"
+              linkName="Наши возможности"
+            />
+          </nav>
+          <PhoneLink className="menu__link" />
+          <EmailLink className="menu__link" />
+        </aside>
+        <aside className="menu-pc flex flex-col items-start" ref={menuRef}>
+          <nav className="w-[86.6%] m-auto flex flex-col items-start">
+            <NavigationLink
+              onClick={handleClick}
+              to="/home"
+              className="menu-pc__link"
+              linkName="Главная"
+            />
+            <NavigationLink
+              onClick={handleClick}
+              to="/about"
+              className="menu-pc__link"
+              linkName="О нас"
+            />
+            <NavigationLink
+              onClick={handleServices}
+              to="/services"
+              className="menu-pc__link"
+              linkName="Услуги"
+            />
+            <NavigationLink
+              onClick={handleClick}
+              to="/portfolio"
+              className="menu-pc__link"
+              linkName="Портфолио"
+            />
+            <NavigationLink
+              onClick={handleClick}
+              to="/products"
+              className="menu-pc__link"
+              linkName="Наши продукты"
+            />
+            <NavigationLink
+              onClick={handleClick}
+              to="/skills"
+              className="menu-pc__link"
+              linkName="Наши возможности"
+            />
+          </nav>
+          <PhoneLink className="menu-pc__link" />
+          <EmailLink className="menu-pc__link" />
+        </aside>
+      </>
     );
   }
 
@@ -91,31 +152,36 @@ export const Menu = () => {
             <NavigationLink
               onClick={handleClick}
               to="/services"
+              className="menu__link"
               linkName="Все Услуги"
             />
             <NavigationLink
               to="/services/websites"
               onClick={handleClick}
+              className="menu__link"
               linkName="Веб-Сайты"
             />
             <NavigationLink
               onClick={handleClick}
               to="/services/logo"
+              className="menu__link"
               linkName="Логотипы"
             />
             <NavigationLink
               onClick={handleClick}
               to="/services/app"
+              className="menu__link"
               linkName="Приложения"
             />
             <NavigationLink
               onClick={handleClick}
               to="/services/seo"
+              className="menu__link"
               linkName="SEO Оптимизация"
             />
           </nav>
-          <PhoneLink />
-          <EmailLink />
+          <PhoneLink className="menu__link" />
+          <EmailLink className="menu__link" />
         </aside>
       </>
     );

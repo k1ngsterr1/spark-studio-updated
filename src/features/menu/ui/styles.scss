@@ -45,3 +45,52 @@
     transform: translateX(-500%);
   }
 }
+
+.menu-pc {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    display: none !important;
+  }
+
+  .menu-pc {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    transform: translateX(-100%);
+    z-index: 10;
+    overflow: hidden;
+    right: 0;
+    // top: clamp(45px, 21.0276vw, 180px);
+
+    &__link {
+      @apply text-custom-black;
+      font-family: "Montserrat", sans-serif;
+      font-size: clamp(16px, 1.66656vw, 64px);
+      font-style: normal;
+      font-weight: 700;
+      line-height: 130.5%;
+      transform: translateX(-500%);
+      transition: 0.3s all;
+      &:hover {
+        @apply text-custom-orange;
+      }
+    }
+    &__link--contact {
+      @apply text-custom-orange;
+      font-family: "Montserrat", sans-serif;
+      font-size: clamp(12px, 1.24992vw, 48px);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130.5%;
+      transform: translateX(-500%);
+      transition: 0.3s all;
+      &:hover {
+        @apply text-custom-orange;
+      }
+    }
+  }
+}

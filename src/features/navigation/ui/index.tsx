@@ -94,7 +94,7 @@ export const Navigation = () => {
           >
             Заявка
           </ScrollLink>
-          <Hamburger
+          {/* <Hamburger
             margin="ml-4"
             onHover={animateOnHover}
             offHover={animateOffHover}
@@ -102,7 +102,7 @@ export const Navigation = () => {
             topLineRef={topLine}
             middleLineRef={middleLine}
             bottomLineRef={bottomLine}
-          />
+          /> */}
         </div>
       </div>
     </nav>
