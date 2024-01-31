@@ -58,7 +58,7 @@ export const Navigation = () => {
           className="navigation__pc__logo hoverable"
           alt="logo"
         />
-        <div className="w-[40%] flex justify-between items-center">
+        <div className="w-[50%] flex justify-between items-center">
           <Link className="navigation__pc__link hoverable" to="/home">
             Главная
           </Link>
@@ -71,8 +71,12 @@ export const Navigation = () => {
           <Link className="navigation__pc__link hoverable" to="/portfolio">
             Портфолио
           </Link>
-          <Link className="navigation__pc__link hoverable" to="/portfolio">
-            Портфолио
+
+          <Link className="navigation__pc__link hoverable" to="/skills">
+            Возможности
+          </Link>
+          <Link className="navigation__pc__link hoverable" to="/products">
+            Сервисы
           </Link>
           <ScrollLink
             className="navigation__pc__link--orange hoverable"

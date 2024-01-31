@@ -2,11 +2,12 @@ import { useState } from "react";
 import { Slide } from "react-awesome-reveal";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper";
-import { Pagination, Navigation, Parallax } from "swiper/modules";
+import { Navigation, Parallax, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/autoplay";
 
 import "./styles.scss";
 
@@ -93,10 +94,14 @@ export const AdvancedPortfolioFeature = () => {
         </p>
       </Slide>
       <Swiper
-        modules={[Parallax]}
+        modules={[Parallax, Autoplay, Navigation]}
         parallax
         spaceBetween={50}
         speed={600}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
         slidesPerView={1}
         centeredSlides={true}
         onSlideChange={handleSlideChange}
@@ -112,7 +117,10 @@ export const AdvancedPortfolioFeature = () => {
           className={`${bgImage}`}
         ></div>
         {slidesData.map((slide) => (
-          <SwiperSlide key={slide.id} className="parallax-slider__slide">
+          <SwiperSlide
+            key={slide.id}
+            className="parallax-slider__slide hoverable"
+          >
             <div>
               <Slide
                 direction="left"
