@@ -4,6 +4,7 @@ import selectorReducer from "@shared/ui/selector/model/index";
 import loadReducer from "./loaderSlice";
 import menuStateReducer from "./menuStateSlice";
 import burgerReducer from "./burgerSlice";
+import portfolioSwitchReducer from "./portfolioSwitchSlice";
 
 export const store = configureStore({
   reducer: {
@@ -12,6 +13,7 @@ export const store = configureStore({
     selector: selectorReducer,
     loader: loadReducer,
     burger: burgerReducer,
+    portfolioState: portfolioSwitchReducer,
   },
   devTools: process.env.NODE_ENV !== "production",
 });

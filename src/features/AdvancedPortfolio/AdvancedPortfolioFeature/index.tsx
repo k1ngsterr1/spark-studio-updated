@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
 import "./styles.scss";
+import { PortfolioSwitch } from "@features/PortfolioSwitch";
 
 export const AdvancedPortfolioFeature = () => {
   const [bgImage, setBgImage] = useState("one");
@@ -92,6 +93,9 @@ export const AdvancedPortfolioFeature = () => {
           активом позволяет оценить значение дальнейших направлений развития. Не
           следует, однако забывать, что реализация.
         </p>
+      </Slide>
+      <Slide direction="left" className="mt-10">
+        <PortfolioSwitch />
       </Slide>
       <Swiper
         modules={[Parallax, Autoplay, Navigation]}
