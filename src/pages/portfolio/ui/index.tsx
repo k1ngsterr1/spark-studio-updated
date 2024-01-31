@@ -1,13 +1,11 @@
 import { Loader, Meta } from "@shared/index";
 import { Header } from "@widgets/Header/ui";
-import { PortfolioFeature } from "@features/Home/ui/PortfolioFeature";
 import { useSelector } from "react-redux";
 import { Footer } from "@widgets/Footer/ui";
 import { RootState } from "@shared/lib/redux/store";
 import { useFetchDataWithLoader } from "@shared/lib/hooks/useFetchDataWithLoader";
 import { Menu } from "@features/index";
 import { AdvancedPortfolioFeature } from "@features/AdvancedPortfolio/AdvancedPortfolioFeature";
-import { Form } from "@widgets/Form/ui";
 import FormFeature from "@features/Home/ui/FormFeature";
 
 export const Portfolio = () => {

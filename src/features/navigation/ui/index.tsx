@@ -71,6 +71,9 @@ export const Navigation = () => {
           <Link className="navigation__pc__link hoverable" to="/portfolio">
             Портфолио
           </Link>
+          <Link className="navigation__pc__link hoverable" to="/portfolio">
+            Портфолио
+          </Link>
           <ScrollLink
             className="navigation__pc__link--orange hoverable"
             to="contacts-pc"
@@ -78,15 +81,6 @@ export const Navigation = () => {
           >
             Заявка
           </ScrollLink>
-          {/* <Hamburger
-            margin="ml-4"
-            onHover={animateOnHover}
-            offHover={animateOffHover}
-            onClick={handleHamburgerClick}
-            topLineRef={topLine}
-            middleLineRef={middleLine}
-            bottomLineRef={bottomLine}
-          /> */}
         </div>
       </div>
     </nav>

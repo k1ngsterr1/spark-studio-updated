@@ -22,7 +22,56 @@ export const AdvancedPortfolioFeature = () => {
     5: "five",
     6: "six",
     7: "seven",
+    8: "eight",
   };
+
+  const slidesData = [
+    {
+      id: 0,
+      title: "AS & Partners",
+      description: "Разработка сайта",
+    },
+    {
+      id: 2,
+      title: "Cargo Express PV",
+      description: "Разработка сайта",
+    },
+    {
+      id: 3,
+      title: "Prime Properties",
+      description: "Разработка сайта",
+    },
+    {
+      id: 4,
+      title: "Sharbakty Bidai",
+      description: "Разработка сайта",
+    },
+    {
+      id: 5,
+      title: "Special Solutions",
+      description: "Разработка сайта",
+    },
+    {
+      id: 6,
+      title: "Zippity",
+      description: "Разработка сайта",
+    },
+    {
+      id: 7,
+      title: "AGRO PARTNERS PV",
+      description: "Разработка сайта",
+    },
+    {
+      id: 8,
+      title: "China Drive",
+      description: "Разработка сайта",
+    },
+    {
+      id: 9,
+      title: "Intelligence.IO",
+      description: "Разработка сайта",
+    },
+  ];
 
   const handleSlideChange = (swiper: SwiperType) => {
     const newBgImage = backgrounds[swiper.activeIndex];
@@ -31,13 +80,13 @@ export const AdvancedPortfolioFeature = () => {
 
   return (
     <>
-      <Slide direction="left" triggerOnce={true}>
+      <Slide direction="left">
         <h4 className="w-[90%] mt-20 m-auto text-center">
           Наше <span className="orange">портфолио</span>
         </h4>
       </Slide>
-      <Slide direction="right" triggerOnce={true}>
-        <p className="mt-4 w-[90%] m-auto">
+      <Slide direction="right">
+        <p className="mt-4 w-[90%] m-auto min-[1024px]:text-center !w-[50%]">
           Идейные соображения высшего порядка, а также консультация с широким
           активом позволяет оценить значение дальнейших направлений развития. Не
           следует, однако забывать, что реализация.
@@ -62,150 +111,30 @@ export const AdvancedPortfolioFeature = () => {
           data-swiper-parallax="0%"
           className={`${bgImage}`}
         ></div>
-        <SwiperSlide className="parallax-slider__slide">
-          <div>
-            <Slide
-              direction="left"
-              className="w-full flex flex-col items-center text-center justify-center"
-              delay={150}
-            >
-              <span className="parallax-slider__slide__text">
-                Intelligence.io
-              </span>
-            </Slide>
-            <Slide
-              direction="right"
-              className="w-full flex flex-col items-center text-center justify-center"
-              delay={250}
-            >
-              <span className="parallax-slider__slide__sub-text">
-                Разработка сайта
-              </span>
-            </Slide>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="parallax-slider__slide">
-          <div>
-            <Slide
-              direction="left"
-              className="w-full flex flex-col items-center text-center justify-center"
-              // delay={250}
-              fraction={0.1}
-            >
-              <span className="parallax-slider__slide__text w-full">
-                Cargo Express
-              </span>
-            </Slide>
-            <Slide
-              direction="right"
-              className="w-full flex flex-col items-center text-center justify-center"
-              delay={250}
-            >
-              <span className="parallax-slider__slide__sub-text">
-                Разработка сайта
-              </span>
-            </Slide>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="parallax-slider__slide">
-          <div>
-            <Slide
-              direction="left"
-              className="w-full flex flex-col items-center text-center justify-center"
-              delay={150}
-            >
-              <span className="parallax-slider__slide__text w-full">
-                Prime Properties
-              </span>
-            </Slide>
-            <Slide
-              direction="right"
-              className="w-full flex flex-col items-center text-center justify-center"
-              delay={250}
-            >
-              <span className="parallax-slider__slide__sub-text">
-                Разработка Сайта
-              </span>
-            </Slide>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="parallax-slider__slide">
-          <div>
-            <Slide
-              direction="left"
-              className="w-full flex flex-col items-center text-center justify-center"
-              delay={150}
-            >
-              <span className="parallax-slider__slide__text w-full">
-                Sharbakty Bidai
-              </span>
-            </Slide>
-            <Slide
-              direction="right"
-              className="w-full flex flex-col items-center text-center justify-center"
-              delay={250}
-            >
-              <span className="parallax-slider__slide__sub-text">
-                Разработка сайта
-              </span>
-            </Slide>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="parallax-slider__slide">
-          <div>
-            <Slide
-              direction="left"
-              className="w-full flex flex-col items-center text-center justify-center"
-              delay={150}
-            >
-              <span className="parallax-slider__slide__text w-full">
-                Special Solutions
-              </span>
-            </Slide>
-            <Slide
-              direction="right"
-              className="w-full flex flex-col items-center text-center justify-center"
-              delay={250}
-            >
-              <span className="parallax-slider__slide__sub-text">
-                Разработка сайта
-              </span>
-            </Slide>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="parallax-slider__slide">
-          <div>
-            <Slide
-              direction="left"
-              className="w-full flex flex-col items-center text-center justify-center"
-              delay={150}
-            >
-              <span className="parallax-slider__slide__text w-full">
-                Cargo Express
-              </span>
-            </Slide>
-            <Slide
-              direction="right"
-              className="w-full flex flex-col items-center text-center justify-center"
-              delay={250}
-            >
-              <span className="parallax-slider__slide__sub-text">
-                Разработка сайта
-              </span>
-            </Slide>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="parallax-slider__slide">
-          <Slide
-            direction="left"
-            className="w-full flex items-center justify-center text-center"
-            delay={150}
-          >
-            <span className="parallax-slider__slide__text">
-              Prime Properties
-            </span>
-          </Slide>
-        </SwiperSlide>
+        {slidesData.map((slide) => (
+          <SwiperSlide key={slide.id} className="parallax-slider__slide">
+            <div>
+              <Slide
+                direction="left"
+                className="w-full flex flex-col items-center text-center justify-center"
+                delay={150}
+              >
+                <span className="parallax-slider__slide__text">
+                  {slide.title}
+                </span>
+              </Slide>
+              <Slide
+                direction="right"
+                className="w-full flex flex-col items-center text-center justify-center"
+                delay={250}
+              >
+                <span className="parallax-slider__slide__sub-text">
+                  {slide.description}
+                </span>
+              </Slide>
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );

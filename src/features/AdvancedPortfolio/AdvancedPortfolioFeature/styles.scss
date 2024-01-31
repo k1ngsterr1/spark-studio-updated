@@ -2,7 +2,9 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url("../../../assets/images/sites/phone_cards/AI_Phone_Card.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../../assets/images/sites/phone_cards/AS_Phone_Card.png");
   transition: background-image 0.3s ease-in-out;
 }
 
@@ -10,6 +12,8 @@
   width: 100%;
   height: 100%;
   position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-image: url("../../../assets/images/sites/phone_cards/Cargo_Phone_Card.png");
   transition: background-image 0.3s ease-in-out;
 }
@@ -18,6 +22,9 @@
   width: 100%;
   height: 100%;
   position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
+
   background-image: url("../../../assets/images/sites/phone_cards/PP_Phone_Card.png");
   transition: background-image 0.3s ease-in-out;
 }
@@ -26,6 +33,9 @@
   width: 100%;
   height: 100%;
   position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
+
   background-image: url("../../../assets/images/sites/phone_cards/Sharbakty_Phone_Card.png");
   transition: background-image 0.3s ease-in-out;
 }
@@ -34,6 +44,9 @@
   width: 100%;
   height: 100%;
   position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
+
   background-image: url("../../../assets/images/sites/phone_cards/SS_Phone_Card.png");
   transition: background-image 0.3s ease-in-out;
 }
@@ -42,6 +55,9 @@
   width: 100%;
   height: 100%;
   position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
+
   background-image: url("../../../assets/images/sites/phone_cards/Zippity_Phone_Card.png");
   transition: background-image 0.3s ease-in-out;
 }
@@ -50,7 +66,10 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url("../../../assets/images/sites/works/work02.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  background-image: url("../../../assets/images/sites/phone_cards/Agro_Phone_Card.png");
   transition: background-image 0.3s ease-in-out;
 }
 
@@ -58,7 +77,19 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url("../../../assets/images/sites/works/work01.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../../assets/images/sites/phone_cards/CHD_Phone_Card.png");
+  transition: background-image 0.3s ease-in-out;
+}
+
+.eight {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../../assets/images/sites/phone_cards/AI_Phone_Card.png");
   transition: background-image 0.3s ease-in-out;
 }
 
@@ -93,5 +124,61 @@
       font-size: 20px;
       @apply text-custom-orange;
     }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .zero {
+    height: clamp(600px, 62.496vw, 2400px);
+    background-position: center center;
+    background-image: url("../../../assets/images/sites/pc_cards/AS_PC_Card.png");
+  }
+
+  .one {
+    height: clamp(600px, 62.496vw, 2400px);
+    background-position: center center;
+    background-image: url("../../../assets/images/sites/pc_cards/Cargo_PC_Card.png");
+  }
+
+  .two {
+    height: clamp(600px, 62.496vw, 2400px);
+    background-position: center center;
+    background-image: url("../../../assets/images/sites/pc_cards/PP_PC_Card.png");
+  }
+
+  .three {
+    height: clamp(600px, 62.496vw, 2400px);
+    background-position: center center;
+    background-image: url("../../../assets/images/sites/pc_cards/Sharbakty_PC_Card.png");
+  }
+
+  .four {
+    height: clamp(600px, 62.496vw, 2400px);
+    background-position: center center;
+    background-image: url("../../../assets/images/sites/pc_cards/SS_PC_Card.png");
+  }
+
+  .five {
+    height: clamp(600px, 62.496vw, 2400px);
+    background-position: center center;
+    background-image: url("../../../assets/images/sites/pc_cards/Zippity_PC_Card.png");
+  }
+
+  .six {
+    height: clamp(600px, 62.496vw, 2400px);
+    background-position: center center;
+    background-image: url("../../../assets/images/sites/pc_cards/AGRO_PC_CARD.png");
+  }
+
+  .seven {
+    height: clamp(600px, 62.496vw, 2400px);
+    background-position: center center;
+    background-image: url("../../../assets/images/sites/pc_cards/CHD_PC_CARD.png");
+  }
+
+  .eight {
+    height: clamp(600px, 62.496vw, 2400px);
+    background-position: center center;
+    background-image: url("../../../assets/images/sites/pc_cards/AI_PC_CARD.png");
   }
 }

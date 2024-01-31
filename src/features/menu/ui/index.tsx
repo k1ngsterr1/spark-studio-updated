@@ -91,48 +91,6 @@ export const Menu = () => {
           <PhoneLink className="menu__link" />
           <EmailLink className="menu__link" />
         </aside>
-        <aside className="menu-pc flex flex-col items-start" ref={menuRef}>
-          <nav className="w-[86.6%] m-auto flex flex-col items-start">
-            <NavigationLink
-              onClick={handleClick}
-              to="/home"
-              className="menu-pc__link"
-              linkName="Главная"
-            />
-            <NavigationLink
-              onClick={handleClick}
-              to="/about"
-              className="menu-pc__link"
-              linkName="О нас"
-            />
-            <NavigationLink
-              onClick={handleServices}
-              to="/services"
-              className="menu-pc__link"
-              linkName="Услуги"
-            />
-            <NavigationLink
-              onClick={handleClick}
-              to="/portfolio"
-              className="menu-pc__link"
-              linkName="Портфолио"
-            />
-            <NavigationLink
-              onClick={handleClick}
-              to="/products"
-              className="menu-pc__link"
-              linkName="Наши продукты"
-            />
-            <NavigationLink
-              onClick={handleClick}
-              to="/skills"
-              className="menu-pc__link"
-              linkName="Наши возможности"
-            />
-          </nav>
-          <PhoneLink className="menu-pc__link" />
-          <EmailLink className="menu-pc__link" />
-        </aside>
       </>
     );
   }
