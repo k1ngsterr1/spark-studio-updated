@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+
 import "./styles.scss";
 
 const ClickSpark = () => {
@@ -6,7 +7,7 @@ const ClickSpark = () => {
   const [sparkPosition, setSparkPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const handleClick = (e) => {
+    const handleClick = (e: any) => {
       const svg = svgRef.current;
       if (!svg) return;
 
