@@ -5,6 +5,8 @@ import { useAppSelector } from "@shared/lib/redux/hooks";
 import { RootState } from "@shared/lib/redux/store";
 import ClickSpark from "@shared/ui/sparkEffect";
 
+import "@shared/styles/scrollbar.scss";
+
 function App() {
   const isMenuOpen = useAppSelector((state: RootState) => state.menu.isOpen);
 

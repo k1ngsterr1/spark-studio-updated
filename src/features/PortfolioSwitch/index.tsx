@@ -1,37 +1,46 @@
-import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { Fade } from "react-awesome-reveal";
+import { switchState } from "@shared/lib/redux/portfolioSwitchSlice";
 
 import "./styles.scss";
 
 export const PortfolioSwitch = () => {
-  const [select, setSelected] = useState("");
+  const selectedValue = useSelector(
+    (state: any) => state.portfolioState.switchState
+  );
+  const dispatch = useDispatch();
   const navigate = useNavigate();
+
+  const handleChange = (option: any) => {
+    dispatch(switchState(option.value));
+    console.log("clicked!");
+  };
 
   return (
     <div className="switcher">
       <Fade direction="up" cascade damping={0.3}>
         <span
           className={`switcher__text--${
-            select === "Сайты" ? "active" : "disable"
+            selectedValue === "Сайты" ? "active" : "disable"
           } hoverable`}
-          onClick={() => setSelected("Сайты")}
+          onClick={handleChange}
         >
           Сайты
         </span>
         <span
           className={`switcher__text--${
-            select === "Приложения" ? "active" : "disable"
+            selectedValue === "Приложения" ? "active" : "disable"
           } hoverable ml-4`}
-          onClick={() => setSelected("Приложения")}
+          onClick={handleChange}
         >
           Приложения
         </span>
         <span
           className={`switcher__text--${
-            select === "Логотипы" ? "active" : "disable"
+            selectedValue === "Логотипы" ? "active" : "disable"
           } hoverable ml-4`}
-          onClick={() => setSelected("Логотипы")}
+          onClick={handleChange}
         >
           Логотипы
         </span>

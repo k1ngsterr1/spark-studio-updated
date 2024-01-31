@@ -1,27 +1,18 @@
-import React, { useEffect, useRef, useState } from "react";
-
+import { useEffect, useRef, useState } from "react";
 import "./styles.scss";
 
-interface ClickSparkProps {
-  activeOn?: string;
-}
-
-const ClickSpark: React.FC<ClickSparkProps> = ({ activeOn }) => {
-  const svgRef = useRef<SVGSVGElement>(null);
+const ClickSpark = () => {
+  const svgRef = useRef(null);
   const [sparkPosition, setSparkPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const handleClick = (e: MouseEvent) => {
-      if (e.target != null) {
-        if (activeOn && !e.target.matches(activeOn)) return;
-      }
-
+    const handleClick = (e) => {
       const svg = svgRef.current;
       if (!svg) return;
 
       setSparkPosition({
-        x: e.clientX - 15,
-        y: e.clientY - 15,
+        x: e.clientX,
+        y: e.clientY,
       });
 
       animateSpark(svg);
@@ -29,14 +20,14 @@ const ClickSpark: React.FC<ClickSparkProps> = ({ activeOn }) => {
 
     document.addEventListener("click", handleClick);
     return () => document.removeEventListener("click", handleClick);
-  }, [activeOn]);
+  }, []);
 
-  const animateSpark = (svg: SVGSVGElement) => {
+  const animateSpark = (svg: any) => {
     const sparks = Array.from(svg.children);
     const size = parseInt(sparks[0].getAttribute("y1") || "0");
     const offset = size / 2 + "px";
 
-    const keyframes = (i: number) => {
+    const keyframes = (i: any) => {
       const deg = `calc(${i} * (360deg / ${sparks.length}))`;
       return [
         {
@@ -56,34 +47,45 @@ const ClickSpark: React.FC<ClickSparkProps> = ({ activeOn }) => {
       fill: "forwards",
     };
 
-    sparks.forEach((spark) =>
-      (spark as SVGLineElement).animate(keyframes(i), options)
-    );
+    sparks.forEach((spark, i) => {
+      (spark as SVGLineElement).animate(keyframes(i), options);
+    });
   };
 
   return (
-    <svg
-      ref={svgRef}
-      width="30"
-      height="30"
-      viewBox="0 0 100 100"
-      fill="none"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="4"
+    <div
       style={{
-        position: "absolute",
-        left: `${sparkPosition.x}px`,
-        top: `${sparkPosition.y}px`,
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100vw",
+        height: "100vh",
         pointerEvents: "none",
-        transform: "translate(-50%, -50%)",
-        stroke: "#FF5722",
+        zIndex: 9999,
       }}
     >
-      {Array.from({ length: 8 }, (_, i) => (
-        <line key={i} x1="50" y1="30" x2="50" y2="4" />
-      ))}
-    </svg>
+      <svg
+        ref={svgRef}
+        width="30"
+        height="30"
+        viewBox="0 0 100 100"
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="4"
+        style={{
+          position: "absolute",
+          left: `${sparkPosition.x}px`,
+          top: `${sparkPosition.y}px`,
+          transform: "translate(-50%, -50%)",
+          stroke: "#FF5722",
+        }}
+      >
+        {Array.from({ length: 8 }, (_, i) => (
+          <line key={i} x1="50" y1="30" x2="50" y2="4" />
+        ))}
+      </svg>
+    </div>
   );
 };
 
