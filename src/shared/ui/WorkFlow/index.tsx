@@ -1,7 +1,6 @@
-import { TypeAnimation } from "react-type-animation";
 import { Number } from "../Number";
 
-import line from "@assets/images/line.svg";
+import line from "@assets/images/assets/line.svg";
 
 interface WorkFlowProps {
   tabName: string;
@@ -42,7 +41,7 @@ export const WorkFlowTab: React.FC<WorkFlowProps> = ({
         <Number number={tabNumber} marginTop={marginTop} color={numberColor} />
         <span className="work-container__text">{tabName}</span>
         <span className="work-container__additional-text">
-          <TypeAnimation sequence={[tabAdditionalText]}></TypeAnimation>
+          {tabAdditionalText}
         </span>
       </div>
     </>

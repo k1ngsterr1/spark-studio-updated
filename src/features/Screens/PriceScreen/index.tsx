@@ -148,7 +148,7 @@ export const PriceScreen = () => {
           </Slide>
         </div>
         <div className="flex justify-between items-start">
-          <Slide direction="up" delay={200}>
+          <Slide cascade direction="right" damping={0.3}>
             <PriceTab
               marginTop="mt-8"
               tabNaming="Базовый"
@@ -185,8 +185,6 @@ export const PriceScreen = () => {
                 },
               ]}
             />
-          </Slide>
-          <Slide direction="up" delay={300}>
             <PriceTab
               marginTop="mt-8"
               tabNaming="Бизнес"
@@ -223,8 +221,6 @@ export const PriceScreen = () => {
                 },
               ]}
             />
-          </Slide>
-          <Slide direction="up" delay={400}>
             <PriceTab
               marginTop="mt-8"
               tabNaming="Магазин"
@@ -261,8 +257,6 @@ export const PriceScreen = () => {
                 },
               ]}
             />
-          </Slide>
-          <Slide direction="up" delay={400}>
             <PriceTab
               marginTop="mt-8"
               tabNaming="Магазин"

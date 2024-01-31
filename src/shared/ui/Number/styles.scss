@@ -2,3 +2,9 @@
   font-size: clamp(30px, 14.0184vw, 120px);
   @apply font-macherie;
 }
+
+@media screen and (min-width: 1024px) {
+  .number {
+    font-size: clamp(30px, 3.1248vw, 120px) !important;
+  }
+}

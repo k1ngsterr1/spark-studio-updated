@@ -48,7 +48,9 @@ export const PriceTab: React.FC<PriceTabProps> = ({
               </div>
             ))}
         </div>
-        <button className="price-tab__container__button">Заказать</button>
+        <button className="price-tab__container__button hoverable">
+          Заказать
+        </button>
       </div>
     </div>
   );

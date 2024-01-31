@@ -61,27 +61,29 @@ export const WebsiteFeature = () => {
                 Разработка <span className="orange">Веб-Сайтов</span>{" "}
               </h1>
             </Slide>
-            <Breadcrumbs
-              sx={{
-                marginTop: "clamp(8px,3.73824vw,32px)",
-              }}
-            >
-              <Link
-                to="/home"
-                className="hoverable transition-all hover:text-custom-orange"
+            <Slide direction="left" delay={150}>
+              <Breadcrumbs
+                sx={{
+                  marginTop: "clamp(8px,3.73824vw,32px)",
+                }}
               >
-                Главная
-              </Link>
-              <Link
-                to="/services"
-                className="hoverable transition-all hover:text-custom-orange"
-              >
-                Услуги
-              </Link>
-              <Link to="/services/websites" className="orange hoverable">
-                Разработка Веб-Сайтов
-              </Link>
-            </Breadcrumbs>
+                <Link
+                  to="/home"
+                  className="hoverable transition-all hover:text-custom-orange"
+                >
+                  Главная
+                </Link>
+                <Link
+                  to="/services"
+                  className="hoverable transition-all hover:text-custom-orange"
+                >
+                  Услуги
+                </Link>
+                <Link to="/services/websites" className="orange hoverable">
+                  Разработка Веб-Сайтов
+                </Link>
+              </Breadcrumbs>
+            </Slide>
             <Slide direction="left" delay={200}>
               <p className="inline-block  mt-8 w-[60%]">
                 Команда "Spark Studio" - это творческая мастерская, где
