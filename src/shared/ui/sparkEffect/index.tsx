@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+
 import "./styles.scss";
 
 interface ClickSparkProps {
@@ -55,7 +56,7 @@ const ClickSpark: React.FC<ClickSparkProps> = ({ activeOn }) => {
       fill: "forwards",
     };
 
-    sparks.forEach((spark, i) =>
+    sparks.forEach((spark) =>
       (spark as SVGLineElement).animate(keyframes(i), options)
     );
   };

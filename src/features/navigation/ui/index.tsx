@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "@shared/lib/redux/hooks";
 import { toggleMenu as toggleMenuAction } from "../model";
 import { Hamburger } from "@shared/ui/hamburger";
@@ -59,34 +59,18 @@ export const Navigation = () => {
           alt="logo"
         />
         <div className="w-[40%] flex justify-between items-center">
-          <ScrollLink
-            className="navigation__pc__link hoverable"
-            to="main-pc"
-            smooth
-          >
+          <Link className="navigation__pc__link hoverable" to="/home">
             Главная
-          </ScrollLink>
-          <ScrollLink
-            className="navigation__pc__link hoverable"
-            to="about-pc"
-            smooth
-          >
-            Кто мы
-          </ScrollLink>
-          <ScrollLink
-            className="navigation__pc__link hoverable"
-            to="services-pc"
-            smooth
-          >
+          </Link>
+          <Link className="navigation__pc__link hoverable" to="/about">
+            О нас
+          </Link>
+          <Link className="navigation__pc__link hoverable" to="/services">
             Услуги
-          </ScrollLink>
-          <ScrollLink
-            className="navigation__pc__link hoverable"
-            to="portfolio-pc"
-            smooth
-          >
+          </Link>
+          <Link className="navigation__pc__link hoverable" to="/portfolio">
             Портфолио
-          </ScrollLink>
+          </Link>
           <ScrollLink
             className="navigation__pc__link--orange hoverable"
             to="contacts-pc"
