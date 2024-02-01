@@ -22,6 +22,7 @@ import { ServicesPage } from "./services/ui";
 import { AboutPage } from "./about/ui";
 import { ComingSoonPage } from "./ComingSoon/ui";
 
+
 export const MyRoutes: FC = () => {
   return (
     <Router>

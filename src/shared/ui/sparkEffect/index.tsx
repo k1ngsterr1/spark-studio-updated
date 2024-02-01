@@ -24,7 +24,7 @@ const ClickSpark = () => {
   }, []);
 
   const animateSpark = (svg: any) => {
-    const sparks = Array.from(svg.children);
+    const sparks: any = Array.from(svg.children);
     const size = parseInt(sparks[0].getAttribute("y1") || "0");
     const offset = size / 2 + "px";
 
@@ -48,7 +48,7 @@ const ClickSpark = () => {
       fill: "forwards",
     };
 
-    sparks.forEach((spark, i) => {
+    sparks.forEach((spark: any, i: any) => {
       (spark as SVGLineElement).animate(keyframes(i), options);
     });
   };
