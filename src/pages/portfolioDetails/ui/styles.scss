@@ -1,12 +1,19 @@
-.portfolio_details_img {
-  position: absolute;
-  right: 0;
-}
-
+// Background Images
 .SS_BG {
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url("../../../assets/images/sites/blur_pc/SS_BLUR_PC_CARD.png");
+}
+
+.AS_BG {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../../assets/images/sites/blur_pc/AS_BLUR_PC_CARD.png");
+}
+
+.portfolio_details_img {
+  position: absolute;
+  right: 0;
 }
 
 .mockup_image {

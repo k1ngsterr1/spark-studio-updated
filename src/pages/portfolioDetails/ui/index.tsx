@@ -17,10 +17,10 @@ export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
   return (
     <div>
       <Meta
-        title="Spark Studio - Студия Веб-Дизайна и Разработки в Казахстане"
-        ogTitle="Spark Studio - Студия Веб-Дизайна и Разработки в Казахстане"
-        description="Spark Studio предлагает инновационный веб-дизайн и разработку. Создаем современные, адаптивные сайты, которые помогут выделить ваш бизнес в интернет-пространстве и привлечь больше клиентов."
-        ogDescription="Spark Studio предлагает инновационный веб-дизайн и разработку. Создаем современные, адаптивные сайты, которые помогут выделить ваш бизнес в интернет-пространстве и привлечь больше клиентов."
+        title={props.metaTitle}
+        ogTitle={props.metaTitle}
+        description={props.metaDescription}
+        ogDescription={props.metaDescription}
       />
       <Header />
       <Menu />
