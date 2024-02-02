@@ -28,6 +28,7 @@ export const ScrollButton: React.FC<ButtonProps> = ({
     <ScrollLink
       className={`button ${marginTop} hoverable flex items-center justify-center`}
       to={to}
+      smooth
     >
       {text}
     </ScrollLink>
