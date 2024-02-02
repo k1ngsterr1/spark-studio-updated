@@ -22,6 +22,8 @@ import { ServicesPage } from "./services/ui";
 import { AboutPage } from "./about/ui";
 import { ComingSoonPage } from "./ComingSoon/ui";
 
+// Content
+import { portfolioContent } from "@shared/lib/data/portfolioContent";
 
 export const MyRoutes: FC = () => {
   return (
@@ -43,10 +45,17 @@ export const MyRoutes: FC = () => {
         <Route path={ROUTE_CONSTANTS.LOGO} element={<LogoPage />} />
         <Route path={ROUTE_CONSTANTS.PORTFOLIO} element={<Portfolio />} />
         <Route path={ROUTE_CONSTANTS.SERVICES} element={<ServicesPage />} />
-        <Route
-          path={ROUTE_CONSTANTS.PORTFOLIO_DETAIL}
-          element={<PortfolioDetails />}
-        />
+        {Object.entries(portfolioContent).map(([portfolioCase, content]) => (
+          <Route
+            key={portfolioCase}
+            path={ROUTE_CONSTANTS.PORTFOLIO_DETAIL.replace(
+              ":portfolioCase",
+              portfolioCase
+            )}
+            element={<PortfolioDetails {...content} />}
+          />
+        ))}
+
         <Route path={ROUTE_CONSTANTS.PRODUCTS} element={<ComingSoonPage />} />
         <Route path={ROUTE_CONSTANTS.SKILLS} element={<ComingSoonPage />} />
       </Routes>

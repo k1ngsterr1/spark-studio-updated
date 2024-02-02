@@ -1,0 +1,16 @@
+.portfolio_details_img {
+  position: absolute;
+  right: 0;
+}
+
+.SS_BG {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../../assets/images/sites/blur_pc/SS_BLUR_PC_CARD.png");
+}
+
+.mockup_image {
+  width: clamp(600px, 62.496vw, 2400px);
+  position: absolute;
+  top: clamp(250px, 26.04vw, 1000px);
+}
