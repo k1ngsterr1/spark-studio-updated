@@ -1,0 +1,7 @@
+.devices_carousel {
+  width: clamp(500px, 52.08vw, 2000px);
+
+  &__slide {
+    width: clamp(250px, 26.04vw, 1000px);
+  }
+}

@@ -5,14 +5,23 @@ import photo from "@assets/images/sites/works/work01.webp";
 
 import SS_LOGO from "@assets/images/sites/logos/ss_logo.svg";
 import SS_MOCKUP from "@assets/images/sites/mockups/SS_MOCKUP.png";
+import SS_PHONE_MOCKUP from "@assets/images/sites/mockups/SS_PHONE_MOCKUP.png";
 
 export interface PhotoItem {
   photo: string;
 }
 
+export interface DevicesGalleryProps {
+  devicesImages: PhotoItem[];
+}
+
 interface ListItem {
   icon: IconDefinition;
   list: string;
+}
+
+interface Paragraphs {
+  text: string;
 }
 
 export interface PortfolioInfo {
@@ -29,7 +38,9 @@ export interface PortfolioInfo {
   metaDescription: string;
   options: ListItem[];
   gallery: PhotoItem[];
+  phoneMockup: string;
   linkProject: string;
+  adaptiveDescription: Paragraphs[];
 }
 
 export const portfolioContent: Record<string, PortfolioInfo> = {
@@ -48,6 +59,18 @@ export const portfolioContent: Record<string, PortfolioInfo> = {
     linkProject: "https://special-solutions.kz/home",
     metaTitle: "Проверка",
     metaDescription: "Проверка",
+    phoneMockup: SS_PHONE_MOCKUP,
+    adaptiveDescription: [
+      {
+        text: "Сайт спроектирован таким образом, что-бы соответствовать современным требованиям юзабилити. По умолчанию сайт интернет-магазина проектируется не только в десктопной версии, но и под мобильные устройства (планшет и смартфон).",
+      },
+      {
+        text: "Сайт спроектирован таким образом, что-бы соответствовать современным требованиям юзабилити. По умолчанию сайт интернет-магазина проектируется не только в десктопной версии, но и под мобильные устройства (планшет и смартфон).",
+      },
+      {
+        text: "Сайт спроектирован таким образом, что-бы соответствовать современным требованиям юзабилити. По умолчанию сайт интернет-магазина проектируется не только в десктопной версии, но и под мобильные устройства (планшет и смартфон).",
+      },
+    ],
     gallery: [
       {
         photo: photo,

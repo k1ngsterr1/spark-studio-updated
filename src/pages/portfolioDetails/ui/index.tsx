@@ -8,6 +8,7 @@ import { Slide } from "react-awesome-reveal";
 
 import "./styles.scss";
 import { Button } from "@shared/ui/button";
+import { DevicesGallery } from "@features/DevicesGallery";
 
 export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
   const { portfolioCase } = useParams();
@@ -60,6 +61,27 @@ export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
           >
             Ссылка на проект
           </button>
+        </div>
+      </section>
+      <section className="w-[86.6%] m-auto flex items-start justify-between mt-40">
+        <img
+          src={props.phoneMockup}
+          className="phone_mockup"
+          alt={props.title}
+        />
+        <div className="flex flex-col items-start w-[50%]">
+          <h3 className="text-6xl text-custom-black">
+            Адаптация <span className="orange">проекта</span>{" "}
+          </h3>
+          <p className="paragraph mt-4 w-[100%]">
+            {props.adaptiveDescription[0].text}
+            <br />
+            <br />
+            {props.adaptiveDescription[1].text}
+            <br />
+            <br />
+            {props.adaptiveDescription[2].text}
+          </p>
         </div>
       </section>
       <Footer />
