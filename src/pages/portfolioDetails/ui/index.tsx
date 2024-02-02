@@ -1,12 +1,13 @@
 import { useParams } from "react-router-dom";
-import { Loader, Meta } from "@shared/index";
+import { Meta } from "@shared/index";
 import { Header } from "@widgets/Header/ui";
 import { Footer } from "@widgets/Footer/ui";
 import { Menu } from "@features/index";
 import { PortfolioInfo } from "@shared/lib/data/portfolioContent";
-import { Fade, Slide } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 
 import "./styles.scss";
+import { Button } from "@shared/ui/button";
 
 export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
   const { portfolioCase } = useParams();
@@ -47,11 +48,19 @@ export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
         </section>
         {/* Task */}
       </main>
-      <section className="w-[86.6%] m-auto flex items-center justify-between mt-96">
+      <section className="w-[86.6%] m-auto flex items-start justify-between mt-96">
         <h2 className="text-6xl text-custom-black">
           Задачи <span className="orange">проекта</span>{" "}
         </h2>
-        <p className="paragraph w-[40%]">{props.taskDescription}</p>
+        <div className="inline-flex flex-col items-start w-[40%]">
+          <p className="paragraph w-[100%]">{props.taskDescription}</p>
+          <button
+            className="project_btn hoverable"
+            onClick={() => window.open(`${props.linkProject}`)}
+          >
+            Ссылка на проект
+          </button>
+        </div>
       </section>
       <Footer />
     </div>

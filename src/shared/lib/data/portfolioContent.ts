@@ -29,6 +29,7 @@ export interface PortfolioInfo {
   metaDescription: string;
   options: ListItem[];
   gallery: PhotoItem[];
+  linkProject: string;
 }
 
 export const portfolioContent: Record<string, PortfolioInfo> = {
@@ -44,6 +45,7 @@ export const portfolioContent: Record<string, PortfolioInfo> = {
     backgroundImage: "SS_BG",
     logo: SS_LOGO,
     mockUpImage: SS_MOCKUP,
+    linkProject: "https://special-solutions.kz/home",
     metaTitle: "Проверка",
     metaDescription: "Проверка",
     gallery: [

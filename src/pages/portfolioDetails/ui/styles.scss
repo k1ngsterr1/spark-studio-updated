@@ -14,3 +14,15 @@
   position: absolute;
   top: clamp(250px, 26.04vw, 1000px);
 }
+
+.project_btn {
+  font-size: clamp(9px, 0.93744vw, 36px);
+  font-family: Montserrat;
+  transition: 0.3s all;
+  cursor: none;
+  @apply mt-4;
+  @apply text-custom-orange;
+  &:hover {
+    text-decoration: underline;
+  }
+}
