@@ -1,19 +1,15 @@
-import { useParams } from "react-router-dom";
 import { Meta } from "@shared/index";
 import { Header } from "@widgets/Header/ui";
 import { Footer } from "@widgets/Footer/ui";
 import { Menu } from "@features/index";
 import { PortfolioInfo } from "@shared/lib/data/portfolioContent";
 import { Fade, Slide } from "react-awesome-reveal";
-import { Button, ScrollButton } from "@shared/ui/button";
-import { DevicesGallery } from "@features/DevicesGallery";
+import { ScrollButton } from "@shared/ui/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./styles.scss";
 
 export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
-  const { portfolioCase } = useParams();
-
   return (
     <div>
       <Meta

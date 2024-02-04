@@ -45,7 +45,7 @@ const ClickSpark = () => {
     const options = {
       duration: 660,
       easing: "cubic-bezier(0.25, 1, 0.5, 1)",
-      fill: "forwards",
+      fill: "forwards" as FillMode,
     };
 
     sparks.forEach((spark: any, i: any) => {

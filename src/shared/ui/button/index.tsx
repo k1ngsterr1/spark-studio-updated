@@ -1,5 +1,5 @@
 import React from "react";
-import { LinkProps, Link as ScrollLink } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 
 import "./styles.scss";
 
