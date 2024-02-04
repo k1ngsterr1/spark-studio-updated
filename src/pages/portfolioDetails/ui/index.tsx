@@ -25,7 +25,7 @@ export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
       <Header />
       <Menu />
       <main
-        className={`w-full !min-h-[80vh] flex flex-col items-center mb-16 mt-10 ${props.backgroundImage}`}
+        className={`w-full !min-h-[80vh] flex flex-col items-center mb-16 mt-10 ${props.backgroundImage} max-[440px]:!min-h-[70vh]`}
         id="upper"
       >
         {/* Main */}
@@ -39,7 +39,7 @@ export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
             </span>
           </Slide>
           <Slide direction="left" className="flex justify-center">
-            <p className="paragraph !text-white text-center w-[50%] mt-4 max-[400px]:w-[90%]">
+            <p className="paragraph !text-white text-center w-[50%] mt-4 max-[440px]:w-[90%]">
               {props.description}
             </p>
           </Slide>
@@ -51,7 +51,7 @@ export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
         </section>
       </main>
       {/* Task */}
-      <section className="w-[86.6%] m-auto flex items-start justify-between mt-96 portfolio-content">
+      <section className="w-[86.6%] m-auto flex items-start justify-between mt-96 portfolio-content max-[440px]:!mt-36">
         <Slide direction="left">
           <h2 className="text-6xl text-custom-black">
             Задачи <span className="orange">проекта</span>{" "}
@@ -78,9 +78,9 @@ export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
             alt={props.title}
           />
         </Slide>
-        <div className="flex flex-col items-start w-[50%] max-[400px]:w-full mt-10">
+        <div className="flex flex-col items-start w-[50%] max-[440px]:w-full mt-10">
           <Slide direction="right" cascade damping={0.2} className="w-full">
-            <h3 className="text-6xl text-custom-black max-[400px]:w-full !text-center">
+            <h3 className="text-6xl text-custom-black max-[440px]:w-full !text-center">
               Адаптация <span className="orange">проекта</span>{" "}
             </h3>
             <p className="paragraph mt-5 w-[100%]">
@@ -121,7 +121,22 @@ export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
           </Fade>
         </div>
       </section>
-      <div className="flex justify-center">
+
+      <section className="w-[100%] m-auto flex items-start justify-between  portfolio-content">
+        <img
+          src={props.mainImage_2}
+          className="main_mockup"
+          alt={props.title}
+        />
+      </section>
+      <section className="w-[100%] m-auto flex items-start justify-between portfolio-content mt-10">
+        <img
+          src={props.mainImage_3}
+          className="main_mockup"
+          alt={props.title}
+        />
+      </section>
+      <div className="flex justify-center mt-10">
         <ScrollButton to={"upper"} text="Вверх" marginTop="mt-0" />
       </div>
       <Footer />

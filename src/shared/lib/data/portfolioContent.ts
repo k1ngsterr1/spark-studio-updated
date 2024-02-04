@@ -43,7 +43,7 @@ import CHINA_MAIN_3 from "@assets/images/sites/mockups/CD_MAIN_IMAGE_3.png";
 
 // Agro Partners
 import AGRO_MOCKUP from "@assets/images/sites/mockups/AGRO_MOCKUP.png";
-import AGRO_PHONE_MOCKUP from "@assets/images/sites/mockups/AGRO_MOCKUP.png";
+import AGRO_PHONE_MOCKUP from "@assets/images/sites/mockups/AGRO_PHONE_MOCKUP.png";
 import AGRO_MAIN from "@assets/images/sites/mockups/AGRO_MAIN_IMAGE.png";
 import AGRO_MAIN_2 from "@assets/images/sites/mockups/AGRO_MAIN_IMAGE_2.png";
 import AGRO_MAIN_3 from "@assets/images/sites/mockups/AGRO_MAIN_IMAGE_3.png";

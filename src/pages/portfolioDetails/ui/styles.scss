@@ -23,6 +23,18 @@
   background-image: url("../../../assets/images/sites/blur_pc/SHBT_BLUR_PC_CARD.png");
 }
 
+.CHINA_BG {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../../assets/images/sites/blur_pc/CD_BLUR_PC_CARD.png");
+}
+
+.AGRO_BG {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../../assets/images/sites/blur_pc/AGRO_BLUR_PC_CARD.png");
+}
+
 .portfolio_details_img {
   position: absolute;
   right: 0;
@@ -54,15 +66,52 @@
   transform: rotate(20deg);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
+  // Background Images
+  .SS_BG {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../../../assets/images/sites/blur_pc/SS_BLUR_PC_CARD.png");
+  }
+
+  .AS_BG {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../../../assets/images/sites/blur_pc/AS_BLUR_PHONE_CARD.png");
+  }
+
+  .CARGO_BG {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../../../assets/images/sites/blur_pc/CARGO_BLUR_PHONE_CARD.png");
+  }
+
+  .SHBT_BG {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../../../assets/images/sites/blur_pc/SHBT_BLUR_PHONE_CARD.png");
+  }
+
+  .CHINA_BG {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../../../assets/images/sites/blur_pc/CD_BLUR_PHONE_CARD.png");
+  }
+
+  .AGRO_BG {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../../../assets/images/sites/blur_pc/AGRO_BLUR_PHONE_CARD.png");
+  }
+
   .phone_mockup {
     width: 90%;
     margin: auto;
   }
 
   .mockup_image {
-    width: 90%;
-    top: clamp(325px, 151.86599999999999vw, 1300px);
+    width: 100%;
+    top: clamp(300px, 140.184vw, 1200px);
   }
 
   .portfolio-content {
@@ -86,9 +135,6 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-    }
-
-    .main_mockup {
     }
 
     p {
