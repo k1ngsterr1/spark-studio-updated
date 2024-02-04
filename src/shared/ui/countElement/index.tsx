@@ -22,16 +22,15 @@ export const CountElement: React.FC<CountElementProps> = ({
   return (
     <>
       <Slide
-        className="text-center flex flex-col"
+        className="text-center flex flex-col items-center"
         direction={direction}
-        triggerOnce
       >
         <span
           className={`flex flex-col text-5xl font-macherie ${marginTop} ${color}`}
         >
           <CountUp end={end} duration={duration} />
         </span>
-        <span className="mt-4 font-macherie text-custom-black text-2xl text-center">
+        <span className="mt-4 font-macherie text-custom-black text-2xl text-center min-[1024px]:w-[60%]">
           {text}
         </span>
       </Slide>
