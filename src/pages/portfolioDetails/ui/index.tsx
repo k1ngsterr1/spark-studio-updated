@@ -5,11 +5,11 @@ import { Footer } from "@widgets/Footer/ui";
 import { Menu } from "@features/index";
 import { PortfolioInfo } from "@shared/lib/data/portfolioContent";
 import { Fade, Slide } from "react-awesome-reveal";
-
-import "./styles.scss";
 import { Button, ScrollButton } from "@shared/ui/button";
 import { DevicesGallery } from "@features/DevicesGallery";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import "./styles.scss";
 
 export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
   const { portfolioCase } = useParams();
@@ -31,7 +31,7 @@ export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
         {/* Main */}
         <section className="flex flex-col items-center mt-20">
           <Slide direction="left">
-            <h1 className="text-white">{props.title}</h1>
+            <h1 className="text-white text-center">{props.title}</h1>
           </Slide>
           <Slide direction="right">
             <span className="text-md text-white font-[Montserrat]">
@@ -39,7 +39,7 @@ export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
             </span>
           </Slide>
           <Slide direction="left" className="flex justify-center">
-            <p className="paragraph !text-white text-center w-[50%] mt-4">
+            <p className="paragraph !text-white text-center w-[50%] mt-4 max-[400px]:w-[90%]">
               {props.description}
             </p>
           </Slide>
@@ -51,13 +51,13 @@ export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
         </section>
       </main>
       {/* Task */}
-      <section className="w-[86.6%] m-auto flex items-start justify-between mt-96">
+      <section className="w-[86.6%] m-auto flex items-start justify-between mt-96 portfolio-content">
         <Slide direction="left">
           <h2 className="text-6xl text-custom-black">
             Задачи <span className="orange">проекта</span>{" "}
           </h2>
         </Slide>
-        <div className="inline-flex flex-col items-start w-[40%]">
+        <div className="inline-flex flex-col items-start w-[40%] slide">
           <Slide direction="right">
             <p className="paragraph w-[100%]">{props.taskDescription}</p>
             <button
@@ -70,7 +70,7 @@ export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
         </div>
       </section>
       {/* Adaptation */}
-      <section className="w-[86.6%] m-auto flex items-start justify-between mt-40">
+      <section className="w-[86.6%] m-auto flex items-start justify-between mt-40 portfolio-content">
         <Slide direction="left">
           <img
             src={props.phoneMockup}
@@ -78,9 +78,9 @@ export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
             alt={props.title}
           />
         </Slide>
-        <div className="flex flex-col items-start w-[50%]">
-          <Slide direction="right" cascade damping={0.2}>
-            <h3 className="text-6xl text-custom-black">
+        <div className="flex flex-col items-start w-[50%] max-[400px]:w-full mt-10">
+          <Slide direction="right" cascade damping={0.2} className="w-full">
+            <h3 className="text-6xl text-custom-black max-[400px]:w-full !text-center">
               Адаптация <span className="orange">проекта</span>{" "}
             </h3>
             <p className="paragraph mt-5 w-[100%]">
@@ -95,11 +95,11 @@ export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
           </Slide>
         </div>
       </section>
-      <section className="w-[100%] m-auto flex items-start justify-between mt-10">
+      <section className="w-[100%] m-auto flex items-start justify-between mt-10 portfolio-content">
         <img src={props.mainImage} className="main_mockup" alt={props.title} />
       </section>
       {/* Tech Stack */}
-      <section className="w-[86.6%] m-auto flex items-center justify-center flex-col mt-20">
+      <section className="w-[86.6%] m-auto flex items-center justify-center flex-col mt-20 portfolio-content">
         <Slide direction="left">
           <h2 className="text-6xl text-custom-black">
             Технологический <span className="orange">стэк</span>{" "}

@@ -35,7 +35,7 @@
 }
 
 .phone_mockup {
-  width: 300px;
+  width: clamp(150px, 15.624vw, 600px);
 }
 
 .project_btn {
@@ -52,4 +52,52 @@
 
 .degree {
   transform: rotate(20deg);
+}
+
+@media screen and (max-width: 400px) {
+  .phone_mockup {
+    width: 90%;
+    margin: auto;
+  }
+
+  .mockup_image {
+    width: 90%;
+    top: clamp(325px, 151.86599999999999vw, 1300px);
+  }
+
+  .portfolio-content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: clamp(32px, 14.95296vw, 128px) !important;
+
+    h2,
+    h3,
+    h4 {
+      width: 100% !important;
+      text-align: center !important;
+    }
+
+    .slide {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .main_mockup {
+    }
+
+    p {
+      width: 100% !important;
+      @apply mt-8;
+    }
+
+    button {
+      font-size: clamp(11.5px, 5.37372vw, 46px);
+    }
+  }
 }
