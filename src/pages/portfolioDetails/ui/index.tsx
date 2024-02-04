@@ -87,10 +87,6 @@ export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
               {props.adaptiveDescription[0].text}
               <br />
               <br />
-              {props.adaptiveDescription[1].text}
-              <br />
-              <br />
-              {props.adaptiveDescription[2].text}
             </p>
           </Slide>
         </div>
@@ -101,16 +97,16 @@ export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
       {/* Tech Stack */}
       <section className="w-[86.6%] m-auto flex items-center justify-center flex-col mt-20 portfolio-content">
         <Slide direction="left">
-          <h2 className="text-6xl text-custom-black">
+          <h2 className="text-6xl text-custom-black max-[440px]:text-4xl">
             Технологический <span className="orange">стэк</span>{" "}
           </h2>
         </Slide>
-        <div className="w-[35%] flex justify-between items-start mt-10 mb-20">
+        <div className="w-[35%] flex justify-between items-start mt-10 mb-20 max-[440px]:w-full">
           <Fade cascade damping={0.2}>
             {props.options.map((listItem) => (
               <div className="flex flex-col items-center">
                 <FontAwesomeIcon
-                  className="text-8xl text-custom-orange degree"
+                  className="text-8xl text-custom-orange degree max-[440px]:text-6xl"
                   icon={listItem.icon}
                 />
                 <span className="font-[Montserrat] text-2xl mt-4">
