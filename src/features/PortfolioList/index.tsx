@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { useSelector } from "react-redux";
 import { PortfolioItem } from "@shared/ui/PortfolioItem";
+import { useNavigate } from "react-router-dom";
 
 import work01 from "@assets/images/sites/works/work01.webp";
 import work02 from "@assets/images/sites/works/work02.webp";
@@ -24,10 +25,13 @@ export const PortfolioList = () => {
     (state: any) => state.selector.selectedOption
   );
 
+  const navigate = useNavigate();
+
   type PortfolioCategory = {
     name: string;
     img: string;
     description: string;
+    navigate: string;
   };
 
   type PortfolioItems = {
@@ -39,52 +43,63 @@ export const PortfolioList = () => {
       {
         name: "Arconica Special Solutions",
         img: work10,
+        navigate: "special_solutions",
         description: "A cool website",
       },
       {
-        name: "Arconica Special Solutions",
+        name: "Sharbakty Bidai Terminal",
         img: work11,
+        navigate: "sharbakty",
         description: "A cool website",
       },
       {
         name: "Jintropine.kz",
         img: work06,
+        navigate: "jintropine",
         description: "A cool website",
       },
       {
         name: "Your Domain Bot",
         img: work05,
+        navigate: "your_domain_bot",
         description: "A cool website",
       },
       {
         name: "Intelligence.io",
         img: work01,
+        navigate: "intelligence_io",
         description: "A cool website",
       },
       {
         name: "Prime Properties",
         img: work02,
+        navigate: "prime_properties",
         description: "Another cool website",
       },
       {
         name: "Vintage.io",
         img: work03,
+        navigate: "vintage_io",
         description: "Another cool website",
       },
       {
         name: "Drekt.io",
         img: work04,
+        navigate: "drekt_io",
         description: "Another cool website",
       },
     ],
     applications: [
       {
         name: "App One",
+        navigate: "example",
         img: "/images/app-one.jpg",
         description: "A useful app",
       },
       {
         name: "App Two",
+        navigate: "example",
+
         img: "/images/app-two.jpg",
         description: "Another useful app",
       },
@@ -92,26 +107,31 @@ export const PortfolioList = () => {
     logotypes: [
       {
         name: "China Drive",
+        navigate: "example",
         img: logo01,
         description: "A sleek logo",
       },
       {
         name: "Logo Two",
+        navigate: "example",
         img: logo02,
         description: "Sun Grain",
       },
       {
         name: "Agro Class",
+        navigate: "example",
         img: logo03,
         description: "Another sleek logo",
       },
       {
         name: "Cargo Express PV",
+        navigate: "example",
         img: logo04,
         description: "Cargo Express PV",
       },
       {
         name: "SAMIGROUP",
+        navigate: "example",
         img: logo05,
         description: "Another sleek logo",
       },
@@ -131,7 +151,7 @@ export const PortfolioList = () => {
             name={item.name}
             img={item.img}
             onClick={() => {
-              console.log(`${item.name} clicked`);
+              navigate(`/portfolio/${item.navigate}`);
             }}
           />
         ))}
