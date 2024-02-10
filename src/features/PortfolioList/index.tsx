@@ -11,6 +11,7 @@ import work05 from "@assets/images/sites/works/work05.webp";
 import work06 from "@assets/images/sites/works/work06.webp";
 import work10 from "@assets/images/sites/works/work10.webp";
 import work11 from "@assets/images/sites/works/work11.webp";
+import as_partners from "@assets/images/sites/works/arconica_portfolio.webp";
 
 import logo01 from "@assets/images/logo/logo.webp";
 import logo02 from "@assets/images/logo/logo2.webp";
@@ -86,6 +87,12 @@ export const PortfolioList = () => {
         name: "Drekt.io",
         img: work04,
         navigate: "drekt_io",
+        description: "Another cool website",
+      },
+      {
+        name: "AS & Partners",
+        img: as_partners,
+        navigate: "as_partners",
         description: "Another cool website",
       },
     ],
