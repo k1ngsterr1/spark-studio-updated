@@ -55,7 +55,7 @@ export const AboutCompanyFeature = () => {
             дальнейших направлений развития.
           </p>
         </div>
-        <img src={about} alt="about" className="w-1/3" />
+        <img src={about} alt="about" className="w-full" />
       </section>
       <section className="pc w-full flex justify-between items-start mt-20">
         <div className="w-full flex justify-between items-center">

@@ -73,7 +73,7 @@ export const MainFeature = () => {
           </Slide>
         </main>
         <div className="flex w-[68%] flex-col">
-          <div className="w-full flex justify-between">
+          <div className="w-full flex justify-between mr-2">
             <Slide direction="left">
               <Block
                 blockText="WEB"

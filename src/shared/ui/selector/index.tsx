@@ -1,6 +1,5 @@
 import Select from "react-select";
-import { useSelector, useDispatch } from "react-redux";
-import { changeOption } from "./model";
+import { useSelector } from "react-redux";
 
 export const Selector = () => {
   const options = [
@@ -12,15 +11,14 @@ export const Selector = () => {
   const selectedValue = useSelector(
     (state: any) => state.selector.selectedOption
   );
-  const dispatch = useDispatch();
 
   const defaultOption = options.find(
     (option) => option.value === selectedValue
   );
 
-  const handleChange = (option: any) => {
-    dispatch(changeOption(option.value));
-  };
+  // const handleChange = (option: any) => {
+  //   dispatch(changeOption(option.value));
+  // };
 
   const style = {
     control: (base: any) => ({
@@ -39,7 +37,7 @@ export const Selector = () => {
     <>
       <Select
         defaultValue={defaultOption}
-        onChange={handleChange}
+        // onChange={handleChange}
         options={options}
         placeholder="Выберите услугу"
         menuPortalTarget={document.body}
