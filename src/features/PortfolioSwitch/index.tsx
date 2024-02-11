@@ -28,14 +28,14 @@ export const PortfolioSwitch = () => {
         >
           Сайты
         </span>
-        <span
+        {/* <span
           className={`switcher__text--${
             selectedValue === "Приложения" ? "active" : "disable"
           } hoverable ml-4`}
           onClick={() => handleChange("Приложения")}
         >
           Приложения
-        </span>
+        </span> */}
         <span
           className={`switcher__text--${
             selectedValue === "Логотипы" ? "active" : "disable"
@@ -44,12 +44,12 @@ export const PortfolioSwitch = () => {
         >
           Логотипы
         </span>
-        <span
+        {/* <span
           className={`switcher__text text-custom-orange hoverable ml-4`}
           onClick={() => navigate("/portfolio")}
         >
           Портфолио
-        </span>
+        </span> */}
       </Fade>
     </div>
   );

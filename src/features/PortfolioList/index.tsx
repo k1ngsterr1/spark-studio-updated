@@ -13,17 +13,17 @@ import work10 from "@assets/images/sites/works/work10.webp";
 import work11 from "@assets/images/sites/works/work11.webp";
 import as_partners from "@assets/images/sites/works/arconica_portfolio.webp";
 
-import logo01 from "@assets/images/logo/logo.webp";
-import logo02 from "@assets/images/logo/logo2.webp";
-import logo03 from "@assets/images/logo/logo3.webp";
-import logo04 from "@assets/images/logo/logo4.webp";
-import logo05 from "@assets/images/logo/logo5.webp";
+import logo01 from "@assets/images/logo/Agro_Logo.webp";
+import logo02 from "@assets/images/logo/Cargo_Logo.webp";
+import logo03 from "@assets/images/logo/ChinaDrive_Logo.webp";
+import logo04 from "@assets/images/logo/SHBT_Logo.webp";
+import logo05 from "@assets/images/logo/SUNGRAIN_Logo.webp";
 
 import "./styles.scss";
 
 export const PortfolioList = () => {
   const selectedOption: string = useSelector(
-    (state: any) => state.selector.selectedOption
+    (state: any) => state.portfolioState.portfolioState
   );
 
   const navigate = useNavigate();
@@ -40,7 +40,7 @@ export const PortfolioList = () => {
   };
 
   const portfolioItems: PortfolioItems = {
-    websites: [
+    Сайты: [
       {
         name: "Arconica Special Solutions",
         img: work10,
@@ -96,51 +96,36 @@ export const PortfolioList = () => {
         description: "Another cool website",
       },
     ],
-    applications: [
+    Логотипы: [
       {
-        name: "App One",
-        navigate: "example",
-        img: "/images/app-one.jpg",
-        description: "A useful app",
-      },
-      {
-        name: "App Two",
-        navigate: "example",
-
-        img: "/images/app-two.jpg",
-        description: "Another useful app",
-      },
-    ],
-    logotypes: [
-      {
-        name: "China Drive",
+        name: "Agro Partners PV",
         navigate: "example",
         img: logo01,
-        description: "A sleek logo",
-      },
-      {
-        name: "Logo Two",
-        navigate: "example",
-        img: logo02,
-        description: "Sun Grain",
-      },
-      {
-        name: "Agro Class",
-        navigate: "example",
-        img: logo03,
-        description: "Another sleek logo",
+        description: "A useful app",
       },
       {
         name: "Cargo Express PV",
         navigate: "example",
-        img: logo04,
-        description: "Cargo Express PV",
+        img: logo02,
+        description: "Another useful app",
       },
       {
-        name: "SAMIGROUP",
+        name: "China Drive",
+        navigate: "example",
+        img: logo03,
+        description: "Another useful app",
+      },
+      {
+        name: "Sharbakty Bidai Terminal",
+        navigate: "example",
+        img: logo04,
+        description: "Another useful app",
+      },
+      {
+        name: "Sungrain",
         navigate: "example",
         img: logo05,
-        description: "Another sleek logo",
+        description: "Another useful app",
       },
     ],
   };
