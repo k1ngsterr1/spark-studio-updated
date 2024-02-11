@@ -7,14 +7,14 @@ import "./styles.scss";
 
 export const PortfolioSwitch = () => {
   const selectedValue = useSelector(
-    (state: any) => state.portfolioState.switchState
+    (state: any) => state.portfolioState.portfolioState
   );
+
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const handleChange = (option: any) => {
-    dispatch(switchState(option.value));
-    console.log("clicked!");
+  const handleChange = (optionValue: string) => {
+    dispatch(switchState(optionValue));
   };
 
   return (
@@ -24,7 +24,7 @@ export const PortfolioSwitch = () => {
           className={`switcher__text--${
             selectedValue === "Сайты" ? "active" : "disable"
           } hoverable`}
-          onClick={handleChange}
+          onClick={() => handleChange("Сайты")}
         >
           Сайты
         </span>
@@ -32,7 +32,7 @@ export const PortfolioSwitch = () => {
           className={`switcher__text--${
             selectedValue === "Приложения" ? "active" : "disable"
           } hoverable ml-4`}
-          onClick={handleChange}
+          onClick={() => handleChange("Приложения")}
         >
           Приложения
         </span>
@@ -40,7 +40,7 @@ export const PortfolioSwitch = () => {
           className={`switcher__text--${
             selectedValue === "Логотипы" ? "active" : "disable"
           } hoverable ml-4`}
-          onClick={handleChange}
+          onClick={() => handleChange("Логотипы")}
         >
           Логотипы
         </span>

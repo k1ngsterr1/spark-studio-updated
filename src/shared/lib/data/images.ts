@@ -1,6 +1,6 @@
-import img1 from "@assets/images/apps/phone_1.webp";
-import img2 from "@assets/images/apps/phone_BSHOP.webp";
-import img3 from "@assets/images/apps/phone_mobauto.webp";
+import img1 from "@assets/images/sites/mockups/SHBT_PHONE_MOCKUP.png";
+import img2 from "@assets/images/sites/mockups/SS_PHONE_MOCKUP.png";
+import img3 from "@assets/images/sites/mockups/AGRO_PHONE_MOCKUP.png";
 
 export interface PhotoItem {
   photo: string;

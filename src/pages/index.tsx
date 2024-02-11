@@ -14,7 +14,7 @@ import { HomePage } from "@pages/home/ui";
 import { ApplicationsPage } from "@pages/applications/ui";
 import { SeoPage } from "@pages/seo/ui";
 import { WebsitesPage } from "@pages/websites/ui";
-import { Portfolio } from "@pages/portfolio/ui";
+import { Portfolio } from "@pages/portfolioDetails/ui/ui";
 import { PortfolioDetails } from "@pages/portfolioDetails/ui";
 import { NotFound } from "@pages/notFound/ui";
 import { LogoPage } from "./logo/ui";

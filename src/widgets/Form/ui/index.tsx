@@ -102,7 +102,7 @@ export const Form = () => {
               </div>
               <div className="flex flex-col items-start ml-40">
                 <Slide direction="right">
-                  <p className="paragraph !text-xl w-[100%]">
+                  <p className="paragraph !text-base w-[100%]">
                     В Spark Studio мы гордимся нашей работой и стремимся к
                     долгосрочному партнерству с нашими клиентами. Доверьте ваш
                     проект нам, и мы сделаем все возможное, чтобы превзойти ваши
