@@ -1,10 +1,12 @@
-import { Button } from "@shared/ui/button";
+import { ScrollButton } from "@shared/ui/button";
 import { Slide } from "react-awesome-reveal";
 import { PriceScreen } from "@features/Screens/PriceScreen";
 import { WorkScreen } from "@features/Screens/WorkScreen";
 import { PortfolioFeature } from "@features/Home/ui/PortfolioFeature";
 import { Breadcrumbs } from "@mui/material";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+
 import FormFeature from "@features/Home/ui/FormFeature";
 
 import websites from "@assets/images/assets/websites.svg";
@@ -33,20 +35,18 @@ export const WebsiteFeature = () => {
         </Breadcrumbs>
         <Slide direction="right" delay={200}>
           <p className="mt-8 w-[100%]">
-            Команда "Spark Studio" - это творческая мастерская, где воплощаются
-            самые смелые идеи в веб-разработке. Мы специализируемся на создании
-            уникальных и инновационных веб-сайтов, которые не только
-            удовлетворяют потребности вашего бизнеса, но и вдохновляют вашу
-            аудиторию.
+            В Spark Studio мы предлагаем высококачественные услуги по разработке
+            веб-сайтов, которые помогут вашему бизнесу выделиться в цифровом
+            пространстве. Наша команда опытных разработчиков и дизайнеров
+            работает над созданием инновационных и эффективных веб-сайтов,
+            которые не только привлекательны визуально, но и оптимизированы для
+            поисковых систем, обеспечивая лучшее взаимодействие с пользователем
+            и повышение конверсии.
           </p>
         </Slide>
 
         <Slide direction="left" delay={300}>
-          <Button
-            text="Заказать"
-            marginTop="mt-4"
-            onClick={() => console.log("Заказать")}
-          />
+          <ScrollButton text="Заказать" marginTop="mt-4" to="contacts" />
         </Slide>
         <PriceScreen />
         <WorkScreen />
@@ -86,19 +86,18 @@ export const WebsiteFeature = () => {
             </Slide>
             <Slide direction="left" delay={200}>
               <p className="inline-block  mt-8 w-[60%]">
-                Команда "Spark Studio" - это творческая мастерская, где
-                воплощаются самые смелые идеи в веб-разработке. Мы
-                специализируемся на создании уникальных и инновационных
-                веб-сайтов, которые не только удовлетворяют потребности вашего
-                бизнеса, но и вдохновляют вашу аудиторию.
+                В Spark Studio мы предлагаем высококачественные услуги по
+                разработке веб-сайтов, которые помогут вашему бизнесу выделиться
+                в цифровом пространстве. Наша команда опытных разработчиков и
+                дизайнеров работает над созданием инновационных и эффективных
+                веб-сайтов, которые не только привлекательны визуально, но и
+                оптимизированы для поисковых систем, обеспечивая лучшее
+                взаимодействие с пользователем и повышение конверсии.
               </p>
             </Slide>
             <Slide direction="left" delay={300}>
-              <Button
-                text="Заказать"
-                marginTop="mt-4"
-                onClick={() => console.log("Заказать")}
-              />
+              <ScrollLink></ScrollLink>
+              <ScrollButton text="Заказать" marginTop="mt-4" to="contacts-pc" />
             </Slide>
           </div>
           <Slide direction="right" className="w-full" delay={300}>

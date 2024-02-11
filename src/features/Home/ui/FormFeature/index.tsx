@@ -5,7 +5,7 @@ import { Slide } from "react-awesome-reveal";
 const FormFeature = () => {
   return (
     <>
-      <div className="mobile flex flex-col items-center">
+      <div className="mobile flex flex-col items-center" id="contacts">
         <h4 className="mt-20">
           <span className="orange">Есть</span> проект?
         </h4>
