@@ -114,7 +114,7 @@ export const AdvancedPortfolioFeature = () => {
         spaceBetween={50}
         speed={600}
         autoplay={{
-          delay: 3000,
+          delay: 4000,
           disableOnInteraction: false,
         }}
         slidesPerView={1}

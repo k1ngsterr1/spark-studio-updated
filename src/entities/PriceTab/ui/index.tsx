@@ -43,8 +43,8 @@ export const PriceTab: React.FC<PriceTabProps> = ({
                 key={index}
                 className="price-tab__container__properties__property"
               >
-                <span className="font-normal">{prop.propertyName}</span>
-                <span className="ml-5">{prop.propertyGraph}</span>
+                <span className="font-normal w-[70%]">{prop.propertyName}</span>
+                <strong className="ml-5 orange">{prop.propertyGraph}</strong>
               </div>
             ))}
         </div>

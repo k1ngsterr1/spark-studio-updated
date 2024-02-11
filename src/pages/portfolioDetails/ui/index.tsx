@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Meta } from "@shared/index";
 import { Header } from "@widgets/Header/ui";
 import { Footer } from "@widgets/Footer/ui";
@@ -10,6 +11,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./styles.scss";
 
 export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <Meta

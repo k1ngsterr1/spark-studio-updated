@@ -26,31 +26,35 @@ export const PriceScreen = () => {
             properties={[
               {
                 propertyName: "Макеты дизайна ПК версии",
-                propertyGraph: "Value 1",
+                propertyGraph: "1",
               },
               {
                 propertyName: "Макеты дизайна моб. версии",
-                propertyGraph: "Value 1",
+                propertyGraph: "1",
               },
               {
-                propertyName: "Макеты дизайна ПК версии",
-                propertyGraph: "Value 1",
+                propertyName: "Дизайн внутренних страниц десктоп версии",
+                propertyGraph: "1",
               },
               {
-                propertyName: "Макеты дизайна моб. версии",
-                propertyGraph: "Value 1",
+                propertyName: "Дизайн внутренних страниц мобильной версии",
+                propertyGraph: "1",
               },
               {
-                propertyName: "Макеты дизайна ПК версии",
-                propertyGraph: "Value 1",
+                propertyName: "Адаптивная версия",
+                propertyGraph: "Имеется",
               },
               {
-                propertyName: "Макеты дизайна моб. версии",
-                propertyGraph: "Value 1",
+                propertyName: "Наполнение страниц контентом",
+                propertyGraph: "10",
               },
               {
-                propertyName: "Макеты дизайна ПК версии",
-                propertyGraph: "Value 1",
+                propertyName: "Дополнительный язык",
+                propertyGraph: "+50%",
+              },
+              {
+                propertyName: "Срок разработки",
+                propertyGraph: "15 дней",
               },
             ]}
           />
@@ -60,35 +64,39 @@ export const PriceScreen = () => {
             marginTop="mt-8"
             tabNaming="Бизнес"
             tabDescription="Корпоративный сайт"
-            price="550 000 ₸"
+            price="1 078 000 ₸"
             properties={[
               {
                 propertyName: "Макеты дизайна ПК версии",
-                propertyGraph: "Value 1",
+                propertyGraph: "2",
               },
               {
                 propertyName: "Макеты дизайна моб. версии",
-                propertyGraph: "Value 1",
+                propertyGraph: "2",
               },
               {
-                propertyName: "Макеты дизайна ПК версии",
-                propertyGraph: "Value 1",
+                propertyName: "Дизайн внутренних страниц десктоп версии",
+                propertyGraph: "2",
               },
               {
-                propertyName: "Макеты дизайна моб. версии",
-                propertyGraph: "Value 1",
+                propertyName: "Дизайн внутренних страниц мобильной версии",
+                propertyGraph: "2",
               },
               {
-                propertyName: "Макеты дизайна ПК версии",
-                propertyGraph: "Value 1",
+                propertyName: "Адаптивная версия",
+                propertyGraph: "Имеется",
               },
               {
-                propertyName: "Макеты дизайна моб. версии",
-                propertyGraph: "Value 1",
+                propertyName: "Наполнение страниц контентом",
+                propertyGraph: "20",
               },
               {
-                propertyName: "Макеты дизайна ПК версии",
-                propertyGraph: "Value 1",
+                propertyName: "Дополнительный язык",
+                propertyGraph: "+50%",
+              },
+              {
+                propertyName: "Срок разработки",
+                propertyGraph: "20 дней",
               },
             ]}
           />
@@ -98,35 +106,39 @@ export const PriceScreen = () => {
             marginTop="mt-8"
             tabNaming="Магазин"
             tabDescription="Готовый интернет магазин"
-            price="1 000 000 ₸"
+            price="1 526 000 ₸"
             properties={[
               {
                 propertyName: "Макеты дизайна ПК версии",
-                propertyGraph: "Value 1",
+                propertyGraph: "2",
               },
               {
                 propertyName: "Макеты дизайна моб. версии",
-                propertyGraph: "Value 1",
+                propertyGraph: "2",
               },
               {
-                propertyName: "Макеты дизайна ПК версии",
-                propertyGraph: "Value 1",
+                propertyName: "Дизайн внутренних страниц десктоп версии",
+                propertyGraph: "3",
               },
               {
-                propertyName: "Макеты дизайна моб. версии",
-                propertyGraph: "Value 1",
+                propertyName: "Дизайн внутренних страниц мобильной версии",
+                propertyGraph: "3",
               },
               {
-                propertyName: "Макеты дизайна ПК версии",
-                propertyGraph: "Value 1",
+                propertyName: "Адаптивная версия",
+                propertyGraph: "Имеется",
               },
               {
-                propertyName: "Макеты дизайна моб. версии",
-                propertyGraph: "Value 1",
+                propertyName: "Наполнение страниц контентом",
+                propertyGraph: "10",
               },
               {
-                propertyName: "Макеты дизайна ПК версии",
-                propertyGraph: "Value 1",
+                propertyName: "Дополнительный язык",
+                propertyGraph: "+50%",
+              },
+              {
+                propertyName: "Срок разработки",
+                propertyGraph: "30 дней",
               },
             ]}
           />
@@ -157,31 +169,35 @@ export const PriceScreen = () => {
               properties={[
                 {
                   propertyName: "Макеты дизайна ПК версии",
-                  propertyGraph: "Value 1",
+                  propertyGraph: "1",
                 },
                 {
                   propertyName: "Макеты дизайна моб. версии",
-                  propertyGraph: "Value 1",
+                  propertyGraph: "1",
                 },
                 {
-                  propertyName: "Макеты дизайна ПК версии",
-                  propertyGraph: "Value 1",
+                  propertyName: "Дизайн внутренних страниц десктоп версии",
+                  propertyGraph: "1",
                 },
                 {
-                  propertyName: "Макеты дизайна моб. версии",
-                  propertyGraph: "Value 1",
+                  propertyName: "Дизайн внутренних страниц мобильной версии",
+                  propertyGraph: "1",
                 },
                 {
-                  propertyName: "Макеты дизайна ПК версии",
-                  propertyGraph: "Value 1",
+                  propertyName: "Адаптивная версия",
+                  propertyGraph: "Имеется",
                 },
                 {
-                  propertyName: "Макеты дизайна моб. версии",
-                  propertyGraph: "Value 1",
+                  propertyName: "Наполнение страниц контентом",
+                  propertyGraph: "10",
                 },
                 {
-                  propertyName: "Макеты дизайна ПК версии",
-                  propertyGraph: "Value 1",
+                  propertyName: "Дополнительный язык",
+                  propertyGraph: "+50%",
+                },
+                {
+                  propertyName: "Срок разработки",
+                  propertyGraph: "15 дней",
                 },
               ]}
             />
@@ -189,35 +205,39 @@ export const PriceScreen = () => {
               marginTop="mt-8"
               tabNaming="Бизнес"
               tabDescription="Корпоративный сайт"
-              price="550 000 ₸"
+              price="1 078 000 ₸"
               properties={[
                 {
                   propertyName: "Макеты дизайна ПК версии",
-                  propertyGraph: "Value 1",
+                  propertyGraph: "2",
                 },
                 {
                   propertyName: "Макеты дизайна моб. версии",
-                  propertyGraph: "Value 1",
+                  propertyGraph: "2",
                 },
                 {
-                  propertyName: "Макеты дизайна ПК версии",
-                  propertyGraph: "Value 1",
+                  propertyName: "Дизайн внутренних страниц десктоп версии",
+                  propertyGraph: "2",
                 },
                 {
-                  propertyName: "Макеты дизайна моб. версии",
-                  propertyGraph: "Value 1",
+                  propertyName: "Дизайн внутренних страниц мобильной версии",
+                  propertyGraph: "2",
                 },
                 {
-                  propertyName: "Макеты дизайна ПК версии",
-                  propertyGraph: "Value 1",
+                  propertyName: "Адаптивная версия",
+                  propertyGraph: "Имеется",
                 },
                 {
-                  propertyName: "Макеты дизайна моб. версии",
-                  propertyGraph: "Value 1",
+                  propertyName: "Наполнение страниц контентом",
+                  propertyGraph: "20",
                 },
                 {
-                  propertyName: "Макеты дизайна ПК версии",
-                  propertyGraph: "Value 1",
+                  propertyName: "Дополнительный язык",
+                  propertyGraph: "+50%",
+                },
+                {
+                  propertyName: "Срок разработки",
+                  propertyGraph: "20 дней",
                 },
               ]}
             />
@@ -225,71 +245,39 @@ export const PriceScreen = () => {
               marginTop="mt-8"
               tabNaming="Магазин"
               tabDescription="Готовый интернет магазин"
-              price="1 000 000 ₸"
+              price="1 526 000 ₸"
               properties={[
                 {
                   propertyName: "Макеты дизайна ПК версии",
-                  propertyGraph: "Value 1",
+                  propertyGraph: "2",
                 },
                 {
                   propertyName: "Макеты дизайна моб. версии",
-                  propertyGraph: "Value 1",
+                  propertyGraph: "2",
                 },
                 {
-                  propertyName: "Макеты дизайна ПК версии",
-                  propertyGraph: "Value 1",
+                  propertyName: "Дизайн внутренних страниц десктоп версии",
+                  propertyGraph: "3",
                 },
                 {
-                  propertyName: "Макеты дизайна моб. версии",
-                  propertyGraph: "Value 1",
+                  propertyName: "Дизайн внутренних страниц мобильной версии",
+                  propertyGraph: "3",
                 },
                 {
-                  propertyName: "Макеты дизайна ПК версии",
-                  propertyGraph: "Value 1",
+                  propertyName: "Адаптивная версия",
+                  propertyGraph: "Имеется",
                 },
                 {
-                  propertyName: "Макеты дизайна моб. версии",
-                  propertyGraph: "Value 1",
+                  propertyName: "Наполнение страниц контентом",
+                  propertyGraph: "10",
                 },
                 {
-                  propertyName: "Макеты дизайна ПК версии",
-                  propertyGraph: "Value 1",
-                },
-              ]}
-            />
-            <PriceTab
-              marginTop="mt-8"
-              tabNaming="Магазин"
-              tabDescription="Готовый интернет магазин"
-              price="1 000 000 ₸"
-              properties={[
-                {
-                  propertyName: "Макеты дизайна ПК версии",
-                  propertyGraph: "Value 1",
+                  propertyName: "Дополнительный язык",
+                  propertyGraph: "+50%",
                 },
                 {
-                  propertyName: "Макеты дизайна моб. версии",
-                  propertyGraph: "Value 1",
-                },
-                {
-                  propertyName: "Макеты дизайна ПК версии",
-                  propertyGraph: "Value 1",
-                },
-                {
-                  propertyName: "Макеты дизайна моб. версии",
-                  propertyGraph: "Value 1",
-                },
-                {
-                  propertyName: "Макеты дизайна ПК версии",
-                  propertyGraph: "Value 1",
-                },
-                {
-                  propertyName: "Макеты дизайна моб. версии",
-                  propertyGraph: "Value 1",
-                },
-                {
-                  propertyName: "Макеты дизайна ПК версии",
-                  propertyGraph: "Value 1",
+                  propertyName: "Срок разработки",
+                  propertyGraph: "30 дней",
                 },
               ]}
             />
