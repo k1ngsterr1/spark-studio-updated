@@ -85,19 +85,16 @@ export const WebsiteFeature = () => {
               </Breadcrumbs>
             </Slide>
             <Slide direction="left" delay={200}>
-              <p className="inline-block  mt-8 w-[60%]">
+              <p className="inline-block  mt-8 w-[45%]">
                 В Spark Studio мы предлагаем высококачественные услуги по
                 разработке веб-сайтов, которые помогут вашему бизнесу выделиться
                 в цифровом пространстве. Наша команда опытных разработчиков и
                 дизайнеров работает над созданием инновационных и эффективных
-                веб-сайтов, которые не только привлекательны визуально, но и
-                оптимизированы для поисковых систем, обеспечивая лучшее
-                взаимодействие с пользователем и повышение конверсии.
+                веб-сайтов.
               </p>
             </Slide>
             <Slide direction="left" delay={300}>
-              <ScrollLink></ScrollLink>
-              <ScrollButton text="Заказать" marginTop="mt-4" to="contacts-pc" />
+              <ScrollButton text="Заказать" marginTop="mt-4" to="form" />
             </Slide>
           </div>
           <Slide direction="right" className="w-full" delay={300}>
@@ -107,6 +104,7 @@ export const WebsiteFeature = () => {
         <PriceScreen />
         <WorkScreen />
         <PortfolioFeature />
+        <div id="form"></div>
         <FormFeature />
       </div>
     </>

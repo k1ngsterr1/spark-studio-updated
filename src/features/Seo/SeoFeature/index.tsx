@@ -1,5 +1,5 @@
 import { Slide } from "react-awesome-reveal";
-import { Button } from "@shared/ui/button";
+import { Button, ScrollButton } from "@shared/ui/button";
 import { PriceTab } from "@entities/PriceTab/ui";
 import { Breadcrumbs } from "@mui/material";
 import { Link } from "react-router-dom";
@@ -36,11 +36,7 @@ export const SeoFeature = () => {
           </p>
         </Slide>
         <Slide direction="left" delay={300}>
-          <Button
-            text="Заказать"
-            marginTop="mt-4"
-            onClick={() => console.log("Заказать")}
-          />
+          <ScrollButton text="Заказать" marginTop="mt-4" to="contacts" />
         </Slide>
         <Slide direction="left" className="mt-20" delay={400}>
           <h2 className="text-center">
@@ -204,11 +200,7 @@ export const SeoFeature = () => {
               </p>
             </Slide>
             <Slide direction="left" delay={300}>
-              <Button
-                text="Заказать"
-                marginTop="mt-4"
-                onClick={() => console.log("Заказать")}
-              />
+              <ScrollButton text="Заказать" marginTop="mt-4" to="form" />
             </Slide>
           </div>
           <Slide direction="right" className="w-full" delay={300}>
@@ -354,6 +346,7 @@ export const SeoFeature = () => {
             </Slide>
           </div>
         </section>
+        <div id="form"></div>
         <FormFeature />
       </main>
     </>
