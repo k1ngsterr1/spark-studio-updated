@@ -1,5 +1,5 @@
 import { Slide } from "react-awesome-reveal";
-import { Button, ScrollButton } from "@shared/ui/button";
+import { ScrollButton } from "@shared/ui/button";
 import { PriceTab } from "@entities/PriceTab/ui";
 import { Breadcrumbs } from "@mui/material";
 import { Link } from "react-router-dom";

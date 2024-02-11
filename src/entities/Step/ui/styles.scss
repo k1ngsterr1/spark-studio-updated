@@ -1,0 +1,35 @@
+.step {
+  display: flex;
+  flex-direction: column;
+
+  &__button {
+    width: clamp(32px, 3.33312vw, 128px);
+    height: clamp(32px, 3.33312vw, 128px);
+    border-radius: 100%;
+    transition: 0.3s all;
+    @apply text-2xl;
+    @apply text-white;
+    @apply bg-custom-orange;
+
+    &__icon {
+      rotate: 0deg;
+    }
+
+    &:hover {
+      background-color: #f93a00;
+    }
+  }
+
+  &__days {
+    font-family: Montserrat;
+    font-size: clamp(9px, 0.93744vw, 36px);
+    @apply text-custom-black;
+  }
+
+  &__title {
+    font-size: clamp(11.5px, 1.19784vw, 46px);
+    text-align: center;
+    font-family: Montserrat;
+    @apply text-custom-black;
+  }
+}
