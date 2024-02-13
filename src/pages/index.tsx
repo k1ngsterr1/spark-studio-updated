@@ -34,7 +34,6 @@ export const MyRoutes: FC = () => {
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/index.html" element={<Navigate to="/home" />} />
         <Route path="/index.shtml" element={<Navigate to="/home" />} />
-
         <Route
           path={ROUTE_CONSTANTS.APPLICATIONS}
           element={<ApplicationsPage />}

@@ -10,7 +10,6 @@ export const AboutCompanyFeature = () => {
           Наши <span className="orange">Результаты</span>
         </h3>
         <p className="paragraph mt-4">
-          {" "}
           Идейные соображения высшего порядка, а также консультация с широким
           активом позволяет оценить значение дальнейших направлений развития. Не
           следует, однако забывать, что реализация намеченных плановых заданий
@@ -22,23 +21,31 @@ export const AboutCompanyFeature = () => {
           direction={"left"}
           duration={4}
           color="orange"
-          text="Реализованные проекты"
+          text="Реализованный проект"
           marginTop="mt-12"
         />
         <CountElement
-          end={43}
+          end={24}
           direction={"right"}
           duration={3}
           color="orange"
-          text="Реализованные проекты"
+          text="Часа на связи"
           marginTop="mt-12"
         />
         <CountElement
-          end={50}
+          end={12}
           direction={"left"}
           duration={3}
           color="orange"
-          text="Реализованные проекты"
+          text="Логотипов нарисованно"
+          marginTop="mt-12"
+        />
+        <CountElement
+          end={33}
+          direction={"left"}
+          duration={4}
+          color="orange"
+          text="Довольных клиента"
           marginTop="mt-12"
         />
       </section>
@@ -55,7 +62,7 @@ export const AboutCompanyFeature = () => {
             дальнейших направлений развития.
           </p>
         </div>
-        <img src={about} alt="about" className="w-full" />
+        <img src={about} alt="about" className="w-1/3" />
       </section>
       <section className="pc w-full flex justify-between items-start mt-20">
         <div className="w-full flex justify-between items-center">
@@ -65,37 +72,37 @@ export const AboutCompanyFeature = () => {
               direction={"left"}
               duration={4}
               color="orange"
-              text="Реализованные проекты"
+              text="Реализованный проект"
               marginTop="mt-12"
             />
           </span>
           <span className="flex flex-col">
             <CountElement
-              end={21}
+              end={24}
               direction={"left"}
               duration={4}
               color="orange"
-              text="Реализованные проекты"
+              text="Часа на связи"
               marginTop="mt-12"
             />
           </span>
           <span className="flex flex-col">
             <CountElement
-              end={21}
+              end={12}
               direction={"left"}
               duration={4}
               color="orange"
-              text="Реализованные проекты"
+              text="Логотипов нарисованно"
               marginTop="mt-12"
             />
           </span>
           <span className="flex flex-col">
             <CountElement
-              end={21}
+              end={33}
               direction={"left"}
               duration={4}
               color="orange"
-              text="Реализованные проекты"
+              text="Довольных клиента"
               marginTop="mt-12"
             />
           </span>

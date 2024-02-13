@@ -81,7 +81,7 @@ export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
         </Slide>
         <div className="flex flex-col items-start w-[50%] max-[440px]:w-full mt-10">
           <Slide direction="right" cascade damping={0.2} className="w-full">
-            <h3 className="text-6xl text-custom-black max-[440px]:w-full !text-center">
+            <h3 className="text-6xl text-custom-black max-[440px]:w-full ">
               Адаптация <span className="orange">проекта</span>{" "}
             </h3>
             <p className="paragraph mt-5 w-[100%]">
@@ -118,7 +118,6 @@ export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
           </Fade>
         </div>
       </section>
-
       <section className="w-[100%] m-auto flex items-start justify-between  portfolio-content">
         <img
           src={props.mainImage_2}

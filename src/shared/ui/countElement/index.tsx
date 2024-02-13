@@ -26,11 +26,11 @@ export const CountElement: React.FC<CountElementProps> = ({
         direction={direction}
       >
         <span
-          className={`flex flex-col text-5xl font-macherie ${marginTop} ${color}`}
+          className={`flex flex-col items-center justify-center text-5xl font-macherie ${marginTop} ${color}`}
         >
           <CountUp end={end} duration={duration} />
         </span>
-        <span className="mt-4 font-macherie text-custom-black text-2xl text-center min-[1024px]:w-[60%]">
+        <span className="mt-4 font-macherie text-custom-black text-2xl text-center min-[1024px]:w-[70%]">
           {text}
         </span>
       </Slide>

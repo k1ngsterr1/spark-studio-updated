@@ -3,7 +3,6 @@ import { Slide } from "react-awesome-reveal";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper";
 import { Navigation, Parallax, Autoplay } from "swiper/modules";
-import { PortfolioSwitch } from "@features/PortfolioSwitch";
 import { useNavigate } from "react-router-dom";
 
 import "swiper/css";
@@ -106,7 +105,7 @@ export const AdvancedPortfolioFeature = () => {
         </p>
       </Slide>
       <Slide direction="left" className="mt-10">
-        <PortfolioSwitch />
+        {/* <PortfolioSwitch /> */}
       </Slide>
       <Swiper
         modules={[Parallax, Autoplay, Navigation]}
