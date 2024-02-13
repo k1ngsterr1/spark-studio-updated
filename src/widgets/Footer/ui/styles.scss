@@ -1,6 +1,7 @@
 .footer {
   &__icon {
     font-size: clamp(20px, 9.3456vw, 80px);
+    rotate: 0deg !important;
     @apply text-custom-orange;
   }
 
