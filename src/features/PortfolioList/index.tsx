@@ -3,12 +3,12 @@ import { useSelector } from "react-redux";
 import { PortfolioItem } from "@shared/ui/PortfolioItem";
 import { useNavigate } from "react-router-dom";
 
-import work01 from "@assets/images/sites/works/work01.webp";
+import work01 from "@assets/images/sites/works/cargo_portfolio.webp";
 import work02 from "@assets/images/sites/works/work02.webp";
 import work03 from "@assets/images/sites/works/work03.webp";
 import work04 from "@assets/images/sites/works/work04.webp";
-import work05 from "@assets/images/sites/works/work05.webp";
-import work06 from "@assets/images/sites/works/work06.webp";
+import work05 from "@assets/images/sites/works/china_portfolio.webp";
+import work06 from "@assets/images/sites/works/agro_portfolio.webp";
 import work10 from "@assets/images/sites/works/work10.webp";
 import work11 from "@assets/images/sites/works/work11.webp";
 import as_partners from "@assets/images/sites/works/arconica_portfolio.webp";
@@ -54,40 +54,22 @@ export const PortfolioList = () => {
         description: "A cool website",
       },
       {
-        name: "Jintropine.kz",
+        name: "AGRO PARTNERS PV",
         img: work06,
-        navigate: "jintropine",
+        navigate: "agro",
         description: "A cool website",
       },
       {
-        name: "Your Domain Bot",
+        name: "China Drive",
         img: work05,
-        navigate: "your_domain_bot",
+        navigate: "china_drive",
         description: "A cool website",
       },
       {
-        name: "Intelligence.io",
+        name: "Cargo Express PV",
         img: work01,
-        navigate: "intelligence_io",
+        navigate: "cargo",
         description: "A cool website",
-      },
-      {
-        name: "Prime Properties",
-        img: work02,
-        navigate: "prime_properties",
-        description: "Another cool website",
-      },
-      {
-        name: "Vintage.io",
-        img: work03,
-        navigate: "vintage_io",
-        description: "Another cool website",
-      },
-      {
-        name: "Drekt.io",
-        img: work04,
-        navigate: "drekt_io",
-        description: "Another cool website",
       },
       {
         name: "AS & Partners",

@@ -46,7 +46,7 @@ export const ServicesFeature = () => {
           <Slide className="w-full" direction="left" triggerOnce={true}>
             <ServiceTab
               text="ЛОГОТИПЫ"
-              onClick={() => navigate("/services/logotypes")}
+              onClick={() => navigate("/services/logo")}
               number="03"
               delayIcon={300}
               delayText={400}
@@ -92,7 +92,7 @@ export const ServicesFeature = () => {
           />
           <ServiceTab
             text="ПРИЛОЖЕНИЯ"
-            onClick={() => navigate("/services/websites")}
+            onClick={() => navigate("/services/applications")}
             number="02"
             delayIcon={100}
             delayText={200}
@@ -100,7 +100,7 @@ export const ServicesFeature = () => {
           />
           <ServiceTab
             text="ЛОГОТИПЫ"
-            onClick={() => navigate("/services/websites")}
+            onClick={() => navigate("/services/logo")}
             number="03"
             delayIcon={100}
             delayText={200}
@@ -108,7 +108,7 @@ export const ServicesFeature = () => {
           />
           <ServiceTab
             text="SEO"
-            onClick={() => navigate("/services/websites")}
+            onClick={() => navigate("/services/seo")}
             number="04"
             delayIcon={100}
             delayText={200}
