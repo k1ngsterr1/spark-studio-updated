@@ -23,9 +23,6 @@ export const AdvancedPortfolioFeature = () => {
     3: "three",
     4: "four",
     5: "five",
-    6: "six",
-    7: "seven",
-    8: "eight",
   };
 
   const slidesData = [
@@ -36,52 +33,34 @@ export const AdvancedPortfolioFeature = () => {
       navigation: "as_partners",
     },
     {
-      id: 2,
+      id: 1,
       title: "Cargo Express PV",
       description: "Разработка сайта",
       navigation: "cargo",
     },
     {
-      id: 3,
-      title: "Prime Properties",
-      description: "Разработка сайта",
-      navigation: "prime_properties",
-    },
-    {
-      id: 4,
+      id: 2,
       title: "Sharbakty Bidai",
       description: "Разработка сайта",
       navigation: "sharbakty",
     },
     {
-      id: 5,
+      id: 3,
       title: "Special Solutions",
       description: "Разработка сайта",
       navigation: "special_solutions",
     },
     {
-      id: 6,
-      title: "Zippity",
-      description: "Разработка сайта",
-      navigation: "zippity",
-    },
-    {
-      id: 7,
+      id: 4,
       title: "AGRO PARTNERS PV",
       description: "Разработка сайта",
       navigation: "agro",
     },
     {
-      id: 8,
+      id: 5,
       title: "China Drive",
       description: "Разработка сайта",
       navigation: "china_drive",
-    },
-    {
-      id: 9,
-      title: "Intelligence.IO",
-      description: "Разработка сайта",
-      navigation: "intelligence_io",
     },
   ];
 
