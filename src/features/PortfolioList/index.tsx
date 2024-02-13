@@ -4,9 +4,7 @@ import { PortfolioItem } from "@shared/ui/PortfolioItem";
 import { useNavigate } from "react-router-dom";
 
 import work01 from "@assets/images/sites/works/cargo_portfolio.webp";
-import work02 from "@assets/images/sites/works/work02.webp";
-import work03 from "@assets/images/sites/works/work03.webp";
-import work04 from "@assets/images/sites/works/work04.webp";
+
 import work05 from "@assets/images/sites/works/china_portfolio.webp";
 import work06 from "@assets/images/sites/works/agro_portfolio.webp";
 import work10 from "@assets/images/sites/works/work10.webp";

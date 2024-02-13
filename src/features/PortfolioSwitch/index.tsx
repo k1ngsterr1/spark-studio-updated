@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+
 import { Fade } from "react-awesome-reveal";
 import { switchState } from "@shared/lib/redux/portfolioSwitchSlice";
 
@@ -11,7 +11,6 @@ export const PortfolioSwitch = () => {
   );
 
   const dispatch = useDispatch();
-  const navigate = useNavigate();
 
   const handleChange = (optionValue: string) => {
     dispatch(switchState(optionValue));
