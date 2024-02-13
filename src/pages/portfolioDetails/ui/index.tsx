@@ -54,7 +54,7 @@ export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
       {/* Task */}
       <section className="w-[86.6%] m-auto flex items-start justify-between mt-96 portfolio-content max-[440px]:!mt-36">
         <Slide direction="left">
-          <h2 className="text-6xl text-custom-black">
+          <h2 className="text-6xl text-custom-black max-[440px]:!mt-12">
             Задачи <span className="orange">проекта</span>{" "}
           </h2>
         </Slide>
