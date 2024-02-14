@@ -127,7 +127,7 @@ export const Menu = () => {
             />
             <NavigationLink
               onClick={handleClick}
-              to="/services/app"
+              to="/services/applications"
               className="menu__link"
               linkName="Приложения"
             />
