@@ -8,7 +8,7 @@ export const Footer = () => {
   return (
     <footer className="footer flex flex-col items-center justify-center mt-8">
       <FontAwesomeIcon className="footer__icon" icon={faInstagram} />
-      <a className="footer__phone" href="tel:+77759932587">
+      <a className="footer__phone" href="tel:+77066233117">
         +7-706-623-31-17
       </a>
       <a className="footer__email" href="mailto:cto@sparkstudio.kz">
