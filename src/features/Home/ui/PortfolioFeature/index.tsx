@@ -19,7 +19,7 @@ export const PortfolioFeature = () => {
             Не следует, однако забывать, что реализация.
           </p>
         </Slide>
-        <Selector />
+        <PortfolioSwitch />
         <div className="w-full flex flex-col">
           <PortfolioList />
         </div>

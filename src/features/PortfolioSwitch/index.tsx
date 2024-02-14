@@ -22,7 +22,7 @@ export const PortfolioSwitch = () => {
         <span
           className={`switcher__text--${
             selectedValue === "Сайты" ? "active" : "disable"
-          } hoverable`}
+          } hoverable text-lg`}
           onClick={() => handleChange("Сайты")}
         >
           Сайты
@@ -38,7 +38,7 @@ export const PortfolioSwitch = () => {
         <span
           className={`switcher__text--${
             selectedValue === "Логотипы" ? "active" : "disable"
-          } hoverable ml-4`}
+          } hoverable ml-4 text-lg`}
           onClick={() => handleChange("Логотипы")}
         >
           Логотипы
