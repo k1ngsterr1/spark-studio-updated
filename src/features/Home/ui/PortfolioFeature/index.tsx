@@ -13,7 +13,7 @@ export const PortfolioFeature = () => {
           </h4>
         </Slide>
         <Slide direction="right" triggerOnce={true}>
-          <p className="mt-4">
+          <p className="mt-4 mb-8">
             Идейные соображения высшего порядка, а также консультация с широким
             активом позволяет оценить значение дальнейших направлений развития.
             Не следует, однако забывать, что реализация.
