@@ -1,5 +1,11 @@
 import { useForm } from "react-hook-form";
+import { useDispatch } from "react-redux";
+import { openWindow } from "../redux/popupSlice";
+import { useSelector } from "react-redux";
+import { RootState } from "../redux/store";
+
 import emailjs from "@emailjs/browser";
+
 export interface SendFormData {
   full_name: string;
   phone_number: string;
@@ -7,6 +13,8 @@ export interface SendFormData {
 }
 
 export function useSendEmail() {
+  const dispatch = useDispatch();
+
   const {
     register,
     handleSubmit,
@@ -30,7 +38,7 @@ export function useSendEmail() {
       )
       .then(
         () => {
-          console.log("success");
+          dispatch(openWindow);
         },
         (error) => {
           console.log(error.text);

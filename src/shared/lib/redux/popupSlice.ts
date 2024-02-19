@@ -7,10 +7,13 @@ const popupSlice = createSlice({
   },
   reducers: {
     openWindow: (state) => {
-      state.isOpened = !state.isOpened;
+      state.isOpened = true;
+    },
+    closeWindow: (state) => {
+      state.isOpened = false;
     },
   },
 });
 
-export const { openWindow } = popupSlice.actions;
+export const { openWindow, closeWindow } = popupSlice.actions;
 export default popupSlice.reducer;

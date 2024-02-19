@@ -69,7 +69,7 @@ export const MainFeature = () => {
             </p>
           </Slide>
           <Slide direction="left" delay={200}>
-            <ScrollButton text="Заказать" to="contacts" marginTop="mt-8" />
+            <ScrollButton text="Заказать" to="contacts-pc" marginTop="mt-8" />
           </Slide>
         </main>
         <div className="flex w-[68%] flex-col">

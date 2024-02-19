@@ -98,7 +98,11 @@ export const AboutUsFeature = () => {
             </p>
           </Slide>
           <Slide direction="right">
-            <Button text="Портфолио" marginTop="mt-0" />
+            <Button
+              text="Портфолио"
+              marginTop="mt-0"
+              onClick={() => navigate("/portfolio")}
+            />
           </Slide>
         </div>
       </section>
