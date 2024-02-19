@@ -5,10 +5,12 @@ import loadReducer from "./loaderSlice";
 import menuStateReducer from "./menuStateSlice";
 import burgerReducer from "./burgerSlice";
 import portfolioSwitchReducer from "./portfolioSwitchSlice";
+import popupSlice from "./popupSlice";
 
 export const store = configureStore({
   reducer: {
     menu: menuReducer,
+    popup: popupSlice,
     menuState: menuStateReducer,
     selector: selectorReducer,
     loader: loadReducer,
