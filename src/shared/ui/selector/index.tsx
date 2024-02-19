@@ -1,17 +1,21 @@
 import Select from "react-select";
 import { useSelector } from "react-redux";
 import { Controller } from "react-hook-form";
+import { useState } from "react";
 
 interface SelectorProps {
   control: any;
+  setValue: any;
 }
 
-export const Selector: React.FC<SelectorProps> = ({ control }) => {
+export const Selector: React.FC<SelectorProps> = ({ control, setValue }) => {
   const options = [
     { value: "websites", label: "Сайты" },
     { value: "applications", label: "Приложения" },
     { value: "logotypes", label: "Логотипы" },
   ];
+
+  const [selectedOption, setSelectedOption] = useState(options[0]);
 
   const selectedValue = useSelector(
     (state: any) => state.selector.selectedOption
@@ -20,6 +24,11 @@ export const Selector: React.FC<SelectorProps> = ({ control }) => {
   const defaultOption = options.find(
     (option) => option.value === selectedValue
   );
+
+  const handleChange = (option: any) => {
+    setSelectedOption(option);
+    setValue("service", option.value);
+  };
 
   const style = {
     control: (base: any) => ({
@@ -44,6 +53,7 @@ export const Selector: React.FC<SelectorProps> = ({ control }) => {
             {...field}
             defaultValue={defaultOption}
             options={options}
+            value={selectedOption}
             placeholder="Выберите услугу"
             menuPortalTarget={document.body}
             styles={style}
@@ -52,6 +62,7 @@ export const Selector: React.FC<SelectorProps> = ({ control }) => {
             required
             className="react-select text-xl w-[300px] mt-8 hoverable min-[1024px]:w-[100%]"
             classNamePrefix="react-select hoverable"
+            onChange={handleChange}
           />
         )}
       />

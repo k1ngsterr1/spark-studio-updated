@@ -19,6 +19,7 @@ export function useSendEmail() {
     register,
     handleSubmit,
     control,
+    setValue,
     formState: { errors, isSubmitting, isValid },
   } = useForm<SendFormData>({
     mode: "onChange",
@@ -54,5 +55,6 @@ export function useSendEmail() {
     isSubmitting,
     isValid,
     control,
+    setValue,
   };
 }

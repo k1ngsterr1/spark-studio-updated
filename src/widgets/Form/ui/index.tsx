@@ -7,7 +7,8 @@ import { Selector } from "@shared/ui/selector";
 import { Slide } from "react-awesome-reveal";
 
 export const Form = () => {
-  const { register, handleSubmit, control, errors, onSubmit } = useSendEmail();
+  const { register, handleSubmit, control, errors, onSubmit, setValue } =
+    useSendEmail();
 
   return (
     <>
@@ -44,7 +45,7 @@ export const Form = () => {
           )}
         </div>
         <div className="form-mobile-screen__input mt-2">
-          <Selector control={control} />
+          <Selector control={control} setValue={setValue} />
         </div>
         <Button text="Отправить" marginTop="mt-8" />
       </form>
@@ -92,7 +93,7 @@ export const Form = () => {
                   </Slide>
                 </div>
                 <Slide direction="left">
-                  <Selector control={control} />
+                  <Selector control={control} setValue={setValue} />
                 </Slide>
                 <Slide direction="left">
                   <Button text="Отправить" marginTop="mt-8" />
