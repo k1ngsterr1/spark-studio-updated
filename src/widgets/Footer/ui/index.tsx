@@ -7,7 +7,11 @@ import "./styles.scss";
 export const Footer = () => {
   return (
     <footer className="footer flex flex-col items-center justify-center mt-8">
-      <FontAwesomeIcon className="footer__icon" icon={faInstagram} />
+      <FontAwesomeIcon
+        className="footer__icon"
+        icon={faInstagram}
+        onClick={() => window.open("https://www.instagram.com/sparkstudio.kz/")}
+      />
       <a className="footer__phone" href="tel:+77066233117">
         +7-706-623-31-17
       </a>

@@ -18,5 +18,10 @@
 @media screen and (min-width: 1024px) {
   .footer {
     display: none !important;
+
+    &__icon {
+      font-size: clamp(16px, 1.66656vw, 64px);
+      @apply mt-3;
+    }
   }
 }

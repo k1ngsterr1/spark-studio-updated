@@ -3,13 +3,14 @@ import emailjs from "@emailjs/browser";
 export interface SendFormData {
   full_name: string;
   phone_number: string;
-  option: string;
+  service: string;
 }
 
 export function useSendEmail() {
   const {
     register,
     handleSubmit,
+    control,
     formState: { errors, isSubmitting, isValid },
   } = useForm<SendFormData>({
     mode: "onChange",
@@ -28,8 +29,8 @@ export function useSendEmail() {
         import.meta.env.VITE_PUBLIC_KEY
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          console.log("success");
         },
         (error) => {
           console.log(error.text);
@@ -37,5 +38,13 @@ export function useSendEmail() {
       );
   };
 
-  return { register, handleSubmit, onSubmit, errors, isSubmitting, isValid };
+  return {
+    register,
+    handleSubmit,
+    onSubmit,
+    errors,
+    isSubmitting,
+    isValid,
+    control,
+  };
 }

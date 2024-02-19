@@ -1,3 +1,5 @@
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useSendEmail } from "@shared/lib/hooks/useSendEmail";
 import { Button } from "@shared/ui/button";
 import { Input } from "@shared/ui/input";
@@ -5,7 +7,7 @@ import { Selector } from "@shared/ui/selector";
 import { Slide } from "react-awesome-reveal";
 
 export const Form = () => {
-  const { register, handleSubmit, errors, onSubmit } = useSendEmail();
+  const { register, handleSubmit, control, errors, onSubmit } = useSendEmail();
 
   return (
     <>
@@ -42,13 +44,9 @@ export const Form = () => {
           )}
         </div>
         <div className="form-mobile-screen__input mt-2">
-          <Selector />
+          <Selector control={control} />
         </div>
-        <Button
-          text="Отправить"
-          marginTop="mt-8"
-          onClick={() => console.log("Doodle")}
-        />
+        <Button text="Отправить" marginTop="mt-8" />
       </form>
       <form
         className="flex justify-between items-start mb-20"
@@ -94,7 +92,7 @@ export const Form = () => {
                   </Slide>
                 </div>
                 <Slide direction="left">
-                  <Selector />
+                  <Selector control={control} />
                 </Slide>
                 <Slide direction="left">
                   <Button text="Отправить" marginTop="mt-8" />
@@ -109,6 +107,13 @@ export const Form = () => {
                     ожидания.
                   </p>
                 </Slide>
+                <FontAwesomeIcon
+                  className="footer__icon"
+                  icon={faInstagram}
+                  onClick={() =>
+                    window.open("https://www.instagram.com/sparkstudio.kz/")
+                  }
+                />
                 <Slide direction="right" className="mt-4">
                   <a
                     className="text-custom-orange text-xl hoverable font-[Montserrat] mt-4"

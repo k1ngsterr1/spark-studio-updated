@@ -1,7 +1,12 @@
 import Select from "react-select";
 import { useSelector } from "react-redux";
+import { Controller } from "react-hook-form";
 
-export const Selector = () => {
+interface SelectorProps {
+  control: any;
+}
+
+export const Selector: React.FC<SelectorProps> = ({ control }) => {
   const options = [
     { value: "websites", label: "Сайты" },
     { value: "applications", label: "Приложения" },
@@ -31,18 +36,24 @@ export const Selector = () => {
 
   return (
     <>
-      <Select
-        defaultValue={defaultOption}
-        // onChange={handleChange}
-        options={options}
-        placeholder="Выберите услугу"
-        menuPortalTarget={document.body}
-        styles={style}
+      <Controller
+        control={control}
         name="service"
-        menuPosition="fixed"
-        required
-        className="react-select text-xl w-[300px] mt-8 hoverable min-[1024px]:w-[100%]"
-        classNamePrefix="react-select hoverable"
+        render={({ field }) => (
+          <Select
+            {...field}
+            defaultValue={defaultOption}
+            options={options}
+            placeholder="Выберите услугу"
+            menuPortalTarget={document.body}
+            styles={style}
+            name="service"
+            menuPosition="fixed"
+            required
+            className="react-select text-xl w-[300px] mt-8 hoverable min-[1024px]:w-[100%]"
+            classNamePrefix="react-select hoverable"
+          />
+        )}
       />
     </>
   );
