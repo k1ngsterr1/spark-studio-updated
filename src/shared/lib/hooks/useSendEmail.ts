@@ -1,8 +1,6 @@
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import { openWindow } from "../redux/popupSlice";
-import { useSelector } from "react-redux";
-import { RootState } from "../redux/store";
 
 import emailjs from "@emailjs/browser";
 
