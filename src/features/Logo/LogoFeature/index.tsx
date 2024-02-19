@@ -65,120 +65,76 @@ export const LogoFeature = () => {
         <PriceTab
           marginTop="mt-8"
           tabNaming="Базовый"
-          tabDescription="Лендинг, сайт - визитка"
-          price="300 000 ₸"
+          tabDescription="Разработка логотипа низкой сложности"
+          price="15 000 ₸"
           properties={[
             {
-              propertyName: "Макеты дизайна ПК версии",
+              propertyName: "Исходник",
+              propertyGraph: "Да",
+            },
+            {
+              propertyName: "Высокое разрешение",
+              propertyGraph: "Да",
+            },
+            {
+              propertyName: "Количество изображений",
               propertyGraph: "1",
-            },
-            {
-              propertyName: "Макеты дизайна моб. версии",
-              propertyGraph: "1",
-            },
-            {
-              propertyName: "Дизайн внутренних страниц десктоп версии",
-              propertyGraph: "1",
-            },
-            {
-              propertyName: "Дизайн внутренних страниц мобильной версии",
-              propertyGraph: "1",
-            },
-            {
-              propertyName: "Адаптивная версия",
-              propertyGraph: "Имеется",
-            },
-            {
-              propertyName: "Наполнение страниц контентом",
-              propertyGraph: "10",
-            },
-            {
-              propertyName: "Дополнительный язык",
-              propertyGraph: "+50%",
             },
             {
               propertyName: "Срок разработки",
-              propertyGraph: "15 дней",
+              propertyGraph: "2 дня",
             },
           ]}
         />
         <PriceTab
           marginTop="mt-8"
           tabNaming="Бизнес"
-          tabDescription="Корпоративный сайт"
-          price="1 078 000 ₸"
+          tabDescription="Средняя сложность"
+          price="20 000 ₸"
           properties={[
             {
-              propertyName: "Макеты дизайна ПК версии",
-              propertyGraph: "2",
+              propertyName: "Исходник",
+              propertyGraph: "Да",
             },
             {
-              propertyName: "Макеты дизайна моб. версии",
-              propertyGraph: "2",
+              propertyName: "Высокое разрешение",
+              propertyGraph: "Да",
             },
             {
-              propertyName: "Дизайн внутренних страниц десктоп версии",
-              propertyGraph: "2",
+              propertyName: "Количество изображений",
+              propertyGraph: "1",
             },
             {
-              propertyName: "Дизайн внутренних страниц мобильной версии",
-              propertyGraph: "2",
-            },
-            {
-              propertyName: "Адаптивная версия",
-              propertyGraph: "Имеется",
-            },
-            {
-              propertyName: "Наполнение страниц контентом",
-              propertyGraph: "20",
-            },
-            {
-              propertyName: "Дополнительный язык",
-              propertyGraph: "+50%",
+              propertyName: "Подбор шрифта",
+              propertyGraph: "Да",
             },
             {
               propertyName: "Срок разработки",
-              propertyGraph: "20 дней",
+              propertyGraph: "2 дня",
             },
           ]}
         />
         <PriceTab
           marginTop="mt-8"
-          tabNaming="Магазин"
-          tabDescription="Готовый интернет магазин"
-          price="1 526 000 ₸"
+          tabNaming="Профессиональный"
+          tabDescription="Разработка логотипа высокой сложности"
+          price="30 000 ₸"
           properties={[
             {
-              propertyName: "Макеты дизайна ПК версии",
-              propertyGraph: "2",
+              propertyName: "Исходник",
+              propertyGraph: "Да",
             },
             {
-              propertyName: "Макеты дизайна моб. версии",
-              propertyGraph: "2",
+              propertyName: "Высокое разрешение",
+              propertyGraph: "Да",
             },
             {
-              propertyName: "Дизайн внутренних страниц десктоп версии",
-              propertyGraph: "3",
-            },
-            {
-              propertyName: "Дизайн внутренних страниц мобильной версии",
-              propertyGraph: "3",
-            },
-            {
-              propertyName: "Адаптивная версия",
-              propertyGraph: "Имеется",
-            },
-            {
-              propertyName: "Наполнение страниц контентом",
-              propertyGraph: "10",
-            },
-            {
-              propertyName: "Дополнительный язык",
-              propertyGraph: "+50%",
+              propertyName: "Количество изображений",
+              propertyGraph: "1",
             },
             {
               propertyName: "Срок разработки",
-              propertyGraph: "30 дней",
+              propertyGraph: "2 дня",
             },
           ]}
         />
@@ -255,120 +211,76 @@ export const LogoFeature = () => {
               <PriceTab
                 marginTop="mt-8"
                 tabNaming="Базовый"
-                tabDescription="Лендинг, сайт - визитка"
-                price="300 000 ₸"
+                tabDescription="Разработка логотипа низкой сложности"
+                price="15 000 ₸"
                 properties={[
                   {
-                    propertyName: "Макеты дизайна ПК версии",
+                    propertyName: "Исходник",
+                    propertyGraph: "Да",
+                  },
+                  {
+                    propertyName: "Высокое разрешение",
+                    propertyGraph: "Да",
+                  },
+                  {
+                    propertyName: "Количество изображений",
                     propertyGraph: "1",
-                  },
-                  {
-                    propertyName: "Макеты дизайна моб. версии",
-                    propertyGraph: "1",
-                  },
-                  {
-                    propertyName: "Дизайн внутренних страниц десктоп версии",
-                    propertyGraph: "1",
-                  },
-                  {
-                    propertyName: "Дизайн внутренних страниц мобильной версии",
-                    propertyGraph: "1",
-                  },
-                  {
-                    propertyName: "Адаптивная версия",
-                    propertyGraph: "Имеется",
-                  },
-                  {
-                    propertyName: "Наполнение страниц контентом",
-                    propertyGraph: "10",
-                  },
-                  {
-                    propertyName: "Дополнительный язык",
-                    propertyGraph: "+50%",
                   },
                   {
                     propertyName: "Срок разработки",
-                    propertyGraph: "15 дней",
+                    propertyGraph: "2 дня",
                   },
                 ]}
               />
               <PriceTab
                 marginTop="mt-8"
                 tabNaming="Бизнес"
-                tabDescription="Корпоративный сайт"
-                price="1 078 000 ₸"
+                tabDescription="Средняя сложность"
+                price="20 000 ₸"
                 properties={[
                   {
-                    propertyName: "Макеты дизайна ПК версии",
-                    propertyGraph: "2",
+                    propertyName: "Исходник",
+                    propertyGraph: "Да",
                   },
                   {
-                    propertyName: "Макеты дизайна моб. версии",
-                    propertyGraph: "2",
+                    propertyName: "Высокое разрешение",
+                    propertyGraph: "Да",
                   },
                   {
-                    propertyName: "Дизайн внутренних страниц десктоп версии",
-                    propertyGraph: "2",
+                    propertyName: "Количество изображений",
+                    propertyGraph: "1",
                   },
                   {
-                    propertyName: "Дизайн внутренних страниц мобильной версии",
-                    propertyGraph: "2",
-                  },
-                  {
-                    propertyName: "Адаптивная версия",
-                    propertyGraph: "Имеется",
-                  },
-                  {
-                    propertyName: "Наполнение страниц контентом",
-                    propertyGraph: "20",
-                  },
-                  {
-                    propertyName: "Дополнительный язык",
-                    propertyGraph: "+50%",
+                    propertyName: "Подбор шрифта",
+                    propertyGraph: "Да",
                   },
                   {
                     propertyName: "Срок разработки",
-                    propertyGraph: "20 дней",
+                    propertyGraph: "2 дня",
                   },
                 ]}
               />
               <PriceTab
                 marginTop="mt-8"
-                tabNaming="Магазин"
-                tabDescription="Готовый интернет магазин"
-                price="1 526 000 ₸"
+                tabNaming="Профессиональный"
+                tabDescription="Разработка логотипа высокой сложности"
+                price="30 000 ₸"
                 properties={[
                   {
-                    propertyName: "Макеты дизайна ПК версии",
-                    propertyGraph: "2",
+                    propertyName: "Исходник",
+                    propertyGraph: "Да",
                   },
                   {
-                    propertyName: "Макеты дизайна моб. версии",
-                    propertyGraph: "2",
+                    propertyName: "Высокое разрешение",
+                    propertyGraph: "Да",
                   },
                   {
-                    propertyName: "Дизайн внутренних страниц десктоп версии",
-                    propertyGraph: "3",
-                  },
-                  {
-                    propertyName: "Дизайн внутренних страниц мобильной версии",
-                    propertyGraph: "3",
-                  },
-                  {
-                    propertyName: "Адаптивная версия",
-                    propertyGraph: "Имеется",
-                  },
-                  {
-                    propertyName: "Наполнение страниц контентом",
-                    propertyGraph: "10",
-                  },
-                  {
-                    propertyName: "Дополнительный язык",
-                    propertyGraph: "+50%",
+                    propertyName: "Количество изображений",
+                    propertyGraph: "1",
                   },
                   {
                     propertyName: "Срок разработки",
-                    propertyGraph: "30 дней",
+                    propertyGraph: "2 дня",
                   },
                 ]}
               />

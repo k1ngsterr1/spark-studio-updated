@@ -18,6 +18,10 @@
   }
 }
 
+.input--error {
+  @apply text-red-600;
+}
+
 @media screen and (min-width: 1024px) {
   .input {
     width: clamp(270px, 28.1232vw, 1080px);

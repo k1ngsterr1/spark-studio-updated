@@ -17,12 +17,11 @@ export const PriceScreen = () => {
             решений
           </p>
         </Slide>
-
         <PriceTab
           marginTop="mt-8"
           tabNaming="Базовый"
-          tabDescription="Лендинг, сайт - визитка"
-          price="От 300 000 ₸"
+          tabDescription="SEO оптимизация вашего кода"
+          price="Индивидуально"
           properties={[
             {
               propertyName: "Макеты дизайна ПК версии",
@@ -61,8 +60,8 @@ export const PriceScreen = () => {
         <PriceTab
           marginTop="mt-8"
           tabNaming="Бизнес"
-          tabDescription="Корпоративный сайт"
-          price="От 600 000₸"
+          tabDescription="SEO оптимизация вашего кода"
+          price="Индивидуально"
           properties={[
             {
               propertyName: "Макеты дизайна ПК версии",
@@ -101,8 +100,8 @@ export const PriceScreen = () => {
         <PriceTab
           marginTop="mt-8"
           tabNaming="Магазин"
-          tabDescription="Готовый интернет магазин"
-          price="От 800 000 ₸"
+          tabDescription="SEO оптимизация вашего кода"
+          price="Индивидуально"
           properties={[
             {
               propertyName: "Макеты дизайна ПК версии",
@@ -159,8 +158,8 @@ export const PriceScreen = () => {
             <PriceTab
               marginTop="mt-8"
               tabNaming="Базовый"
-              tabDescription="Лендинг, сайт - визитка"
-              price="От 300 000 ₸"
+              tabDescription="SEO оптимизация вашего кода"
+              price="Индивидуально"
               properties={[
                 {
                   propertyName: "Макеты дизайна ПК версии",
@@ -199,8 +198,8 @@ export const PriceScreen = () => {
             <PriceTab
               marginTop="mt-8"
               tabNaming="Бизнес"
-              tabDescription="Корпоративный сайт"
-              price="От 600 000₸"
+              tabDescription="SEO оптимизация вашего кода"
+              price="Индивидуально"
               properties={[
                 {
                   propertyName: "Макеты дизайна ПК версии",
@@ -239,8 +238,8 @@ export const PriceScreen = () => {
             <PriceTab
               marginTop="mt-8"
               tabNaming="Магазин"
-              tabDescription="Готовый интернет магазин"
-              price="От 800 000 ₸"
+              tabDescription="SEO оптимизация вашего кода"
+              price="Индивидуально"
               properties={[
                 {
                   propertyName: "Макеты дизайна ПК версии",

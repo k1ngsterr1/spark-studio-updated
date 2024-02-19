@@ -53,8 +53,8 @@ export const SeoFeature = () => {
         <PriceTab
           marginTop="mt-8"
           tabNaming="Базовый"
-          tabDescription="Лендинг, сайт - визитка"
-          price="300 000 ₸"
+          tabDescription="SEO оптимизация вашего кода"
+          price="Индивидуально"
           properties={[
             {
               propertyName: "Макеты дизайна ПК версии",
@@ -93,8 +93,8 @@ export const SeoFeature = () => {
         <PriceTab
           marginTop="mt-8"
           tabNaming="Бизнес"
-          tabDescription="Корпоративный сайт"
-          price="1 078 000 ₸"
+          tabDescription="SEO оптимизация вашего кода"
+          price="Индивидуально"
           properties={[
             {
               propertyName: "Макеты дизайна ПК версии",
@@ -133,8 +133,8 @@ export const SeoFeature = () => {
         <PriceTab
           marginTop="mt-8"
           tabNaming="Магазин"
-          tabDescription="Готовый интернет магазин"
-          price="1 526 000 ₸"
+          tabDescription="SEO оптимизация вашего кода"
+          price="Индивидуально"
           properties={[
             {
               propertyName: "Макеты дизайна ПК версии",
@@ -226,8 +226,8 @@ export const SeoFeature = () => {
               <PriceTab
                 marginTop="mt-8"
                 tabNaming="Базовый"
-                tabDescription="Лендинг, сайт - визитка"
-                price="300 000 ₸"
+                tabDescription="SEO оптимизация вашего кода"
+                price="Индивидуально"
                 properties={[
                   {
                     propertyName: "Макеты дизайна ПК версии",
@@ -266,8 +266,8 @@ export const SeoFeature = () => {
               <PriceTab
                 marginTop="mt-8"
                 tabNaming="Бизнес"
-                tabDescription="Корпоративный сайт"
-                price="1 078 000 ₸"
+                tabDescription="SEO оптимизация вашего кода"
+                price="Индивидуально"
                 properties={[
                   {
                     propertyName: "Макеты дизайна ПК версии",
@@ -306,8 +306,8 @@ export const SeoFeature = () => {
               <PriceTab
                 marginTop="mt-8"
                 tabNaming="Магазин"
-                tabDescription="Готовый интернет магазин"
-                price="1 526 000 ₸"
+                tabDescription="SEO оптимизация вашего кода"
+                price="Индивидуально"
                 properties={[
                   {
                     propertyName: "Макеты дизайна ПК версии",

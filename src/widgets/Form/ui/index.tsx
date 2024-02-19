@@ -13,7 +13,7 @@ export const Form = () => {
         className="form-mobile-screen flex flex-col items-center w-full min-[1024px]:hidden"
         onSubmit={handleSubmit(onSubmit)}
       >
-        <div className="form-mobile-screen__input mt-12">
+        <div className="form-mobile-screen__input mt-12 flex justify-center flex-col items-center">
           <Input
             {...register("full_name", { required: "Заполните ваше имя" })}
             type="text"
@@ -21,12 +21,12 @@ export const Form = () => {
             isError={Boolean(errors.full_name)}
           />
           {errors.full_name && (
-            <span className="form__input--error mt-4">
+            <span className="form__input--error mt-4 !text-red-600">
               {errors.full_name.message}
             </span>
           )}
         </div>
-        <div className="form-mobile-screen__input mt-12">
+        <div className="form-mobile-screen__input mt-12 flex justify-center flex-col items-center">
           <Input
             {...register("phone_number", {
               required: "Заполните ваш номер телефона",
@@ -36,7 +36,7 @@ export const Form = () => {
             isError={Boolean(errors.phone_number)}
           />
           {errors.phone_number && (
-            <span className="form__input--error mt-4">
+            <span className="form__input--error mt-4 !text-red-600">
               {errors.phone_number.message}
             </span>
           )}
@@ -50,11 +50,11 @@ export const Form = () => {
           onClick={() => console.log("Doodle")}
         />
       </form>
-      <form className="flex justify-between items-start mb-20">
-        <div
-          className="pc form flex flex-col items-start justify-start w-full mt-20 max-[448px]:hidden"
-          onSubmit={handleSubmit(onSubmit)}
-        >
+      <form
+        className="flex justify-between items-start mb-20"
+        onSubmit={handleSubmit(onSubmit)}
+      >
+        <div className="pc form flex flex-col items-start justify-start w-full mt-20 max-[448px]:hidden">
           <div className="flex flex-col ">
             <div className="upper-form flex">
               <div className="inputs flex flex-col">
@@ -97,7 +97,7 @@ export const Form = () => {
                   <Selector />
                 </Slide>
                 <Slide direction="left">
-                  <Button text="Отправить" type="submit" marginTop="mt-8" />
+                  <Button text="Отправить" marginTop="mt-8" />
                 </Slide>
               </div>
               <div className="flex flex-col items-start ml-40">

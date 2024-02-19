@@ -16,10 +16,6 @@ export const Selector = () => {
     (option) => option.value === selectedValue
   );
 
-  // const handleChange = (option: any) => {
-  //   dispatch(changeOption(option.value));
-  // };
-
   const style = {
     control: (base: any) => ({
       ...base,
@@ -42,6 +38,7 @@ export const Selector = () => {
         placeholder="Выберите услугу"
         menuPortalTarget={document.body}
         styles={style}
+        name="service"
         menuPosition="fixed"
         required
         className="react-select text-xl w-[300px] mt-8 hoverable min-[1024px]:w-[100%]"

@@ -16,11 +16,17 @@ export function useSendEmail() {
     criteriaMode: "all",
   });
 
-  const onSubmit = (data: SendFormData) => {
+  const onSubmit = (data: SendFormData, event?: React.BaseSyntheticEvent) => {
+    event?.preventDefault();
     const formData = data as unknown as Record<string, unknown>;
 
     emailjs
-      .send("your_service_id", "your_template_id", formData, "your_user_id")
+      .send(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_EMAIL_ID,
+        formData,
+        import.meta.env.VITE_PUBLIC_KEY
+      )
       .then(
         (result) => {
           console.log(result.text);
