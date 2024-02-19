@@ -38,7 +38,7 @@ export function useSendEmail() {
       )
       .then(
         () => {
-          dispatch(openWindow);
+          dispatch(openWindow());
         },
         (error) => {
           console.log(error.text);

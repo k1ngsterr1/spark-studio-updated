@@ -17,7 +17,7 @@ export const Popup = () => {
         <Button
           text="Закрыть"
           marginTop="mt-4"
-          onClick={() => dispatch(closeWindow)}
+          onClick={() => dispatch(closeWindow())}
         />
       </div>
     </div>
