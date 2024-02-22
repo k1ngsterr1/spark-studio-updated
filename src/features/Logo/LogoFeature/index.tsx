@@ -19,11 +19,11 @@ export const LogoFeature = () => {
         ogDescription="Откройте для себя силу уникального брендинга с профессиональной разработкой логотипов от Spark Studio. Наша команда экспертов создаст идеальный логотип, который выделит ваш бизнес и усилит вашу маркетинговую стратегию. Заходите на сайт, чтобы начать трансформацию вашего бренда уже сегодня!"
       />
       <main className="mobile flex flex-col items-center justify-center">
-        <Slide direction="left" delay={100}>
-          <h1 className="text-center">
-            Разработка <span className="orange">Логотипов</span>
-          </h1>
-        </Slide>
+        {/* <Slide direction="left" delay={100}> */}
+        <h1 className="text-center">
+          Разработка <span className="orange">Логотипов</span>
+        </h1>
+        {/* </Slide> */}
         <Breadcrumbs
           sx={{
             marginTop: "clamp(8px,3.73824vw,32px)",
@@ -35,14 +35,14 @@ export const LogoFeature = () => {
             Разработка Логотипов
           </Link>
         </Breadcrumbs>
-        <Slide direction="right" delay={200}>
-          <p className="mt-8 w-[100%]">
-            В поисках уникального и запоминающегося логотипа для вашего бизнеса?
-            Spark Studio предлагает профессиональные услуги по разработке
-            логотипов, которые помогут вашему бренду выделиться и оставить
-            неизгладимое впечатление.
-          </p>
-        </Slide>
+        {/* <Slide direction="right" delay={200}> */}
+        <p className="mt-8 w-[90%]">
+          В поисках уникального и запоминающегося логотипа для вашего бизнеса?
+          Spark Studio предлагает профессиональные услуги по разработке
+          логотипов, которые помогут вашему бренду выделиться и оставить
+          неизгладимое впечатление.
+        </p>
+        {/* </Slide> */}
         <Slide direction="left" delay={300}>
           <Button
             text="Заказать"
@@ -58,8 +58,7 @@ export const LogoFeature = () => {
         <Slide direction="right" delay={500} triggerOnce>
           <p className="mt-4">
             Выберите подходящий под вашу задачу тарифный план либо
-            воспользуйтесь планом “Exclusive” для нестандартных и кастомных
-            решений
+            воспользуйтесь планом “Супер” для нестандартных и кастомных решений
           </p>
         </Slide>
         <PriceTab
@@ -116,7 +115,7 @@ export const LogoFeature = () => {
         />
         <PriceTab
           marginTop="mt-8"
-          tabNaming="Профессиональный"
+          tabNaming="Супер"
           tabDescription="Разработка логотипа высокой сложности"
           price="Индивидуально"
           properties={[
