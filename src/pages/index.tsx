@@ -24,6 +24,8 @@ import { ComingSoonPage } from "./ComingSoon/ui";
 
 // Content
 import { portfolioContent } from "@shared/lib/data/portfolioContent";
+import { GamesPage } from "./games/ui";
+import { SnakePage } from "./snake/ui";
 
 export const MyRoutes: FC = () => {
   return (
@@ -40,6 +42,7 @@ export const MyRoutes: FC = () => {
         />
         <Route path={ROUTE_CONSTANTS.ABOUT} element={<AboutPage />} />
         <Route path={ROUTE_CONSTANTS.WEBSITES} element={<WebsitesPage />} />
+        <Route path={ROUTE_CONSTANTS.GAMES} element={<GamesPage />} />
         <Route path={ROUTE_CONSTANTS.SEO} element={<SeoPage />} />
         <Route path={ROUTE_CONSTANTS.LOGO} element={<LogoPage />} />
         <Route path={ROUTE_CONSTANTS.PORTFOLIO} element={<Portfolio />} />
@@ -57,6 +60,7 @@ export const MyRoutes: FC = () => {
 
         <Route path={ROUTE_CONSTANTS.PRODUCTS} element={<ComingSoonPage />} />
         <Route path={ROUTE_CONSTANTS.SKILLS} element={<ComingSoonPage />} />
+        <Route path={ROUTE_CONSTANTS.SNAKE_GAME} element={<SnakePage />} />
       </Routes>
     </Router>
   );

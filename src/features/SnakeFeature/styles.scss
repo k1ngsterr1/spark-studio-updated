@@ -1,0 +1,7 @@
+#game-canvas {
+  width: 100%;
+  height: clamp(300px, 140.184vw, 1200px);
+  border: 8px solid;
+  @apply border-custom-orange;
+  @apply mt-4;
+}

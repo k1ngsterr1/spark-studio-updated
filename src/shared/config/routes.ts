@@ -1,5 +1,7 @@
 export const ROUTE_CONSTANTS = {
   HOME: "/home",
+  GAMES: "/games",
+  SNAKE_GAME: "/games/snake",
   ABOUT: "/about",
   SERVICES: "/services",
   WEBSITES: "/services/websites",
