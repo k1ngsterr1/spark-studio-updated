@@ -66,7 +66,7 @@ export const LogoFeature = () => {
           marginTop="mt-8"
           tabNaming="Базовый"
           tabDescription="Разработка логотипа низкой сложности"
-          price="15 000 ₸"
+          price="Индивидуально"
           properties={[
             {
               propertyName: "Исходник",
@@ -90,7 +90,7 @@ export const LogoFeature = () => {
           marginTop="mt-8"
           tabNaming="Бизнес"
           tabDescription="Средняя сложность"
-          price="20 000 ₸"
+          price="Индивидуально"
           properties={[
             {
               propertyName: "Исходник",
@@ -118,7 +118,7 @@ export const LogoFeature = () => {
           marginTop="mt-8"
           tabNaming="Профессиональный"
           tabDescription="Разработка логотипа высокой сложности"
-          price="30 000 ₸"
+          price="Индивидуально"
           properties={[
             {
               propertyName: "Исходник",
@@ -212,7 +212,7 @@ export const LogoFeature = () => {
                 marginTop="mt-8"
                 tabNaming="Базовый"
                 tabDescription="Разработка логотипа низкой сложности"
-                price="15 000 ₸"
+                price="Индивидуально"
                 properties={[
                   {
                     propertyName: "Исходник",
@@ -236,7 +236,7 @@ export const LogoFeature = () => {
                 marginTop="mt-8"
                 tabNaming="Бизнес"
                 tabDescription="Средняя сложность"
-                price="20 000 ₸"
+                price="Индивидуально"
                 properties={[
                   {
                     propertyName: "Исходник",
@@ -264,7 +264,7 @@ export const LogoFeature = () => {
                 marginTop="mt-8"
                 tabNaming="Профессиональный"
                 tabDescription="Разработка логотипа высокой сложности"
-                price="30 000 ₸"
+                price="Индивидуально"
                 properties={[
                   {
                     propertyName: "Исходник",
