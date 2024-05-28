@@ -68,9 +68,9 @@ export const Navigation = () => {
           <Link className="navigation__pc__link hoverable" to="/services">
             Услуги
           </Link>
-          <Link className="navigation__pc__link hoverable" to="/portfolio">
+          {/* <ScrollLink className="navigation__pc__link hoverable" to="/portfolio">
             Портфолио
-          </Link>
+          </ScrollLink> */}
 
           <Link className="navigation__pc__link hoverable" to="/skills">
             Возможности

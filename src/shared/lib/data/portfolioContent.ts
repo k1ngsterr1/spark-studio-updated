@@ -48,6 +48,18 @@ import AGRO_MAIN from "@assets/images/sites/mockups/AGRO_MAIN_IMAGE.png";
 import AGRO_MAIN_2 from "@assets/images/sites/mockups/AGRO_MAIN_IMAGE_2.png";
 import AGRO_MAIN_3 from "@assets/images/sites/mockups/AGRO_MAIN_IMAGE_3.png";
 
+// Showtime Mafia
+import SHOWTIME_MOCKUP from "@assets/images/sites/mockups/SA_MOCKUP.png";
+import SHOWTIME_PHONE_MOCKUP from "@assets/images/sites/mockups/SA_MAIN_IMAGE_PHONE.webp";
+import SHOWTIME_MAIN from "@assets/images/sites/mockups/SA_MAIN_IMAGE.webp";
+import SHOWTIME_MAIN_2 from "@assets/images/sites/mockups/SA_MAIN_IMAGE_2.webp";
+import SHOWTIME_MAIN_3 from "@assets/images/sites/mockups/SA_MAIN_IMAGE_3.webp";
+
+// Sungrain
+import SUNGRAIN_MAIN from "@assets/images/sites/mockups/SUNGRAIN_MAIN_IMAGE.png";
+import SUNGRAIN_MAIN_2 from "@assets/images/sites/mockups/SUNGRAIN_MAIN_IMAGE_3.png";
+import SUNGRAIN_PHONE from "@assets/images/sites/mockups/SUNGRAIN_MAIN_IMAGE_PHONE.png";
+
 export interface PhotoItem {
   photo: string;
 }
@@ -326,6 +338,94 @@ export const portfolioContent: Record<string, PortfolioInfo> = {
     metaDescription:
       "Spark Studio предлагает индивидуальные решения в разработке лендингов для бизнеса. Откройте для себя высокоэффективные, творческие и SEO-оптимизированные одностраничные сайты, которые превращают посетителей в клиентов. Специальные решения для вашего уникального бренда с Agro Partners PV.",
     phoneMockup: AGRO_PHONE_MOCKUP,
+    adaptiveDescription: [
+      {
+        text: "Для обеспечения максимальной доступности и удобства использования лендинга компании Agro Partners PV важно гарантировать его корректное отображение на всех типах устройств. Адаптивный дизайн сайта позволит достичь этой цели, обеспечивая отличное визуальное восприятие и удобство навигации как на широкоформатных мониторах, так и на экранах мобильных телефонов и планшетов.",
+      },
+    ],
+    // gallery: [
+    //   {
+    //     photo: photo,
+    //   },
+    // ],
+    options: [
+      {
+        icon: faReact,
+        list: "React",
+      },
+      {
+        icon: faGit,
+        list: "Git",
+      },
+      {
+        icon: faFigma,
+        list: "Figma",
+      },
+    ],
+  },
+  mafia: {
+    title: "Showtime Mafia",
+    taskDescription:
+      "Проект по разработке лендинга для Showtime Mafia направлен на создание высокоэффективного и визуально привлекательного онлайн лэндинга компании, специализирующейся на проведении игр в оффлайн и онлайн мафию.",
+    subTitle: "Сайт для event компании",
+    description:
+      "«Showtime Mafia» – группа специалистов, готовая помочь в поиске решений по вопросам организации ивентов.",
+    techStackTitle: "Технологический стэк",
+    mainImage: SHOWTIME_MAIN,
+    mainImage_2: SHOWTIME_MAIN_2,
+    mainImage_3: SHOWTIME_MAIN_3,
+    backgroundImage: "SHOWTIME_BG",
+    // logo: SS_LOGO,
+    mockUpImage: SHOWTIME_MOCKUP,
+    linkProject: "https://mafshow.kz/",
+    metaTitle: "Showtime Mafia - Разработка Лэндинга от Spark Studio",
+    metaDescription:
+      "Spark Studio предлагает индивидуальные решения в разработке лендингов для бизнеса. Откройте для себя высокоэффективные, творческие и SEO-оптимизированные одностраничные сайты, которые превращают посетителей в клиентов. Специальные решения для вашего уникального бренда с Showtime Mafia.",
+    phoneMockup: SHOWTIME_PHONE_MOCKUP,
+    adaptiveDescription: [
+      {
+        text: "Для обеспечения максимальной доступности и удобства использования лендинга компании Agro Partners PV важно гарантировать его корректное отображение на всех типах устройств. Адаптивный дизайн сайта позволит достичь этой цели, обеспечивая отличное визуальное восприятие и удобство навигации как на широкоформатных мониторах, так и на экранах мобильных телефонов и планшетов.",
+      },
+    ],
+    // gallery: [
+    //   {
+    //     photo: photo,
+    //   },
+    // ],
+    options: [
+      {
+        icon: faReact,
+        list: "React",
+      },
+      {
+        icon: faGit,
+        list: "Git",
+      },
+      {
+        icon: faFigma,
+        list: "Figma",
+      },
+    ],
+  },
+  sungrain: {
+    title: "Sungrain",
+    taskDescription:
+      "Проект по разработке лендинга для Sungrain направлен на создание высокоэффективного и визуально привлекательного онлайн лэндинга компании, специализирующейся на продаже муки.",
+    subTitle: "Сайт для мучной компании",
+    description:
+      "«Sungrain» – группа специалистов, готовая помочь в поставке качественной муки.",
+    techStackTitle: "Технологический стэк",
+    mainImage: SUNGRAIN_MAIN,
+    mainImage_2: SUNGRAIN_MAIN_2,
+    mainImage_3: SHOWTIME_MAIN_3,
+    backgroundImage: "SUNGRAIN_BG",
+    // logo: SS_LOGO,
+    // mockUpImage: SUNGRAIN,
+    linkProject: "https://sungrain.kz/home",
+    metaTitle: "Sungrain - Разработка Лэндинга от Spark Studio",
+    metaDescription:
+      "Spark Studio предлагает индивидуальные решения в разработке лендингов для бизнеса. Откройте для себя высокоэффективные, творческие и SEO-оптимизированные одностраничные сайты, которые превращают посетителей в клиентов. Специальные решения для вашего уникального бренда с Showtime Mafia.",
+    phoneMockup: SHOWTIME_PHONE_MOCKUP,
     adaptiveDescription: [
       {
         text: "Для обеспечения максимальной доступности и удобства использования лендинга компании Agro Partners PV важно гарантировать его корректное отображение на всех типах устройств. Адаптивный дизайн сайта позволит достичь этой цели, обеспечивая отличное визуальное восприятие и удобство навигации как на широкоформатных мониторах, так и на экранах мобильных телефонов и планшетов.",

@@ -46,13 +46,13 @@ export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
           </Slide>
           <img
             src={props.mockUpImage}
-            className="mockup_image"
+            className="mockup_image "
             alt={props.title}
           />
         </section>
       </main>
       {/* Task */}
-      <section className="w-[86.6%] m-auto flex items-start justify-between mt-96 portfolio-content max-[440px]:!mt-36">
+      <section className="w-[86.6%] m-auto flex items-start justify-between mt-96 portfolio-content max-[440px]:!mt-36 min-[2560px]:!mt-[560px]">
         <Slide direction="left">
           <h2 className="text-6xl text-custom-black max-[440px]:!mt-12">
             Задачи <span className="orange">проекта</span>{" "}
@@ -93,7 +93,11 @@ export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
         </div>
       </section>
       <section className="w-[100%] m-auto flex items-start justify-between mt-10 portfolio-content">
-        <img src={props.mainImage} className="main_mockup" alt={props.title} />
+        <img
+          src={props.mainImage}
+          className="main_mockup w-full"
+          alt={props.title}
+        />
       </section>
       {/* Tech Stack */}
       <section className="w-[86.6%] m-auto flex items-center justify-center flex-col mt-20 portfolio-content">
@@ -128,7 +132,7 @@ export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
       <section className="w-[100%] m-auto flex items-start justify-between portfolio-content mt-10">
         <img
           src={props.mainImage_3}
-          className="main_mockup"
+          className="main_mockup w-full"
           alt={props.title}
         />
       </section>

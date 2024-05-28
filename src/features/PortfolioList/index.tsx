@@ -4,12 +4,14 @@ import { PortfolioItem } from "@shared/ui/PortfolioItem";
 import { useNavigate } from "react-router-dom";
 
 import work01 from "@assets/images/sites/works/cargo_portfolio.webp";
-
 import work05 from "@assets/images/sites/works/china_portfolio.webp";
 import work06 from "@assets/images/sites/works/agro_portfolio.webp";
-import work10 from "@assets/images/sites/works/work10.webp";
-import work11 from "@assets/images/sites/works/work11.webp";
+import work10 from "@assets/images/sites/works/ss_portfolio.webp";
+import work11 from "@assets/images/sites/works/sharbakty_portfolio.webp";
 import as_partners from "@assets/images/sites/works/arconica_portfolio.webp";
+import mafia from "@assets/images/sites/works/mafia_portfolio.webp";
+import sungrain from "@assets/images/sites/works/sungrain_portfolio.webp";
+import bread from "@assets/images/sites/works/bread_portfolio.webp";
 
 import logo01 from "@assets/images/logo/Agro_Logo.webp";
 import logo02 from "@assets/images/logo/Cargo_Logo.webp";
@@ -73,6 +75,24 @@ export const PortfolioList = () => {
         name: "AS & Partners",
         img: as_partners,
         navigate: "as_partners",
+        description: "Another cool website",
+      },
+      {
+        name: "Showtime Mafia",
+        img: mafia,
+        navigate: "mafia",
+        description: "Another cool website",
+      },
+      {
+        name: "Sungrain",
+        img: sungrain,
+        navigate: "sungrain",
+        description: "Another cool website",
+      },
+      {
+        name: "Вкус Хлеба",
+        img: bread,
+        navigate: "vkus_hleba",
         description: "Another cool website",
       },
     ],
