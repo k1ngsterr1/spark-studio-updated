@@ -49,6 +49,7 @@ import AGRO_MAIN_2 from "@assets/images/sites/mockups/AGRO_MAIN_IMAGE_2.png";
 import AGRO_MAIN_3 from "@assets/images/sites/mockups/AGRO_MAIN_IMAGE_3.png";
 
 // Showtime Mafia
+import SHOWTIME_LOGO from "@assets/images/logo/SHOWTIME_LOGO.webp";
 import SHOWTIME_MOCKUP from "@assets/images/sites/mockups/SA_MOCKUP.png";
 import SHOWTIME_PHONE_MOCKUP from "@assets/images/sites/mockups/SA_MAIN_IMAGE_PHONE.webp";
 import SHOWTIME_MAIN from "@assets/images/sites/mockups/SA_MAIN_IMAGE.webp";
@@ -365,6 +366,7 @@ export const portfolioContent: Record<string, PortfolioInfo> = {
   },
   mafia: {
     title: "Showtime Mafia",
+    logo: SHOWTIME_LOGO,
     taskDescription:
       "Проект по разработке лендинга для Showtime Mafia направлен на создание высокоэффективного и визуально привлекательного онлайн лэндинга компании, специализирующейся на проведении игр в оффлайн и онлайн мафию.",
     subTitle: "Сайт для event компании",
@@ -375,7 +377,6 @@ export const portfolioContent: Record<string, PortfolioInfo> = {
     mainImage_2: SHOWTIME_MAIN_2,
     mainImage_3: SHOWTIME_MAIN_3,
     backgroundImage: "SHOWTIME_BG",
-    // logo: SS_LOGO,
     mockUpImage: SHOWTIME_MOCKUP,
     linkProject: "https://mafshow.kz/",
     metaTitle: "Showtime Mafia - Разработка Лэндинга от Spark Studio",
