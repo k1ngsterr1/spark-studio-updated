@@ -41,6 +41,28 @@
   background-image: url("../../../assets/images/sites/blur_pc/AGRO_BLUR_PC_CARD.png");
 }
 
+.SA_BG {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../../assets/images/sites/blur_pc/SA_BLUR_PC_CARD.webp");
+}
+
+.VK_BG {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../../assets/images/sites/blur_pc/VK_BLUR_PC_CARD.png");
+}
+
+.SUNGRAIN_BG {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../../../assets/images/sites/blur_pc/SUNGRAIN_BLUR_PC_CARD.webp");
+}
+
 .portfolio_details_img {
   position: absolute;
   right: 0;
@@ -114,6 +136,12 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url("../../../assets/images/sites/blur_pc/SA_BLUR_PC_CARD.webp");
+  }
+
+  .SUNGRAIN_BG {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../../../assets/images/sites/blur_pc/SUNGRAIN_BLUR_PHONE_CARD.webp");
   }
 
   .phone_mockup {

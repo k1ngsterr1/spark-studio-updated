@@ -51,7 +51,7 @@ import AGRO_MAIN_3 from "@assets/images/sites/mockups/AGRO_MAIN_IMAGE_3.png";
 // Showtime Mafia
 import SHOWTIME_LOGO from "@assets/images/logo/SHOWTIME_LOGO.webp";
 import SHOWTIME_MOCKUP from "@assets/images/sites/mockups/SA_MOCKUP.png";
-import SHOWTIME_PHONE_MOCKUP from "@assets/images/sites/mockups/SA_MAIN_IMAGE_PHONE.webp";
+import SHOWTIME_PHONE_MOCKUP from "@assets/images/sites/mockups/SA_PHONE_MOCKUP.webp";
 import SHOWTIME_MAIN from "@assets/images/sites/mockups/SA_MAIN_IMAGE.webp";
 import SHOWTIME_MAIN_2 from "@assets/images/sites/mockups/SA_MAIN_IMAGE_2.webp";
 import SHOWTIME_MAIN_3 from "@assets/images/sites/mockups/SA_MAIN_IMAGE_3.webp";
@@ -59,7 +59,17 @@ import SHOWTIME_MAIN_3 from "@assets/images/sites/mockups/SA_MAIN_IMAGE_3.webp";
 // Sungrain
 import SUNGRAIN_MAIN from "@assets/images/sites/mockups/SUNGRAIN_MAIN_IMAGE.png";
 import SUNGRAIN_MAIN_2 from "@assets/images/sites/mockups/SUNGRAIN_MAIN_IMAGE_3.png";
+import SUNGRAIN_MAIN_3 from "@assets/images/sites/mockups/SUNGRAIN_MAIN_IMAGE_3.png";
 import SUNGRAIN_PHONE from "@assets/images/sites/mockups/SUNGRAIN_MAIN_IMAGE_PHONE.png";
+import SUNGRAIN_LOGO from "@assets/images/logo/SUNGRAIN_Logo.webp";
+import SG_MOCKUP from "@assets/images/sites/mockups/SG_MOCKUP.png";
+
+// Vkus Hleba
+import VK_MAIN from "@assets/images/sites/mockups/VK_MAIN_IMAGE_01.png";
+import VK_MAIN_2 from "@assets/images/sites/mockups/VK_MAIN_IMAGE_03.png";
+import VK_MAIN_3 from "@assets/images/sites/mockups/VK_MAIN_IMAGE_03.png";
+import VK_PHONE_MOCKUP from "@assets/images/sites/mockups/VK_PHONE_MOCKUP.png";
+import VK_MOCKUP from "@assets/images/sites/mockups/VK_MOCKUP.png";
 
 export interface PhotoItem {
   photo: string;
@@ -376,7 +386,7 @@ export const portfolioContent: Record<string, PortfolioInfo> = {
     mainImage: SHOWTIME_MAIN,
     mainImage_2: SHOWTIME_MAIN_2,
     mainImage_3: SHOWTIME_MAIN_3,
-    backgroundImage: "SHOWTIME_BG",
+    backgroundImage: "SA_BG",
     mockUpImage: SHOWTIME_MOCKUP,
     linkProject: "https://mafshow.kz/",
     metaTitle: "Showtime Mafia - Разработка Лэндинга от Spark Studio",
@@ -385,7 +395,7 @@ export const portfolioContent: Record<string, PortfolioInfo> = {
     phoneMockup: SHOWTIME_PHONE_MOCKUP,
     adaptiveDescription: [
       {
-        text: "Для обеспечения максимальной доступности и удобства использования лендинга компании Agro Partners PV важно гарантировать его корректное отображение на всех типах устройств. Адаптивный дизайн сайта позволит достичь этой цели, обеспечивая отличное визуальное восприятие и удобство навигации как на широкоформатных мониторах, так и на экранах мобильных телефонов и планшетов.",
+        text: "Для обеспечения максимальной доступности и удобства использования лендинга компании Showtime Mafia важно гарантировать его корректное отображение на всех типах устройств. Адаптивный дизайн сайта позволит достичь этой цели, обеспечивая отличное визуальное восприятие и удобство навигации как на широкоформатных мониторах, так и на экранах мобильных телефонов и планшетов.",
       },
     ],
     // gallery: [
@@ -418,18 +428,62 @@ export const portfolioContent: Record<string, PortfolioInfo> = {
     techStackTitle: "Технологический стэк",
     mainImage: SUNGRAIN_MAIN,
     mainImage_2: SUNGRAIN_MAIN_2,
-    mainImage_3: SHOWTIME_MAIN_3,
+    mainImage_3: SUNGRAIN_MAIN_3,
     backgroundImage: "SUNGRAIN_BG",
-    // logo: SS_LOGO,
-    // mockUpImage: SUNGRAIN,
+    logo: SUNGRAIN_LOGO,
+    mockUpImage: SG_MOCKUP,
     linkProject: "https://sungrain.kz/home",
     metaTitle: "Sungrain - Разработка Лэндинга от Spark Studio",
     metaDescription:
       "Spark Studio предлагает индивидуальные решения в разработке лендингов для бизнеса. Откройте для себя высокоэффективные, творческие и SEO-оптимизированные одностраничные сайты, которые превращают посетителей в клиентов. Специальные решения для вашего уникального бренда с Showtime Mafia.",
-    phoneMockup: SHOWTIME_PHONE_MOCKUP,
+    phoneMockup: SUNGRAIN_MAIN_3,
     adaptiveDescription: [
       {
-        text: "Для обеспечения максимальной доступности и удобства использования лендинга компании Agro Partners PV важно гарантировать его корректное отображение на всех типах устройств. Адаптивный дизайн сайта позволит достичь этой цели, обеспечивая отличное визуальное восприятие и удобство навигации как на широкоформатных мониторах, так и на экранах мобильных телефонов и планшетов.",
+        text: "Для обеспечения максимальной доступности и удобства использования лендинга компании Sungrain важно гарантировать его корректное отображение на всех типах устройств. Адаптивный дизайн сайта позволит достичь этой цели, обеспечивая отличное визуальное восприятие и удобство навигации как на широкоформатных мониторах, так и на экранах мобильных телефонов и планшетов.",
+      },
+    ],
+    // gallery: [
+    //   {
+    //     photo: photo,
+    //   },
+    // ],
+    options: [
+      {
+        icon: faReact,
+        list: "React",
+      },
+      {
+        icon: faGit,
+        list: "Git",
+      },
+      {
+        icon: faFigma,
+        list: "Figma",
+      },
+    ],
+  },
+  vkus_hleba: {
+    title: "Вкус Хлеба",
+    taskDescription:
+      "Проект по разработке лендинга для пекарни Вкус хлеба направлен на создание высокоэффективного и визуально привлекательного онлайн лэндинга компании, специализирующейся на выпечке.",
+    subTitle: "Сайт для пекарни",
+    description:
+      "«Вкус Хлеба» – группа специалистов, готовая помочь в поставке качественной муки.",
+    techStackTitle: "Технологический стэк",
+    mainImage: VK_MAIN,
+    mainImage_2: VK_MAIN_2,
+    mainImage_3: VK_MAIN_3,
+    backgroundImage: "VK_BG",
+    logo: SUNGRAIN_LOGO,
+    mockUpImage: VK_MOCKUP,
+    linkProject: "https://vkushleba.kz/",
+    metaTitle: "Вкус хлеба - Разработка Лэндинга от Spark Studio",
+    metaDescription:
+      "Spark Studio предлагает индивидуальные решения в разработке лендингов для бизнеса. Откройте для себя высокоэффективные, творческие и SEO-оптимизированные одностраничные сайты, которые превращают посетителей в клиентов. Специальные решения для вашего уникального бренда с Showtime Mafia.",
+    phoneMockup: VK_PHONE_MOCKUP,
+    adaptiveDescription: [
+      {
+        text: "Для обеспечения максимальной доступности и удобства использования лендинга компании Вкус Хлеба важно гарантировать его корректное отображение на всех типах устройств. Адаптивный дизайн сайта позволит достичь этой цели, обеспечивая отличное визуальное восприятие и удобство навигации как на широкоформатных мониторах, так и на экранах мобильных телефонов и планшетов.",
       },
     ],
     // gallery: [

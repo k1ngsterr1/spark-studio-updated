@@ -125,7 +125,7 @@ export const PortfolioDetails: React.FC<PortfolioInfo> = (props) => {
       <section className="w-[100%] m-auto flex items-start justify-between  portfolio-content">
         <img
           src={props.mainImage_2}
-          className="main_mockup"
+          className="main_mockup w-full"
           alt={props.title}
         />
       </section>
