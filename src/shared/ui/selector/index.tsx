@@ -2,6 +2,7 @@ import Select from "react-select";
 import { useSelector } from "react-redux";
 import { Controller } from "react-hook-form";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 interface SelectorProps {
   control: any;
@@ -9,10 +10,11 @@ interface SelectorProps {
 }
 
 export const Selector: React.FC<SelectorProps> = ({ control, setValue }) => {
+  const { t } = useTranslation();
   const options = [
-    { value: "websites", label: "Сайты" },
-    { value: "applications", label: "Приложения" },
-    { value: "logotypes", label: "Логотипы" },
+    { value: "websites", label: `${t('sites')}` },
+    { value: "applications", label: `${t('apps')}` },
+    { value: "logotypes", label: `${t('logotypes')}` },
   ];
 
   const [selectedOption, setSelectedOption] = useState(options[0]);

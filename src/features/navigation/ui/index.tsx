@@ -4,12 +4,15 @@ import { toggleMenu as toggleMenuAction } from "../model";
 import { Hamburger } from "@shared/ui/hamburger";
 import { useBurgerAnimation } from "@shared/lib/hooks/useBurgerAnimation";
 import { Link as ScrollLink } from "react-scroll";
+import { LanguageButton } from "@shared/ui/languageButton";
+import { useTranslation } from "react-i18next";
 
 import Logo from "@assets/images/assets/spark_logo.svg";
 
 import "./styles.scss";
 
 export const Navigation = () => {
+  const { t } = useTranslation();
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
   const isMenuOpen = useAppSelector((state: any) => state.menu.isOpen);
@@ -60,31 +63,32 @@ export const Navigation = () => {
         />
         <div className="w-[50%] flex justify-between items-center">
           <Link className="navigation__pc__link hoverable" to="/home">
-            Главная
+            {t('main')}
           </Link>
           <Link className="navigation__pc__link hoverable" to="/about">
-            О нас
+            {t('aboutUs')}
           </Link>
           <Link className="navigation__pc__link hoverable" to="/services">
-            Услуги
+            {t('services')}
           </Link>
           {/* <ScrollLink className="navigation__pc__link hoverable" to="/portfolio">
             Портфолио
           </ScrollLink> */}
 
           <Link className="navigation__pc__link hoverable" to="/skills">
-            Возможности
+            {t('capabilities')}
           </Link>
           <Link className="navigation__pc__link hoverable" to="/products">
-            Сервисы
+            {t('servicesSec')}
           </Link>
           <ScrollLink
             className="navigation__pc__link--orange hoverable"
             to="contacts-pc"
             smooth
           >
-            Заявка
+            {t('application')}
           </ScrollLink>
+          <LanguageButton />
         </div>
       </div>
     </nav>

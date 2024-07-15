@@ -2,11 +2,13 @@ import { Block } from "@shared/index";
 import { Button, ScrollButton } from "@shared/ui/button";
 import { Slide } from "react-awesome-reveal";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import "./styles.scss";
 
 export const MainFeature = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -56,20 +58,17 @@ export const MainFeature = () => {
       <div className="pc flex max-[448px]:hidden">
         <main className="flex flex-col items-start">
           <Slide direction="left">
-            <h1 className="w-[60%]">
-              СТУДИЯ ВЕБ <strong className="orange">ДИЗАЙНА</strong>
+            <h1 className="w-[100%]">
+              {t('mainDesign')} <br /><strong className="orange">{t('mainStudio')}</strong>
             </h1>
           </Slide>
           <Slide direction="left" delay={150}>
-            <p className="paragraph mt-6 w-[60%]">
-              Мы являемся командой профессионалов, специализирующихся на
-              создании привлекательных и эффективных веб-сайтов. Наша студия
-              сочетает техническую экспертизу и творческий подход, чтобы помочь
-              вашему бизнесу достичь новых высот в онлайн-мире.
+            <p className="paragraph mt-6 w-[65%]">
+              {t('mainIntro')}
             </p>
           </Slide>
           <Slide direction="left" delay={200}>
-            <ScrollButton text="Заказать" to="contacts-pc" marginTop="mt-8" />
+            <ScrollButton text={t('orderButton')} to="contacts-pc" marginTop="mt-8" />
           </Slide>
         </main>
         <div className="flex w-[68%] flex-col">
