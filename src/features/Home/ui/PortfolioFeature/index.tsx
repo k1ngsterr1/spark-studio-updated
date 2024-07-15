@@ -1,8 +1,10 @@
 import { PortfolioList } from "@features/PortfolioList";
 import { PortfolioSwitch } from "@features/PortfolioSwitch";
 import { Slide } from "react-awesome-reveal";
+import { useTranslation } from "react-i18next";
 
 export const PortfolioFeature = () => {
+  const { t } = useTranslation();
   return (
     <>
       <section className="mobile flex flex-col items-center">
@@ -27,19 +29,13 @@ export const PortfolioFeature = () => {
         <div className="flex flex-col justify-between items-start">
           <Slide direction="left">
             <h4>
-              Наше <span className="orange">портфолио</span>
+              {t('portfolioOur')} <span className="orange">{t('portfolioSecond')}</span>
             </h4>
           </Slide>
           <div className="flex items-start justify-between">
             <Slide direction="left" delay={150}>
               <p className="paragraph mt-2 w-[50%]">
-                В нашем портфолио представлены уникальные и современные проекты,
-                которые мы с гордостью реализовали для наших клиентов. Наши
-                работы отличаются стильным дизайном, интуитивной навигацией и
-                высокой функциональностью. Мы создаем веб-сайты, которые не
-                только красивы, но и эффективно выполняют свои задачи -
-                привлекают аудиторию, увеличивают конверсию и помогают достигать
-                бизнес-целей
+                {t('portfolioParagraph')}
               </p>
             </Slide>
             <PortfolioSwitch />
